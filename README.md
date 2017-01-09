@@ -1,2 +1,2 @@
 # JavaEE
-My exercises in the study of JavaEE
+My exercises in studying of JavaEE
