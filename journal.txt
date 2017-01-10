@@ -1,3 +1,8 @@
 Jan 09, 2017
 
 I starded to learn JavaEE uging book «Java EE 7 Essentials» by Arun Gupta (in Russian). I downloaded NetBeans Java EE from https://netbeans.org/downloads/ and have to install it.
+Note: I had some problem with installation but I resolved this issue using «OS Independent Zip» for download.
+
+Jan 10, 2017
+
+I downloaded zip file from http://glassfish.org/hol/movieplex7-starting-template.zip and took and opened folder movieplex7 in Netbeans as project. I tried to start project but NetBeans didn't find server for it.
