@@ -6,3 +6,8 @@ Note: I had some problem with installation but I resolved this issue using «OS I
 Jan 10, 2017
 
 I downloaded zip file from http://glassfish.org/hol/movieplex7-starting-template.zip and took and opened folder movieplex7 in Netbeans as project. I tried to start project but NetBeans didn't find server for it.
+
+Jan 11, 2017
+
+I figured out how to create and run the GlassFish Server (Services tab).
+However, when the project starts getting error - error in the deployment: Invalid target ID Server. I need to continue to explore this...
