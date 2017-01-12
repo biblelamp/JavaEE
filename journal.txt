@@ -11,3 +11,10 @@ Jan 11, 2017
 
 I figured out how to create and run the GlassFish Server (Services tab).
 However, when the project starts getting error - error in the deployment: Invalid target ID Server. I need to continue to explore this...
+
+Jan 12, 2017
+
+I can not understand what the problem is...
+GlassFish server is starting successfully, project is building successfully,
+but I'm getting message: The module has not been deployed. See the server log for details.
+I continue to look for - what's the problem?
