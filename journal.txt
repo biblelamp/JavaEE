@@ -23,3 +23,9 @@ Jan 13, 2017
 
 I decided to change tactic.
 I'll postpone the book «Java EE 7 Essentials» and try to make more simple project in Java EE - for example https://netbeans.org/kb/docs/javaee/javaee-gettingstarted_ru.html
+By the way, I tried to create some simple applications but failed...
+
+Jan 14, 2017
+
+I'm home. I found out that on the home computer any projects NetBeans was created successfully.
+I started to create my first java web application https://netbeans.org/kb/docs/javaee/javaee-gettingstarted.html
