@@ -29,3 +29,10 @@ Jan 14, 2017
 
 I'm home. I found out that on the home computer any projects NetBeans was created successfully.
 I started to create my first java web application https://netbeans.org/kb/docs/javaee/javaee-gettingstarted.html
+
+Jan 15, 2017
+
+I finished writing a simple application on the model of the article.
+Application building passes without errors. But the application does not work: the module is not deployed.
+http://stackoverflow.com/questions/20976377/deployment-error-java-webproject-from-netbeans-to-glassfish-4-0
+I tryed to start SimpleEE7App.war using Administration Console (http://localhost:4848) but failed...
