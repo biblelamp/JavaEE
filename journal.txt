@@ -41,3 +41,10 @@ Jan 16, 2017
 
 I tried to open SimpleEE7App which I made at home but failed.
 NetBean does not want to open the project. I think I should try to use another IDE maybe Eclipse...
+
+Jan 17, 2017
+
+I have read http://webjavastart.blogspot.ru then installed Eclipse (4.6/.)+Tomcat (9.0) and created simple Dynamic Web Projects HelloWorld and SimpleServlet. All work fine.
+Quite interesting video course in Russian
+https://www.youtube.com/playlist?list=PLwwk4BHih4fjstwgKAHPAuUcjpRUiRh5k
+A series of articles http://onedeveloper.javadev.ru/
