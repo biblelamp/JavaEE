@@ -44,7 +44,11 @@ NetBean does not want to open the project. I think I should try to use another I
 
 Jan 17, 2017
 
-I have read http://webjavastart.blogspot.ru then installed Eclipse (4.6/.)+Tomcat (9.0) and created simple Dynamic Web Projects HelloWorld and SimpleServlet. All work fine.
+I have read http://webjavastart.blogspot.ru then installed Eclipse (4.6.2)+Tomcat (9.0) and created simple Dynamic Web Projects HelloWorld and SimpleServlet. All work fine.
 Quite interesting video course in Russian
 https://www.youtube.com/playlist?list=PLwwk4BHih4fjstwgKAHPAuUcjpRUiRh5k
 A series of articles http://onedeveloper.javadev.ru/
+
+Jan 18, 2017
+
+I have read article http://java-online.ru/jsf-welcome.xhtml and repeated and studied this code.
