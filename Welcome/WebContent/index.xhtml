@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"> 
+  
+  <h:head>
+    <title>Login Page</title>
+  </h:head>
+
+  <h:body>
+    <h:form>
+        <h:panelGrid columns="2" border="0">
+            <h:outputText value="Login"/>
+            <h:inputText value="#{Main.login}" />
+            <h:outputText value="Password"/>
+            <h:inputSecret value="#{Main.password}" />
+        </h:panelGrid>
+        <h:commandButton value="Enter" action="#{Main.checkLogin}" />
+    </h:form>
+  </h:body>
+</html>
