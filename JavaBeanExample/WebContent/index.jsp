@@ -18,7 +18,7 @@ String getFormattedDate() {
       <title>JavaBean with JSP</title>
   </head>
   <body>
-       <h2>${hello.message}</h2>
+       <h2>${hello.getMessage()}</h2>
        <i>Today is <%= getFormattedDate() %></i>
   </body>
 </html>
