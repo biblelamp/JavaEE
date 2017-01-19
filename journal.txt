@@ -51,4 +51,14 @@ A series of articles http://onedeveloper.javadev.ru/
 
 Jan 18, 2017
 
-I have read article http://java-online.ru/jsf-welcome.xhtml and repeated and studied this code.
+I have read article http://java-online.ru/jsf-welcome.xhtml and repeated and studied this code (example with JSF).
+
+Jan 19, 2017
+
+I have read http://java-online.ru/jsp.xhtml about Java Server Pages (JSP) and wrote example JavaBeanExample.
+In parrallel I started to read a book «Thinking In Java Enterprise» by Bruce Eckel http://javatutor.net/books/tiej
+
+--
+for future:
+	Thinking In Java Enterprise http://javatutor.net/books/tiej
+	OpenShift as Java-Hosting https://habrahabr.ru/post/145203/
