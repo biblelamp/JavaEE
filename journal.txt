@@ -27,7 +27,7 @@ By the way, I tried to create some simple applications but failed...
 
 Jan 14, 2017
 
-I'm home. I found out that on the home computer any projects NetBeans was created successfully.
+I'm at home. I found out that on the home computer any projects NetBeans was created successfully.
 I started to create my first java web application https://netbeans.org/kb/docs/javaee/javaee-gettingstarted.html
 
 Jan 15, 2017
@@ -57,6 +57,10 @@ Jan 19, 2017
 
 I have read http://java-online.ru/jsp.xhtml about Java Server Pages (JSP) and wrote example JavaBeanExample.
 In parrallel I started to read a book «Thinking In Java Enterprise» by Bruce Eckel http://javatutor.net/books/tiej
+
+Jan 20, 2017
+
+I continued to read the book and studied simple server and client.
 
 --
 for future:
