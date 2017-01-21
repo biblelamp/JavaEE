@@ -62,6 +62,10 @@ Jan 20, 2017
 
 I continued to read the book and studied simple server and client.
 
+Jan 21, 2017
+
+I studied simple multithreading server and client.
+
 --
 for future:
 	Thinking In Java Enterprise http://javatutor.net/books/tiej
