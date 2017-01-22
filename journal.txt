@@ -66,6 +66,10 @@ Jan 21, 2017
 
 I studied simple multithreading server and client.
 
+Jan 22, 2017
+
+I studied simple Java applets.
+
 --
 for future:
 	Thinking In Java Enterprise http://javatutor.net/books/tiej
