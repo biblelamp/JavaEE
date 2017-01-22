@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.net.*;
 import java.io.*;
+//import com.bruceeckel.swing.*;
 
 public class ShowHTML extends JApplet {
     JButton send = new JButton("Go");
