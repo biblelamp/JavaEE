@@ -69,6 +69,11 @@ I studied simple multithreading server and client.
 Jan 22, 2017
 
 I studied simple Java applets.
+And I decided temporary to skip parts about multiplexing and RMI and went directly to JDBC part.
+
+Jan 23, 2017
+
+I studied the chapter, which describes the work with the database (sqlite).
 
 --
 for future:
