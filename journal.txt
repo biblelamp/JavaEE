@@ -75,7 +75,11 @@ Jan 23, 2017
 
 I studied the chapter, which describes the work with the database (sqlite).
 
+Jan 24, 2017
+
+I started to learn chapter about Servlets and made first simple Servlet.
+
 --
 for future:
-	Thinking In Java Enterprise http://javatutor.net/books/tiej
+	Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
 	OpenShift as Java-Hosting https://habrahabr.ru/post/145203/
