@@ -22,11 +22,13 @@ public class ServletsRule extends HttpServlet {
           throws IOException {
        res.setContentType("text/html");
        PrintWriter out = res.getWriter();
-       out.print("<HEAD><TITLE>");
-       out.print("A server-side strategy");
-       out.print("</TITLE></HEAD><BODY>");
-       out.print("<h1>Servlets Rule! " + i++);
-       out.print("</h1></BODY>");
+       out.print("<head>");
+       out.print("<title>A server-side strategy</title>");
+       out.print("</head>");
+       out.print("<body>");
+       out.print("<h3>Servlets Rule! " + (i++) + "</h3>");
+       out.print("<a href='.'>Back</a>");
+       out.print("</body>");
        out.close();
 	}
 }
