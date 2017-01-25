@@ -79,6 +79,10 @@ Jan 24, 2017
 
 I started to learn chapter about Servlets and made first simple Servlet.
 
+Jan 25, 2017
+
+I added simple index.thml page in project ServletsRule and made second servlet EchoForm.
+
 --
 for future:
 	Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
