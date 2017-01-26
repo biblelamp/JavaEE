@@ -83,6 +83,10 @@ Jan 25, 2017
 
 I added simple index.thml page in project ServletsRule and made second servlet EchoForm.
 
+Jan 26, 2017
+
+I added two different Servlets (ThreadServlet, SessionPeek) and finished chapter introduction to the Servlets.
+
 --
 for future:
 	Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
