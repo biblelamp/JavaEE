@@ -21,8 +21,7 @@ public class EchoForm extends HttpServlet {
 			throws IOException {
 		res.setContentType("text/html");
 		PrintWriter out = res.getWriter();
-		@SuppressWarnings("rawtypes")
-		Enumeration fields = req.getParameterNames();
+		Enumeration<String> fields = req.getParameterNames();
 		if (!fields.hasMoreElements()) {
 			// to make the form
 			out.print("<html>");
@@ -38,7 +37,7 @@ public class EchoForm extends HttpServlet {
 			// output the result of the form submission
 			out.print("<h3>Your form contained:</h3>");
 			while (fields.hasMoreElements()) {
-				String field = (String) fields.nextElement();
+				String field = fields.nextElement();
 				String value = req.getParameter(field);
 				out.print(field + " = " + value + "<br>");
 			}
