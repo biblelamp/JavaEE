@@ -13,9 +13,9 @@ import javax.servlet.http.*;
 @WebServlet("/EchoForm")
 public class EchoForm extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     /**
-     * @see HttpServlet#HttpServlet()
+     * Make form, send and get it
      */
 	public void service(HttpServletRequest req, HttpServletResponse res)
 			throws IOException {
