@@ -87,6 +87,10 @@ Jan 26, 2017
 
 I added two different Servlets (ThreadServlet, SessionPeek) and finished chapter introduction to the Servlets.
 
+Jan 27, 2017
+
+I started to learn next chapter about JavaServer Pages (JSF).
+
 --
 for future:
 	Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
