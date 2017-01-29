@@ -89,11 +89,15 @@ I added two different Servlets (ThreadServlet, SessionPeek) and finished chapter
 
 Jan 27, 2017
 
-I started to learn next chapter - about JavaServer Pages (JSP). And made first simple JSP.
+I started to learn next chapter - about Java Server Pages (JSP). And made first simple JSP.
 
 Jan 28, 2017
 
-I only read a chapter about JavaServer Pages and try to set up Eclipse to work with Java EE.
+I only read a chapter about Java Server Pages and have set up Eclipse tools for working with Java EE.
+
+Jan 29, 2017
+
+I continued study JSP and made two examples.
 
 --
 for future:
