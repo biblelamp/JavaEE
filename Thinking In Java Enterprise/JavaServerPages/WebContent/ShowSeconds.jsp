@@ -5,5 +5,6 @@
 <html>
 <body>
 <h3>The time in seconds is: <%= System.currentTimeMillis()/1000 %></h3>
+<p><a href='.'>Back</a></p>
 </body>
 </html>
