@@ -12,7 +12,7 @@
 %>
 <html>
 <head>
-<title>Hello</title>
+	<title>Hello</title>
 </head>
 <body>
 <%-- 
@@ -21,16 +21,16 @@ JSP expression inserted into the generated html;
 '=' sign indicates a JSP expression 
 --%>
 
-<h3>This page was loaded <%= loadDate %> </h3>
-<h3>Hello, world! It's <%= new Date() %></h3>
-<h4>Here's an object: <%= new Object() %></h4>
-<h4>This page has been up <%= (System.currentTimeMillis()-loadTime)/1000 %> seconds</h4>
-<p><b>Page has been accessed <%= ++hitCount %> times since <%= loadDate %></b></p>
+<h3>Hello Page</h3>
+<p>This page was loaded <b><%= loadDate %></b></p>
+<p>Hello, world! It's <b><%= new Date() %></b></p>
+<p>Here's an object: <b><%= new Object() %></b></p>
+<p>This page has been up <b><%= (System.currentTimeMillis()-loadTime)/1000 %> seconds</b></p>
+<p>Page has been accessed <b><%= ++hitCount %> times since <%= loadDate %></b></p>
 
 <%-- 
 "Scriptlets", which writes on the server console
-and customer page.
-Note that you must put ';':
+and customer page. Note that you must put ';':
 --%>
 
 <%
