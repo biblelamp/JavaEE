@@ -99,6 +99,10 @@ Jan 29, 2017
 
 I continued study JSP and made two examples.
 
+Jan 30, 2017
+
+I decided to make a small pause with JSP and spend on some time on RMI.
+
 --
 for future:
 	Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
