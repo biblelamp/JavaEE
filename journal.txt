@@ -103,6 +103,10 @@ Jan 30, 2017
 
 I decided to make a small pause with JSP and spend on some time on RMI.
 
+Jan 31, 2017
+
+I continued study and made and studied PageContext JSP example.
+
 --
 for future:
 	Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
