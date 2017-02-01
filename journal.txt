@@ -107,6 +107,10 @@ Jan 31, 2017
 
 I continued study and made and studied PageContext JSP example.
 
+Feb 1, 2017
+
+Manipulating sessions in JSP.
+
 --
 for future:
 	Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
