@@ -111,7 +111,11 @@ Feb 1, 2017
 
 Manipulating sessions in JSP.
 
+Feb 2, 2017
+
+Work with cookies in JSP.
+
 --
 for future:
-	Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
-	OpenShift as Java-Hosting https://habrahabr.ru/post/145203/
+  Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
+  OpenShift as Java-Hosting https://habrahabr.ru/post/145203/
