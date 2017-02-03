@@ -115,6 +115,10 @@ Feb 2, 2017
 
 Work with cookies in JSP.
 
+Feb 3, 2017
+
+I finished to learn chapter about JSP and started to learn chapter about Custom Tags.
+
 --
 for future:
   Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
