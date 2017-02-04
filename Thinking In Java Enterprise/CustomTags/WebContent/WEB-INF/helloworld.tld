@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+	PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+	"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+    <tlibversion>1.0</tlibversion>
+    <jspversion>2.0</jspversion>
+    <shortname>Example TLD</shortname>
+    <tag>
+        <name>HelloWorldTag</name>
+        <tag-class>tags.HelloWorldTag</tag-class>
+        <body-content>empty</body-content>
+        <info>
+            echo's hello world to the browser.
+        </info>
+    </tag>
+</taglib>
