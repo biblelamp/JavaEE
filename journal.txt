@@ -123,6 +123,11 @@ Feb 4, 2017
 
 I made first simple example with Custom Tags and JSP.
 
+Feb 5, 2017
+
+I tried to use JavaBean + Custom Tags but failed.
+Perhaps there is an error in the book or something is not written until the end. I'll to understand with it tomorrow.
+
 --
 for future:
   Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
