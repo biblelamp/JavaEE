@@ -14,4 +14,14 @@
             echo's hello world to the browser.
         </info>
     </tag>
+    <tag>
+	    <name>GreetingTag</name>
+		    <tagclass>tags.GreetingTag</tagclass>
+		    <bodycontent>empty</bodycontent>
+		    <info>Adds a HelloWorld Bean to the page context.</info>
+		    <attribute>
+		        <name>id</name>
+		        <required>true</required>
+		    </attribute>
+		</tag>
 </taglib>
