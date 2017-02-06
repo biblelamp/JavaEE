@@ -128,6 +128,16 @@ Feb 5, 2017
 I tried to use JavaBean + Custom Tags but failed.
 Perhaps there is an error in the book or something is not written until the end. I'll to understand with it tomorrow.
 
+Feb 6, 2017
+
+I spent a lot of time to deal with the couple:
+	<tijtags:GreetingTag id="randomgreeting" />
+	<jsp:getProperty name="randomgreeting" property="greeting" />
+but, unfortunately, this fragment did not become work. I replaced the call tag:
+	<jsp:useBean id="randomgreeting" class="tags.GreetingBean" />
+	<jsp:getProperty name="randomgreeting" property="greeting" />
+And I got the necessary result in the browser. Nowever I understand that here must work other technology. I need to move on...
+
 --
 for future:
   Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
