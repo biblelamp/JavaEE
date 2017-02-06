@@ -8,20 +8,22 @@
     <shortname>Example TLD</shortname>
     <tag>
         <name>HelloWorldTag</name>
-        <tag-class>tags.HelloWorldTag</tag-class>
-        <body-content>empty</body-content>
+        <tagclass>tags.HelloWorldTag</tagclass>
+        <bodycontent>empty</bodycontent>
         <info>
-            echo's hello world to the browser.
+            Echo's Hello World to the browser.
         </info>
     </tag>
     <tag>
 	    <name>GreetingTag</name>
-		    <tagclass>tags.GreetingTag</tagclass>
-		    <bodycontent>empty</bodycontent>
-		    <info>Adds a HelloWorld Bean to the page context.</info>
-		    <attribute>
-		        <name>id</name>
-		        <required>true</required>
-		    </attribute>
-		</tag>
+		<tagclass>tags.GreetingTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>
+		    Adds a random HelloWorld Bean to the page context.
+		</info>
+		<attribute>
+		    <name>id</name>
+		    <required>true</required>
+		</attribute>
+	</tag>
 </taglib>

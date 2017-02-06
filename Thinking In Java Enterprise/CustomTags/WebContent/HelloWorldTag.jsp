@@ -11,8 +11,9 @@
     	<tijtags:HelloWorldTag />
 	</p>
 	<p>
-		<tijtags:GreetingTag id="randomgreeting" />
-		<jsp:getProperty name="randomgreeting" property="greeting"/>
+		<%-- <tijtags:GreetingTag id="randomgreeting" /> --%>
+		<jsp:useBean id="randomgreeting" class="tags.GreetingBean" />
+		<jsp:getProperty name="randomgreeting" property="greeting" />
 	</p>
 	<p><a href='.'>Back</a></p>
 </body>
