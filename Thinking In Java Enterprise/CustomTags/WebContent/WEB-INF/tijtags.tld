@@ -26,4 +26,16 @@
 		    <required>true</required>
 		</attribute>
 	</tag>
+	<tag>
+    	<name>DropCapitalTag</name>
+    	<tagclass>tags.DropCapitalTag</tagclass>
+    	<bodycontent>JSP</bodycontent>
+    	<info>
+	        Transforms text to have a drop capital.
+    	</info>
+    	<attribute>
+        	<name>color</name>
+        	<required>false</required>
+    	</attribute>
+	</tag>	
 </taglib>
