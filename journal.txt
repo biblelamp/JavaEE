@@ -138,6 +138,10 @@ but, unfortunately, this fragment did not become work. I replaced the call tag:
 	<jsp:getProperty name="randomgreeting" property="greeting" />
 And I got the necessary result in the browser. Nowever I understand that here must work other technology. I need to move on...
 
+Feb 7, 2017
+
+Tags that manipulate their body content.
+
 --
 for future:
   Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
