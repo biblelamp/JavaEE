@@ -142,6 +142,10 @@ Feb 7, 2017
 
 Tags that manipulate their body content.
 
+Feb 8, 2017
+
+Tags that iterate.
+
 --
 for future:
   Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
