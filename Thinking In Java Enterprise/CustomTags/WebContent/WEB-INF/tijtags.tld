@@ -38,4 +38,24 @@
         	<required>false</required>
     	</attribute>
 	</tag>	
+	<tag>
+	    <name>PrimeNumTag</name>
+	    <tagclass>tags.PrimeNumTag</tagclass>
+	    <bodycontent>JSP</bodycontent>
+	    <info>Generates Prime Number sequences</info>
+	    <attribute>
+	        <name>start</name>
+	        <required>false</required>
+	    </attribute>
+	    <attribute>
+	        <name>end</name>
+	        <required>true</required>
+	    </attribute>
+	    <variable>
+	        <name-given>value</name-given>
+	        <variable-class>Integer</variable-class>
+	        <declare>true</declare>
+	        <scope>AT_BEGIN</scope>
+	    </variable>
+	</tag>
 </taglib>
