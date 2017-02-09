@@ -146,6 +146,10 @@ Feb 8, 2017
 
 Tags that iterate.
 
+Feb 9, 2017
+
+I finished to study JSP and started to study EJB.
+
 --
 for future:
   Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
