@@ -148,7 +148,12 @@ Tags that iterate.
 
 Feb 9, 2017
 
-I finished to study JSP and started to study EJB.
+I finished to read about JSP and started to study EJB.
+
+Feb 10, 2017
+
+I installed JBoss 7.1 and have a problem with start it. Big thanks (http://www.sql.ru/forum/1136284/ne-startuet-jboss-cherez-eklips) for guy, who discovered that Jboss doesn't work with Java8.
+And tried to do simple example from http://blog.eros2.info/2009/04/ejb-3.html (http://www.quizful.net/post/ejb-eclipse-example for next)
 
 --
 for future:
