@@ -152,10 +152,15 @@ I finished to read about JSP and started to study EJB.
 
 Feb 10, 2017
 
-I installed JBoss 7.1 and have a problem with start it. Big thanks (http://www.sql.ru/forum/1136284/ne-startuet-jboss-cherez-eklips) for guy, who discovered that Jboss doesn't work with Java8.
+I installed JBoss 7.1 and have a problem with start it. Big thanks (http://www.sql.ru/forum/1136284/ne-startuet-jboss-cherez-eklips) for guy, who discovered that Jboss doesn't work with Java 8 (JDK 1.8).
 And tried to do simple example from http://blog.eros2.info/2009/04/ejb-3.html (http://www.quizful.net/post/ejb-eclipse-example for next)
+
+Feb 11, 2017
+
+Installed JBoss in Eclipse at home using advices from http://theopentutorials.com/tutorials/java-ee/installing-jboss-tools-in-eclipse/ And yes, again confirmed that JBoss didn't work with Java 8. So I installed JDK 1.7. After start JBoss added user (add-user.bat) and took a look at Administration Console.
 
 --
 for future:
+  Simple EJB Project in Eclipse http://theopentutorials.com/examples/java-ee/ejb3/how-to-create-a-simple-ejb3-project-in-eclipse-jboss-7-1/
   Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
   OpenShift as Java-Hosting https://habrahabr.ru/post/145203/
