@@ -163,6 +163,10 @@ Feb 12, 2017
 
 Today and day before I learned this article http://theopentutorials.com/examples/java-ee/ejb3/how-to-create-a-simple-ejb3-project-in-eclipse-jboss-7-1/ (in English) and I was able to start the first EJB and the client for it successfully.
 
+Feb 13, 2017
+
+I continued to read about EJB.
+
 --
 for future:
   Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
