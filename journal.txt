@@ -167,6 +167,10 @@ Feb 13, 2017
 
 I continued to read about EJB.
 
+FFeb 14, 2017
+
+I decided to finish reading book «Thinking In Java Enterprise» and started to read a book «EJB 3 in Action».
+
 --
 for future:
   Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
