@@ -167,9 +167,13 @@ Feb 13, 2017
 
 I continued to read about EJB.
 
-FFeb 14, 2017
+Feb 14, 2017
 
 I decided to finish reading book «Thinking In Java Enterprise» and started to read a book «EJB 3 in Action».
+
+Feb 15, 2017
+
+I made one day pause for learning Ant.
 
 --
 for future:
