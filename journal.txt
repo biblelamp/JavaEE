@@ -173,7 +173,11 @@ I decided to finish reading book «Thinking In Java Enterprise» and started to re
 
 Feb 15, 2017
 
-I made one day pause for learning Ant.
+I made one day pause for learning Apache Ant (https://ant.apache.org/)
+
+Feb 16, 2017
+
+I finished first chapter from book «EJB 3 in Action».
 
 --
 for future:
