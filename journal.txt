@@ -179,6 +179,10 @@ Feb 16, 2017
 
 I finished first chapter from book «EJB 3 in Action».
 
+Feb 17, 2017
+
+I started to read second chapter from book «EJB 3 in Action».
+
 --
 for future:
   Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
