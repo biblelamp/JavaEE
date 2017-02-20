@@ -187,6 +187,10 @@ Feb 18, 2017
 
 I continued to study second chapter of book «EJB 3 in Action».
 
+Feb 20, 2017
+
+Yesterday I didn't read the book. Today started to read the third chapter.
+
 --
 for future:
   Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
