@@ -191,6 +191,13 @@ Feb 20, 2017
 
 Yesterday I didn't read the book. Today started to read the third chapter.
 
+...
+
+Apr 17, 2017
+
+I decided to continue learning Java EE after long break.
+And today I started to read «Pro Spring, 4th Edition» (Chris Schaefer, Clarence Ho, Rob Harrop)
+
 --
 for future:
   Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
