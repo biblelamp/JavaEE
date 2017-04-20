@@ -10,7 +10,7 @@
   <name>HelloWorld</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spring.version>4.1.6.RELEASE</spring.version>
+    <spring.version>4.3.8.RELEASE</spring.version> <!-- Apr 18, 2017 -->
   </properties>
   <dependencies>
       <dependency>
