@@ -18,7 +18,7 @@ import simplewebapp.beans.UserAccount;
 import simplewebapp.utils.DBUtils;
 import simplewebapp.utils.MyUtils;
 
-@WebFilter(filterName = "cookieFilter", urlPatterns = { "/*" })
+//@WebFilter(filterName = "cookieFilter", urlPatterns = { "/*" })
 public class CookieFilter implements Filter {
 
     public CookieFilter() {
