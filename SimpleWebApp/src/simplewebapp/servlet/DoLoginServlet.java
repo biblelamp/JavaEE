@@ -2,7 +2,6 @@ package simplewebapp.servlet;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.SQLException;
  
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
  
 import simplewebapp.beans.UserAccount;
+import simplewebapp.conn.ConnectionUtils;
 import simplewebapp.utils.DBUtils;
 import simplewebapp.utils.MyUtils;
 
@@ -44,12 +44,14 @@ public class DoLoginServlet extends HttpServlet {
         } else {
             Connection conn = MyUtils.getStoredConnection(request);
             try {
+            	if (conn == null) // if conn was not stored
+            		conn = ConnectionUtils.getConnection();
                 user = DBUtils.findUser(conn, userName, password);
                 if (user == null) {
                     hasError = true;
                     errorString = "User Name or password invalid";
                 }
-            } catch (SQLException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
                 hasError = true;
                 errorString = e.getMessage();
@@ -67,8 +69,8 @@ public class DoLoginServlet extends HttpServlet {
             request.setAttribute("user", user);
 
             // forward to /WEB-INF/views/login.jsp
-            RequestDispatcher dispatcher //
-            = this.getServletContext().getRequestDispatcher("/WEB-INF/views/loginView.jsp");
+            RequestDispatcher dispatcher = this.getServletContext()
+	            .getRequestDispatcher("/WEB-INF/views/loginView.jsp");
             dispatcher.forward(request, response);
         }
 
