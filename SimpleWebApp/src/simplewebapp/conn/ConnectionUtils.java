@@ -8,9 +8,9 @@ public class ConnectionUtils {
 	public static Connection getConnection()
 			throws ClassNotFoundException, SQLException {
 
-		// I'm using SQLite Database
-		return SQLiteConnUtils.getSQLiteConnection();
-		//return MySQLConnUtils.getMySQLConnection();
+		// I'm using MySQL Database
+		return MySQLConnUtils.getMySQLConnection();
+		//return SQLiteConnUtils.getSQLiteConnection();
 		//return OracleConnUtils.getOracleConnection();
 	    //return SQLServerConnUtils_JTDS.getSQLServerConnection_JTDS();
 		//return SQLServerConnUtils_SQLJDBC.getSQLServerConnection_SQLJDBC();
