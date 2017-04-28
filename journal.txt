@@ -202,6 +202,10 @@ Apr 26, 2017
 
 I finished learn very useful example in link http://o7planning.org/en/10285/create-a-simple-java-web-application-using-servlet-jsp-and-jdbc using Servlets, JSP and JDBC (started Apr, 22)
 
+Apr 27, 2017
+
+I started to develop true example for learning course Java EE - Simple Web Bank.
+
 --
 for future:
   Thinking In Java Enterprise http://javatutor.net/books/tiej (in Russian)
