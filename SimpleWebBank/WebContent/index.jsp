@@ -41,6 +41,8 @@
 
     </div>
 
+    <p>${pageContext.request.contextPath}</p>
+
 </div>
 
 </body>
