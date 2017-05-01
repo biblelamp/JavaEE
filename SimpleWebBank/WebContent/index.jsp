@@ -19,7 +19,7 @@
         <div id="top">
 
             <div class="left" id="logo">
-                <a href="index.html"><img src="img/logo.gif" alt="" /></a>
+                <a href="${pageContext.request.contextPath}"><img src="img/logo.gif" alt="" /></a>
             </div>
 
             <div class="left navigation" id="main-nav">
