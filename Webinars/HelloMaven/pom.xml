@@ -10,15 +10,16 @@
   <name>HelloMaven Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
+  <!--
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
-    </dependency>
+    </dependency> -->
 
-    <!-- Servlet Library -->
+    <!-- Servlet Library
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
@@ -26,6 +27,7 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+  -->
 
   <build>
     <finalName>HelloMaven</finalName>
