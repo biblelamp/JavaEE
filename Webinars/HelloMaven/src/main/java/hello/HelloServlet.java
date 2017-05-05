@@ -1,25 +1,25 @@
 package hello;
 
 import java.io.*;
-import javax.servlet.*;
+import javax.servlet.*; // not in Java SE SDK set
 
 public class HelloServlet extends GenericServlet {
 
     public void service(ServletRequest request, ServletResponse response)
-        throws ServletException, IOException {
+            throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter pw = response.getWriter();
-        pw.println("<!DOCTYPE html>");
-        pw.println("<html>");
-        pw.println("<head>");
-        pw.println("<meta charset='UTF-8'>");
-        pw.println("<title>Hello Servlet</title>");
-        pw.println("</head>");
-        pw.println("<body>");
-        pw.println("<h2>Hello Servlet!</h2>");
-        pw.println("Go <a href='/HelloMaven'>Back</a>");
-        pw.println("</body>");
-        pw.println("</html>");
+        pw.println("<!DOCTYPE html>\n"+
+            "<html>\n"+
+            "<head>\n"+
+            "<meta charset='UTF-8'>\n"+
+            "<title>Hello Servlet</title>\n"+
+            "</head>\n"+
+            "<body>\n"+
+            "<h2>Hello Servlet!</h2>\n"+
+            "Go <a href='/HelloMaven'>Back</a>\n"+
+            "</body>\n"+
+            "</html>");
         pw.close();
     }
 }
