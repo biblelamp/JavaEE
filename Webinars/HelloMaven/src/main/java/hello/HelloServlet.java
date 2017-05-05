@@ -17,7 +17,9 @@ public class HelloServlet extends GenericServlet {
             "</head>\n"+
             "<body>\n"+
             "<h2>Hello Servlet!</h2>\n"+
-            "Go <a href='/HelloMaven'>Back</a>\n"+
+            "Go <a href='"+
+                request.getServletContext().getContextPath()+
+            "'>Back</a>\n"+
             "</body>\n"+
             "</html>");
         pw.close();
