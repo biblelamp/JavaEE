@@ -2,7 +2,9 @@ package hello;
 
 import java.io.*;
 import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
 
+@WebServlet("/HelloServlet")
 public class HelloServlet extends GenericServlet {
 	private static final long serialVersionUID = 1L;
 

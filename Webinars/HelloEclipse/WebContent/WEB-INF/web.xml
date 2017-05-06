@@ -11,13 +11,4 @@
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
 
-  <servlet>
-    <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>hello.HelloServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>HelloServlet</servlet-name>
-    <url-pattern>/HelloServlet</url-pattern>
-  </servlet-mapping>
-
 </web-app>
