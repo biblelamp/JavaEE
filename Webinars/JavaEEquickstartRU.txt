@@ -1,0 +1,18 @@
+Java EE: быстрый старт
+
+Java EE (Enterprise Edition) представляет собой платформу, содержащую набор взаимосвязанных технологий, позволяющих разрабатывать и разворачивать многоуровневые серверные приложения. JEE во многом ориентирована на использование через веб, как в интернете, так и в локальных сетях.
+
+В ходе вебинара мы создадим простейшее Java EE веб-приложение, используя два различных подхода: командная строка и IDE. Будут использованы: фреймворк для автоматизации сборки Apache Maven, сервер контейнеров Apache Tomcat, интегрированная среда разработки Eclipse. Нам также потребуется комплект Java разработчика (JDK) и текстовый редактор (под Windows рекомендую Notepad++). Минимум теории — максимум практики.
+
+Для продуктивной работы на вебинаре рекомендуется предварительно загрузить и установить:
+- Java SE Development Kit (JDK) http://www.oracle.com/technetwork/java/javase/downloads
+- Apache Maven https://maven.apache.org/download.cgi
+- Apache Tomcat http://tomcat.apache.org/download-80.cgi
+- Eclipse IDE for Java EE Developers http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/neon3
+
+1. Подготовка
+
+Комплект Java SE JDK загружаем со страницы http://www.oracle.com/technetwork/java/javase/downloads/ Если у вас 64-битная операционная система - выбирайте 64-битный вариант JDK. Если вы используете Windows, то после загрузки и установки необходимо настроить системную переменную Path, которая обеспечит вам запуск компилятора javac и JRE в командной строке из любого каталога.
+
+Фреймворк для автоматизации сборки Apache Maven загружаем со страницы https://maven.apache.org/download.cgi - скачиваем архив и разворачиваем его в любой удобный каталог. Лично я использую папку C:\Program Files (x86)\Apache Maven (Windows 7 64bit).
+
