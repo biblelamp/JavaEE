@@ -18,4 +18,13 @@
     <url-pattern>/HelloServlet</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>FormServlet</servlet-name>
+    <servlet-class>hello.FormServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FormServlet</servlet-name>
+    <url-pattern>/FormServlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
