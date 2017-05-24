@@ -10,20 +10,20 @@ public class FormServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request,
         HttpServletResponse response) throws ServletException, IOException {
 
+        String page; // page for forwarding
+
         // get data from request
         String code = request.getParameter("code");
         String name = request.getParameter("name");
         String price = request.getParameter("price");
 
         if (code == null || name == null || price == null)
-            // if no data
-            RequestDispatcher dispatcher = request.getServletContext()
-                .getRequestDispatcher("/form.html");
+            page = "/form.html"; // if no data
         else
-            // if have data
-            RequestDispatcher dispatcher = this.getServletContext()
-                .getRequestDispatcher("/form.jsp");
-        dispatcher.forward(request, response);
+            page = "/form.jsp"; // if have data
+        RequestDispatcher dispatcher =
+            this.getServletContext().getRequestDispatcher(page);
+        dispatcher.(request, response);
     }
 
     @Override
