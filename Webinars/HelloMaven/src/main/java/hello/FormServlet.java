@@ -21,9 +21,12 @@ public class FormServlet extends HttpServlet {
             page = "/form.html"; // if no data
         else
             page = "/form.jsp"; // if have data
-        RequestDispatcher dispatcher =
-            this.getServletContext().getRequestDispatcher(page);
-        dispatcher.(request, response);
+
+        // get the RD object for redirecting
+        RequestDispatcher rd = getServletContext().getRequestDispatcher(page);
+
+        // redirect to page
+        rd.forward(request, response);
     }
 
     @Override
