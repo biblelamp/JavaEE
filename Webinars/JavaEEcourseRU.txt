@@ -10,7 +10,9 @@ http://javatutor.net/books/tiej/servlets
 3. Java Server Pages
 Описание JSP. Чтение параметров. Использование java-beans. Подключение сторонних ресурсов. Библиотека тэгов. Шаблонизация проекта. Sql тэги. Мультиязычность. Коды ошибок.
 
+http://www.codenet.ru/webmast/java/jsp.php [!]
 http://java-course.ru/student/book1/jsp/
+http://orlova.rsue.ru/content/sst/j2ee2.htm
 http://javatutor.net/books/tiej/jsp
 
 4. Java Persistent API
