@@ -12,6 +12,8 @@
 		String guess_str = request.getParameter("guess");
     	String number_str = request.getParameter("number");
     	String counter_str = request.getParameter("counter");
+    	String backPath = request.getContextPath(); // path to the container
+    	String selfPath = backPath + request.getServletPath(); // add name of jsp file
     %>
 </head>
 <body>
@@ -47,7 +49,7 @@
 				for (int i = 1; i <= 10; i++) {
 			%>
 			<td align="center">
-				<form method="POST" action="guessgamev2.jsp">
+				<form method="POST" action="<%= selfPath %>">
 					<h1><%= i %></h1>
 					<input type="hidden" name="answer_str" value="<%= answer_str %>"/>
 					<input type="hidden" name="counter" value="<%= counter %>"/>
@@ -69,10 +71,8 @@
 			%>
 		</tr>
 	</table>
-	<p style="color:gray">Control: [ <%= counter %> : <%= number %> : <%= guess %> ]</p>
-	<p style="color:red"><%= message %></p>
-	<p>Go <a href="<%= request.getServletContext().getContextPath() %>">back</a> |
-	<a href="guessgamev2.jsp">Reset</a>
-	</p>
+	<p style="color:lightgray">Control: [ <%= counter %> : <%= number %> : <%= guess %> ]</p>
+	<h3 style="color:red"><%= message %></h3>
+	<p>Go <a href="<%= backPath %>">back</a> | <a href="<%= selfPath %>">Reset</a> game</p>
 </body>
 </html>
