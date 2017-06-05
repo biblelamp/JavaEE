@@ -12,7 +12,7 @@
 </head>
 <body>
     <h2>GetForm Servlet:</h2>
-    <table border="0">
+    <table>
     <tr>
         <td>Code</td>
         <td><b><%= code %></b></td>
