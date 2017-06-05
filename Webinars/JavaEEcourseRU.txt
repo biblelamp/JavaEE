@@ -18,6 +18,10 @@ http://javatutor.net/books/tiej/jsp
 4. Java Persistent API
 Описание JPA. Описание ORM. Реализация Hibernate. Создание Entity. Проектирование DAO классов. Создание query. CriteriaAPI. NativeSQL. Транзакции. Миграция БД.
 
+https://ru.wikipedia.org/wiki/Java_Persistence_API
+http://voituk.kiev.ua/2008/01/30/introduction-to-java-persistence-api/
+http://devcolibri.com/1658
+
 5. Проектирование “Интернет банка”
 Описание архитектуры приложения. Описание интерфейсов и способа их реализации. Демонстрация клиентской стороны и способа взаимодействия с ней. Распределение работы.
 
