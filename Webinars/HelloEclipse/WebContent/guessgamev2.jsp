@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>Guess Number Game v2.0</title>
     <%
-    	int guess = -1, number, counter;
+    	int guess = -1, number, counter, prev_guess = -1;
 		String message = "You have to guess number from 1 up 10 using 3 attempts.";
     	String answer_str = request.getParameter("answer_str");
 		String guess_str = request.getParameter("guess");
@@ -24,6 +24,7 @@
 			answer_str = "1111111111";
 			counter = 3;
 		} else {
+			prev_guess = -1;
 			guess = Integer.parseInt(guess_str);
 			char[] chars = answer_str.toCharArray();
 			chars[guess -1] = '0';
@@ -37,6 +38,7 @@
 					((counter == 0)? 
 							"Sorry, You lost. You can try again." : "");
 			if (counter == 0 || guess == number) {
+				prev_guess = number;
 				number = (int) Math.floor(Math.random()*10 + 1);
 				answer_str = "1111111111";
 				counter = 3;
@@ -49,22 +51,27 @@
 				for (int i = 1; i <= 10; i++) {
 			%>
 			<td align="center">
+			<%
+				if (answer_str.charAt(i - 1) == '1') {
+					String style = (i == prev_guess)?
+							"style='color:red'" : "";
+			%>
+				<h1 <%= style %>><%= i %></h1>
 				<form method="POST" action="<%= selfPath %>">
-					<h1><%= i %></h1>
 					<input type="hidden" name="answer_str" value="<%= answer_str %>"/>
 					<input type="hidden" name="counter" value="<%= counter %>"/>
 					<input type="hidden" name="number" value="<%= number %>"/>
 					<input type="hidden" name="guess" value="<%= i %>"/>
-					<input type="submit"
-					<%
-						if (answer_str.charAt(i - 1) == '0') {
-					%>
-						disabled="disabled"
-					<%
-						}
-					%>
-					value="OK"/> <!-- disabled="disabled" -->
+					<input type="submit" value="OK"/> <!-- disabled="disabled" -->
 				</form>		
+			<%
+				} else {
+			%>
+				<h1 style="color:lightgray"><%= i %></h1>
+				<input type="submit" disabled="disabled" value="OK"/>
+			<%
+				}
+			%>
 			</td>
 			<%
 				}
