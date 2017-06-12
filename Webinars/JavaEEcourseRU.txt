@@ -21,6 +21,11 @@ http://javatutor.net/books/tiej/jsp
 https://ru.wikipedia.org/wiki/Java_Persistence_API
 http://voituk.kiev.ua/2008/01/30/introduction-to-java-persistence-api/
 http://devcolibri.com/1658
+Hibernate:
+https://habrahabr.ru/post/132385/
+http://javastudy.ru/hibernate/hibernate-quick-start/
+http://javastudy.ru/interview/jee-hibernate-questions-answers/
+http://www.journaldev.com/3793/hibernate-tutorial
 
 5. Проектирование “Интернет банка”
 Описание архитектуры приложения. Описание интерфейсов и способа их реализации. Демонстрация клиентской стороны и способа взаимодействия с ней. Распределение работы.
