@@ -10,7 +10,7 @@ http://javatutor.net/books/tiej/servlets
 3. Java Server Pages
 Описание JSP. Чтение параметров. Использование java-beans. Подключение сторонних ресурсов. Библиотека тэгов. Шаблонизация проекта. Sql тэги. Мультиязычность. Коды ошибок.
 
-http://www.codenet.ru/webmast/java/jsp.php [!]
+http://www.codenet.ru/webmast/java/jsp.php [1]
 http://java-course.ru/student/book1/jsp/
 http://orlova.rsue.ru/content/sst/j2ee2.htm
 http://javatutor.net/books/tiej/jsp
@@ -22,6 +22,7 @@ https://ru.wikipedia.org/wiki/Java_Persistence_API
 http://voituk.kiev.ua/2008/01/30/introduction-to-java-persistence-api/
 http://devcolibri.com/1658
 Hibernate:
+http://java-online.ru/hibernate-example.xhtml [1]
 https://habrahabr.ru/post/132385/
 http://javastudy.ru/hibernate/hibernate-quick-start/
 http://javastudy.ru/interview/jee-hibernate-questions-answers/
