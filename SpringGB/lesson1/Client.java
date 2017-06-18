@@ -5,5 +5,10 @@ class Client {
         CameraRoll cameraRoll = new ColorCameraRoll();
         camera.setCameraRoll(cameraRoll);
         camera.doPhotograph();
+        /* added idea of the assistant
+        Assistant assistant = new Assistant();
+        Camera camera = assistant.getCamera();
+        camera.doPhotograph();
+        */
     }
 }
