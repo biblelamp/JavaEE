@@ -1,7 +1,7 @@
 class Camera {
     private CameraRoll cameraRoll;
 
-    Camera(CameraRoll cameraRoll) {
+    public void setCameraRoll(CameraRoll cameraRoll) {
         this.cameraRoll = cameraRoll;
     }
 
