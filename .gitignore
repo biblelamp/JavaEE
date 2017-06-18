@@ -1,3 +1,4 @@
+*.class
 /movieplex7/target/
 /SimpleEE7App/nbproject/private/
 /SimpleEE7App/build/
