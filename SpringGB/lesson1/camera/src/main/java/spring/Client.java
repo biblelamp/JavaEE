@@ -16,7 +16,7 @@ class Client {
         //ApplicationContext context =
         //  new AnnotationConfigApplicationContext(AppConfig.class);
 
-        //Camera camera = context.getBean("camera", Camera.class);
-        //camera.doPhotograph();
+        Camera camera = context.getBean("camera", Camera.class);
+        camera.doPhotograph();
     }
 }
