@@ -6,12 +6,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Client {
 
     public static void main(String[] args) {
+
         System.out.println("It's a camera.");
-        // Раскомментировать две строки ниже, для XML-конфигурирования
+
+        // Remove the comment of two lines below for XML configuring
         ApplicationContext context = new ClassPathXmlApplicationContext
             ("config.xml");
 
-        // Раскомментируйте две строки ниже для использования JavaConfig
+        // Remove the comment of two lines below for JavaConfig
         //ApplicationContext context =
         //  new AnnotationConfigApplicationContext(AppConfig.class);
 
