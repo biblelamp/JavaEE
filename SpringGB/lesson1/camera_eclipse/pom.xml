@@ -4,9 +4,9 @@
       http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>spring</groupId>
-  <artifactId>camera_eclipse</artifactId>
+  <artifactId>camera</artifactId>
   <version>0.1</version>
-  <name>camera_eclipse</name>
+  <name>camera</name>
 
   <dependencies>
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
