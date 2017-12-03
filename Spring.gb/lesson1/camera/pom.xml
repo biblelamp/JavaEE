@@ -11,7 +11,8 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <spring.version>4.3.9.RELEASE</spring.version>
+    <spring.version>4.3.13.RELEASE</spring.version>
+    <main.class>spring.Client</main.class>
   </properties>
 
   <dependencies>
@@ -39,6 +40,22 @@
 
   <build>
     <plugins>
+      <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/exec-maven-plugin -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>    
+        <configuration>
+          <mainClass>${main.class}</mainClass>
+        </configuration>
+      </plugin>
       <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -47,7 +64,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>spring.Client</mainClass>
+              <mainClass>${main.class}</mainClass>
               <addClasspath>true</addClasspath>
               <classpathPrefix>dependency/</classpathPrefix>
             </manifest>
