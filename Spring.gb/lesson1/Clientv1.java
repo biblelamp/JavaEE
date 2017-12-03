@@ -7,8 +7,9 @@
 class Clientv1 {
 
     public static void main(String[] args) {
-        Camera camera = new Camera(new CameraRoll());
-        camera.doPhotograph();
+        CameraRoll cameraRoll = new CameraRoll();
+        Camera camera = new Camera(cameraRoll);
+        camera.takePhoto();
     }
 }
 
@@ -20,14 +21,14 @@ class Camera {
         this.cameraRoll = cameraRoll;
     }
 
-    void doPhotograph(){
+    void takePhoto() {
         System.out.println("Click!");
         cameraRoll.processing();
     }
 }
 
 class CameraRoll {
-    void processing(){
+    void processing() {
         System.out.println("+1 pictuire");
     }
 }
