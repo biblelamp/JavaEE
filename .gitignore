@@ -1,9 +1,4 @@
 *.class
-/movieplex7/target/
-/SimpleEE7App/nbproject/private/
-/SimpleEE7App/build/
-/SimpleEE7App/dist/
-/Spring/hello-world/target/
-/Spring/dependency-pull/target/
-/Spring/cdl/target/
-/SpringTutorial/HelloWorld/target/
+target
+*.iml
+.idea
