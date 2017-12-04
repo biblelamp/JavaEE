@@ -3,12 +3,12 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
         http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>spring</groupId>
   <artifactId>camera</artifactId>
   <packaging>jar</packaging>
   <version>0.1</version>
   <name>camera</name>
-  <url>http://maven.apache.org</url>
 
   <properties>
     <spring.version>4.3.13.RELEASE</spring.version>
@@ -47,6 +47,7 @@
         <version>1.6.0</version>
         <executions>
           <execution>
+            <phase>compile</phase> <!-- bind compile and exec -->
             <goals>
               <goal>java</goal>
             </goals>
