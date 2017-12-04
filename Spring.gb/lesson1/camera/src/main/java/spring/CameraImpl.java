@@ -22,7 +22,7 @@ public class CameraImpl implements Camera {
     }
 
     @Override
-    public void doPhotograph(){
+    public void makePhoto(){
         System.out.println("Click!");
         cameraRoll.processing();
     }
