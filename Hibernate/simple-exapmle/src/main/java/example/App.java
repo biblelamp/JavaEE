@@ -7,11 +7,12 @@ import org.hibernate.Transaction;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.service.ServiceRegistryBuilder;
+//import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import example.model.Person;
 
-public class PersonTest {
+public class App {
 
     Session session = null;
     private final String[][] persons = {
@@ -26,10 +27,12 @@ public class PersonTest {
         ServiceRegistry serviceRegistry = null;
         try {
             try {
-                Configuration cfg = new Configuration().
-                                        addResource("person.hbm.xml").configure();
-                serviceRegistry = new StandardServiceRegistryBuilder().
-                                      applySettings(cfg.getProperties()).build();
+                Configuration cfg = new Configuration().configure();
+                serviceRegistry = new ServiceRegistryBuilder().
+                                      applySettings(cfg.getProperties()).
+                                      buildServiceRegistry();
+                //serviceRegistry = new StandardServiceRegistryBuilder().
+                //                      applySettings(cfg.getProperties()).build();
                 sessionFactory = cfg.buildSessionFactory(serviceRegistry);
             } catch (Throwable e) {
                 System.err.println("Failed to create sessionFactory object." + e);
@@ -87,7 +90,7 @@ public class PersonTest {
     /**
      * Constructor
      */
-    public PersonTest() {
+    public App() {
         session = createHibernateSession();
         if (session != null) {
             recordsAdd();
@@ -99,7 +102,6 @@ public class PersonTest {
     }
 
     public static void main(String[] args) {
-        new PersonTest();
-        System.exit(0);
+        new App();
     }
 }
