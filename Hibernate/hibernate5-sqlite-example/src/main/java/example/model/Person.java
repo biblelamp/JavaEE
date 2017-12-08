@@ -4,16 +4,18 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
+//@Table(name="person")
 public class Person {
 
     @Id
+    //@Column(name="id")
     int    id;
+    //@Column(name="name")
     String name;
 
     public Person() {}
 
     public Person(int id, String name) {
-        super();
         this.id = id;
         this.name = name;
     }

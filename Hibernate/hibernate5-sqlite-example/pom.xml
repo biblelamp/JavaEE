@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>example</groupId>
-  <artifactId>simple-example</artifactId>
+  <artifactId>hibernate5-sqlite-example</artifactId>
   <version>0.1</version>
 
   <properties>
@@ -18,7 +18,7 @@
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
-      <version>4.2.21.Final</version> <!-- 4.2.21/5.2.12 -->
+      <version>5.2.12.Final</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
@@ -26,6 +26,13 @@
       <groupId>org.xerial</groupId>
       <artifactId>sqlite-jdbc</artifactId>
       <version>3.21.0</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.zsoltfabok/sqlite-dialect -->
+    <dependency>
+      <groupId>com.zsoltfabok</groupId>
+      <artifactId>sqlite-dialect</artifactId>
+      <version>1.0</version>
     </dependency>
 
   </dependencies>  
