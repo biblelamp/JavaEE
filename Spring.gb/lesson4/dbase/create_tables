@@ -1,0 +1,32 @@
+DROP TABLE IF EXISTS author;
+CREATE TABLE author 
+( 
+  id serial, 
+  first_name varchar(30) NOT NULL, 
+  last_name varchar(30) NOT NULL, 
+  email varchar(30) NOT NULL, 
+  PRIMARY KEY(id)
+  );
+
+DROP TABLE IF EXISTS category;
+CREATE TABLE category
+(
+  id serial,
+  name varchar(30),
+  PRIMARY KEY(id)
+
+);
+
+DROP TABLE IF EXISTS article;
+CREATE TABLE article
+(
+  id serial,
+  published_date TIMESTAMP DEFAULT current_timestamp,
+  title text,
+  content text,
+  author_id int NOT NULL,
+  category_id int NOT NULL,
+  PRIMARY KEY(id),
+  FOREIGN KEY(author_id) REFERENCES  author(id),
+  FOREIGN KEY(category_id) REFERENCES category(id)
+);
