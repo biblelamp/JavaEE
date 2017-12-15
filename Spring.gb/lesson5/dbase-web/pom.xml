@@ -17,17 +17,17 @@
   </properties>
 
   <dependencies>
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>${spring.version}</version>
-    </dependency>
-
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
       <version>${spring.version}</version>
     </dependency>
 
@@ -52,13 +52,6 @@
       <version>${spring.version}</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
-    <dependency>
-      <groupId>org.springframework.data</groupId>
-      <artifactId>spring-data-jpa</artifactId>
-      <version>1.11.9.RELEASE</version>
-    </dependency>
-
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
     <dependency>
       <groupId>org.springframework</groupId>
@@ -73,12 +66,26 @@
       <version>${spring.version}</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+    <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-jpa</artifactId>
+      <version>1.11.9.RELEASE</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
     <dependency>
       <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <version>3.0.1</version>
-      <!-- <scope>provided</scope> -->
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/javax.annotation/jsr250-api -->
@@ -118,13 +125,16 @@
       <name>Nuxeo Releases Repository</name>
       <url>https://maven-eu.nuxeo.org/nexus/content/repositories/public-releases/</url>
     </repository>
+  </repositories>
+
+  <pluginRepositories>
     <!-- https://mvnrepository.com/repos/alfresco-public -->
-    <repository>
+    <pluginRepository>
       <id>Alfresco</id>
       <name>Alfresco Public Repository</name>
       <url>https://artifacts.alfresco.com/nexus/content/repositories/public/</url>
-    </repository>
-  </repositories>
+    </pluginRepository>
+  </pluginRepositories>
 
   <build>
     <plugins>
@@ -134,6 +144,7 @@
         <artifactId>tomcat8-maven-plugin</artifactId>
         <version>3.0-r1756463</version>
       </plugin>
+      <!-- mvn tomcat8:run-war -->
     </plugins>
   </build>
 
