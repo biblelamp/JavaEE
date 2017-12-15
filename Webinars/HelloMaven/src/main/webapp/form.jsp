@@ -1,4 +1,5 @@
-<%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +16,7 @@
     <table border="0">
     <tr>
         <td>Code</td>
-        <td><b><%= code %></b></td>
+        <td><b><%= code %></b> ${code}</td>
     </tr>
     <tr>
         <td>Name</td>
