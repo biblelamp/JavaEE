@@ -18,24 +18,18 @@
   <dependencies>
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
     <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-context</artifactId>
-        <version>${spring.version}</version>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
     </dependency>
-
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
-    <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-core</artifactId>
-        <version>${spring.version}</version>
-    </dependency>
-
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
-    <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-beans</artifactId>
-        <version>${spring.version}</version>
-    </dependency>
+    <!--
+        this dependency also includes the following libraries:
+        - spring-core
+        - spring-beans
+        - spring-aop
+        - spring-expression
+        - commons-logging
+    -->
   </dependencies>
 
   <build>
@@ -67,6 +61,7 @@
             <manifest>
               <mainClass>${main.class}</mainClass>
               <addClasspath>true</addClasspath>
+              <!-- mvn dependency:copy-dependencies // for starting this jar -->
               <classpathPrefix>dependency/</classpathPrefix>
             </manifest>
           </archive>
