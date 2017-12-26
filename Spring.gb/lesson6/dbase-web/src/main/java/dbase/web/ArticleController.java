@@ -1,6 +1,6 @@
 package dbase.web;
 
-import static org.hamcrest.CoreMatchers.nullValue;
+//import static org.hamcrest.CoreMatchers.nullValue;
 
 import java.lang.reflect.Method;
 import java.util.List;
@@ -106,16 +106,17 @@ public class ArticleController {
 
         if (order.equalsIgnoreCase("DESC")) {
             // конструктор Sort принимает в качестве параметров тип сортировки и поле,
-            //по которому будет происходить соритровка
+            // по которому будет происходить соритровка
             sort = new Sort(Sort.Direction.DESC, orderBy);
         } else {
             sort = new Sort(Sort.Direction.ASC, orderBy);
         }
-        // конструктор принимает полную информацию о текущем блоке,количестве статей и сортировке
+        // конструктор принимает полную информацию о текущем блоке, количестве статей и сортировке
         PageRequest pageable = new PageRequest(pageCounter,number, sort);
         Page<Article> articlePage = articleService.getAll(pageable);
         ArticlesAjax responsive =new  ArticlesAjax();
-        // из объекта Page возвращаем итератор и с помощью библиотеки google guava создаем списочный массив
+        // из объекта Page возвращаем итератор
+        // и с помощью библиотеки google guava создаем списочный массив
         responsive.setArticles(Lists.newArrayList(articlePage.iterator()));
         return responsive;
      }
