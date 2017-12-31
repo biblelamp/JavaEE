@@ -1,16 +1,9 @@
-﻿ALTER SEQUENCE author_id_seq RESTART WITH 1;
-ALTER SEQUENCE category_id_seq RESTART WITH 1;
-ALTER SEQUENCE article_id_seq RESTART WITH 1;
+﻿INSERT INTO author (first_name, last_name, email) 
+VALUES ('Yuri', 'Ivanov', 'Yuri.Ivanov@gmail.com'),
+('Artem', 'Alexeev', 'Artem.Alexeev@gmail.com'),
+('Yuri', 'Gorovoy', 'Yuri.Gorovoy@gmail.com');
 
-
-
-INSERT INTO author (first_name, last_name, email) 
-VALUES ('Yuri', 'Ivanov', 'ftst@gmail.com'),
-('Artem', 'Alexeev', 'sdfsdft@gmail.com'),
-('Yuri', 'Gorovoy', 'ft3234st@gmail.com');
-
-
-INSERT INTO category(name)
+INSERT INTO category (name)
 VALUES
 ('Back-end development'),
 ('Front-end development'),
@@ -18,18 +11,13 @@ VALUES
 ('Big Data'),
 ('Game development');
 
-INSERT INTO article(title, content, author_id, category_id)
+INSERT INTO article (title, content, author_id, category_id)
 VALUES
-('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.',1,1),
-('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.',2,2),
-('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.',1,3),
-('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.',1,1),
-('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.',1,2),
-('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.',3,1),
-('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.',2,1),
-('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.',1,2);
-
-
-
-
- 
+('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.', 1, 1),
+('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.', 2, 2),
+('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.', 1, 3),
+('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.', 1, 1),
+('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.', 1, 2),
+('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.', 3, 1),
+('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.', 2, 1),
+('Lorem Impusem', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tempor velit. Integer pellentesque nunc nulla, non porta est ornare eget. Nulla rhoncus rutrum sapien, et mattis quam placerat eget. Vivamus hendrerit eros et ante aliquet faucibus. Quisque ac diam ac lectus dictum ultrices. Pellentesque fringilla libero justo, sit amet porttitor elit tincidunt ac. In pretium elit ac facilisis rhoncus. Mauris ullamcorper tristique sapien at auctor.', 1, 2);
