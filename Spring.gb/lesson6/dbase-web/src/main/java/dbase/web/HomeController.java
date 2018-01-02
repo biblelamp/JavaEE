@@ -23,5 +23,5 @@ public class HomeController {
         List<Category> categories = categoryService.getAll();
         uiModel.addAttribute("categories", categories);
         return "home/main";
-    }    
+    }
 }

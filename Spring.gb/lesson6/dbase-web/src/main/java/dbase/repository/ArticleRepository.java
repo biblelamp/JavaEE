@@ -11,6 +11,6 @@ import dbase.domain.Article;
 
 @Repository
 public interface ArticleRepository extends PagingAndSortingRepository<Article, Long> {
-    @Query("select  a FROM Article a WHERE a.category.id=:id")
+    @Query("select a FROM Article a WHERE a.category.id=:id")
     public Page<Article> findByCategoryId(@Param("id") Long id, Pageable pageable);
 }

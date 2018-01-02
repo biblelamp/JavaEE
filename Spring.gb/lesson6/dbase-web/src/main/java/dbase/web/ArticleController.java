@@ -45,7 +45,7 @@ public class ArticleController {
     }
 
     /**
-     * 
+     * Отображение статьи
      * @param id - идентификатор статьи
      * @param uiModel - данные 
      * @return путь к странице отображения статьи
@@ -73,7 +73,7 @@ public class ArticleController {
     public String add(@ModelAttribute("article") Article article, BindingResult bindingResult, @RequestParam("categoryId") Long categoryId) {    
 
         Category category = categoryService.get(categoryId);
-        if (bindingResult.hasErrors() || category==null) {
+        if (bindingResult.hasErrors() || category == null) {
             return "redirect:/articles/add";
         }
         article.setCategory(category);
@@ -84,32 +84,35 @@ public class ArticleController {
     /**
      * Метод обрабатывающий асинхронный запрос 
      */
-    @RequestMapping(value="/articles_ajax",method=RequestMethod.GET, produces="application/json")
+    @RequestMapping(value="/articles_ajax", method=RequestMethod.GET, produces="application/json")
     @ResponseBody
     /**
-     * @param pageCounter-текущая страница(блок из number статей)
+     * @param pageCounter - текущая страница(блок из number статей)
      * @param number - количество статей в одном блоке
-     * @param order - порядок сортировки(ASC-прямая, DESC-обратная)
+     * @param order - порядок сортировки (ASC-прямая, DESC-обратная)
      * @param orderBy - поле по которому происходит сортировка
      * @return объект класса ArticlesAjax, который содержит список статей, 
-     * данный объект преобразовывается в JSON-формат
+     *         объект преобразовывается в JSON-формат
      */
-    public ArticlesAjax listAjax(@RequestParam("pageCounter") Integer pageCounter, @RequestParam("number") Integer number, @RequestParam("order") String order, @RequestParam("orderBy") String orderBy) {
+    public ArticlesAjax listAjax(@RequestParam("pageCounter") Integer pageCounter,
+            @RequestParam("number") Integer number,
+            @RequestParam("order") String order,
+            @RequestParam("orderBy") String orderBy) {
 
         // объект, который будет содержать информацию о сортировке
         Sort sort = null;
 
         if (order.equalsIgnoreCase("DESC")) {
             // конструктор Sort принимает в качестве параметров тип сортировки и поле,
-            // по которому будет происходить соритровка
+            // по которому будет происходить сортировка
             sort = new Sort(Sort.Direction.DESC, orderBy);
         } else {
             sort = new Sort(Sort.Direction.ASC, orderBy);
         }
         // конструктор принимает полную информацию о текущем блоке, количестве статей и сортировке
-        PageRequest pageable = new PageRequest(pageCounter,number, sort);
+        PageRequest pageable = new PageRequest(pageCounter, number, sort);
         Page<Article> articlePage = articleService.getAll(pageable);
-        ArticlesAjax responsive =new  ArticlesAjax();
+        ArticlesAjax responsive = new ArticlesAjax();
         // из объекта Page возвращаем итератор
         // и с помощью библиотеки google guava создаем списочный массив
         responsive.setArticles(Lists.newArrayList(articlePage.iterator()));
