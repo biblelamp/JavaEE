@@ -1,16 +1,15 @@
 <%@ page isELIgnored="false" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+  pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <c:set value="${pageContext.request.contextPath}" var="contextPath" />
-<c:set value="${contextPath}/resources" var="resPath"  />
-<!DOCTYPE >
+<c:set value="${contextPath}/resources" var="resPath" />
+<!DOCTYPE>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>IT SITE</title>
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link href="${resPath}/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -57,7 +56,7 @@
 				<div class="cleaner_h40"></div>
 			</div>
 			<div class="cleaner"></div>
-		</div>  <!-- end of content wrapper -->
+		</div> <!-- end of content wrapper -->
 	</div>
 
 	<button class="btn_load">Загрузить еще</button>
