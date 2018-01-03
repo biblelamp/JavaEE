@@ -45,7 +45,7 @@ public class ArticleController {
     }
 
     /**
-     * Отображение статьи
+     * Метод для отображения статьи
      * @param id - идентификатор статьи
      * @param uiModel - данные 
      * @return путь к странице отображения статьи
@@ -57,18 +57,25 @@ public class ArticleController {
         return "article/view";
     }
 
+    /**
+     * Метод для отображения формы ввода новой статьи
+     */
     @RequestMapping(value="/add", method= RequestMethod.GET)
     public String addForm(Model uiModel) {
         // создание пустого объекта
         Article article = new Article();
         article.setAuthor(new Author());
-        // получение списка всех категорий для возможности выбора категории, к которо будет принадлежать создаваемая статья
+        // получение списка всех категорий для возможности выбора категории,
+        // к которой будет принадлежать создаваемая статья
         List<Category> categories = categoryService.getAll();
         // связывание объекта статьи с формой и добавление списка категорий на страницу
         uiModel.addAttribute("article", article).addAttribute("categories", categories);
         return "article/add";
     }
 
+    /**
+     * Метод добавляющий новую статью
+     */
     @RequestMapping(method=RequestMethod.POST)
     public String add(@ModelAttribute("article") Article article, BindingResult bindingResult, @RequestParam("categoryId") Long categoryId) {    
 
