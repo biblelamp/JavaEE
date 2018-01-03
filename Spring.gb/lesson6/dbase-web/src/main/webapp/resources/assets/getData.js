@@ -1,17 +1,17 @@
 // шаблон для размещения описания статьи в списке
-var articleBody = "<div class='post_section'>"+"<h2><a class='article__title' href=''></a></h2>"+"<strong>Дата: </span></strong><span class='article__date'></span>|<strong>Автор: </strong><span class='article__author'></span>"+"<p><div class='article__content'></div>"+"<div class='cleaner'></div>"+"<p><div class='category'>Категория: <span class='article__category'></span></div><div class='button float_r'><a href=' ' class='more'>Читать далее</a></div>"+"<div class='cleaner'></div>"+"</div><div class='cleaner_h40'></div>";
+var articleBody = "<div class='post_section'><h2><a class='article__title' href=''></a></h2><strong>Дата: </span></strong><span class='article__date'></span> | <strong>Автор: </strong><span class='article__author'></span><p><div class='article__content'></div><div class='cleaner'></div><p><div class='category'>Категория: <span class='article__category'></span></div><div class='button float_r'><a href=' ' class='more'>Читать далее</a></div><div class='cleaner'></div></div><div class='cleaner_h40'></div>";
 
-//данные, которые передаются на сервер
-//счетчик страниц(блоков)
+// данные, которые передаются на сервер
+// счетчик страниц (блоков)
 var pageCounter = 0;
-//количество страниц
+// количество статей на странице (в блоке)
 var number = 3;
-//порядок сортировки
+// порядок сортировки
 var order = "DESC";
-//поле для сортировки
+// поле для сортировки
 var orderBy = "publishedDate";
 
-//функция для размещения полученных данных на странице
+// функция для размещения полученных данных на странице
 function renderingArticles(articles) {
 
 	articles.forEach(function(article) {
@@ -37,7 +37,6 @@ function loadArticles() {
 		data: data,
 		cache: false,
 		success: function(articlesResponsive) {
-
 				if (articlesResponsive == 0) {
 					console.log("getData: Unsucess!");
 				} else {
