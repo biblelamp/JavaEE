@@ -1,6 +1,7 @@
 <%@ page isELIgnored="false" contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
 <c:set value="${pageContext.request.contextPath}" var="contextPath" />
 <c:set value="${contextPath}/resources" var="resPath" />
@@ -47,7 +48,7 @@
 
 	<div id="templatemo_footer_wrapper">
 		<div id="templatemo_footer">
-			Copyright © 2016 <a href="#">IT SITE</a>
+			Copyright © 2018 <a href="#">IT SITE</a>
 		</div> <!-- end of templatemo_copyright -->
 	</div> <!-- end of copyright wrapper -->
 </body>
