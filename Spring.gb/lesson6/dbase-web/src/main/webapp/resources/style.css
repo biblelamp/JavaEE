@@ -64,7 +64,7 @@ cite span { color: #fff; }
 	background: url(images/templatemo_readmore.png) center right no-repeat;
 	color: #12758e;
 	font-weight: bold;
-	font-size: 11px;
+	font-size: 12px;
 	text-align: left;
 	text-decoration: none;
 }
@@ -75,7 +75,12 @@ cite span { color: #fff; }
 
 .templatemo_list { margin: 0; padding: 0; list-style: none; }
 .templatemo_list li { margin: 0; padding: 0; }
-.templatemo_list li a { display: block; padding: 3px 0 3px 0; text-decoration: none; border-bottom: 1px solid #d6d6d6; }
+.templatemo_list li a { 
+	display: block;
+	padding: 3px 0 3px 0;
+	text-decoration: none;
+	border-bottom: 1px solid #d6d6d6;
+}
 
 /* header */
 
@@ -93,17 +98,17 @@ cite span { color: #fff; }
 }
 
 
-#templatemo_header  #site_title {
+#templatemo_header #site_title {
 	float: left;
 	padding: 25px 0 0;
 }
 
-#templatemo_header  #site_title h1 {
+#templatemo_header #site_title h1 {
 	margin: 0;
 	padding: 0;
 }
 
-#templatemo_header  #site_title h1 a {
+#templatemo_header #site_title h1 a {
 	margin: 0px;
 	padding: 0px;
 	font-size: 30px;
@@ -112,7 +117,7 @@ cite span { color: #fff; }
 	text-decoration: none;
 }
 
-#templatemo_header  #site_title span {
+#templatemo_header #site_title span {
 	text-align: left;
 	margin-left: 20px;
 	padding-bottom: 10px;
@@ -178,7 +183,7 @@ cite span { color: #fff; }
 	font-size: 12px;
 	text-align: center;
 	text-decoration: none;
-	color: #e4e1e1;	
+	color: #e4e1e1;
 	font-weight: bold;
 	outline: none;
 	border: none;
@@ -234,9 +239,6 @@ cite span { color: #fff; }
 
 .add_author_firstname {
 	margin-left: 10px;
-}
-
-.add_author_firstname {
 }
 
 .author_add {
@@ -311,6 +313,7 @@ cite span { color: #fff; }
 .post_section .category {
 	float: left;
 	width: 300px;
+	//font-weight: bold;
 }
 
 .post_section .comment {
@@ -346,7 +349,8 @@ cite span { color: #fff; }
 }
 
 .first_level {
-	margin: 0; padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .comments {
@@ -558,6 +562,7 @@ cite span { color: #fff; }
 	list-style: decimal-leading-zero;
 	margin-bottom: 5px;
 }
+
 /* end of sidebar two */
 
 /* footer */
@@ -581,21 +586,24 @@ cite span { color: #fff; }
 }
 
 .category_reff {
-	cursor:pointer;
-	visited:#CC6600;
+	cursor: pointer;
+	visited: #CC6600;
 }
 
-.btn_load{
+.btn_load {
 	float: left;
 	position: relative;
 	bottom: 40px;
-	left: 25%;
+	left: 30%;
 	border: none;
 	height: 30px;
 	width: 150px;
+	color: #fff;
+	background-color: #16a5c9;
+	font-weight: bold;
 }
 
-.category_name{
+.category_name {
 	color: #12758e;
 }
 
