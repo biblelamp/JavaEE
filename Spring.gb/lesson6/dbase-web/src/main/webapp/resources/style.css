@@ -4,7 +4,7 @@ body {
 	color: #444444;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 13px;
-	line-height:1.5em; 
+	line-height: 1.5em; 
 	background-color: #f5f4f4;
 	background-image: url(images/templatemo_body.jpg);
 	background-repeat: repeat-x;
@@ -40,12 +40,12 @@ h5 { font-size: 16px; margin: 0 0 10px 0; padding: 0; }
 h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 
 .cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
-.cleaner_h10 { clear: both; width:100%; height: 10px; }
-.cleaner_h20 { clear: both; width:100%; height: 20px; }
-.cleaner_h30 { clear: both; width:100%; height: 30px; }
-.cleaner_h40 { clear: both; width:100%; height: 40px; }
-.cleaner_h50 { clear: both; width:100%; height: 50px; }
-.cleaner_h60 { clear: both; width:100%; height: 60px; }
+.cleaner_h10 { clear: both; width: 100%; height: 10px; }
+.cleaner_h20 { clear: both; width: 100%; height: 20px; }
+.cleaner_h30 { clear: both; width: 100%; height: 30px; }
+.cleaner_h40 { clear: both; width: 100%; height: 40px; }
+.cleaner_h50 { clear: both; width: 100%; height: 50px; }
+.cleaner_h60 { clear: both; width: 100%; height: 60px; }
 
 .float_l { float: left; }
 .float_r { float: right; }
@@ -232,9 +232,10 @@ cite span { color: #fff; }
 	color:#444444;
 }
 
-.add_category, .add_title {
+.add_category, .add_title, .author_info_title {
 	display: inline-block;
-	margin-top: 50px;
+	margin-top: 40px;
+	font-weight: bold;
 }
 
 .add_author_firstname {
@@ -249,9 +250,12 @@ cite span { color: #fff; }
 .button_sub {
 	float: right;
 	border: none;
+	height: 30px;
+	width: 150px;
+	color: #fff;
+	background-color: #16a5c9;
+	font-weight: bold;
 	cursor: pointer;
-	height: 35px;
-	width: 100px;
 }
 
 .cd-select {
@@ -475,7 +479,7 @@ cite span { color: #fff; }
 	display: block;
 	width: 100px;
 	margin-right: 10px;
-	font-size: 14px;	
+	font-size: 14px;
 }
 
 #contact_form form textarea {
@@ -601,6 +605,7 @@ cite span { color: #fff; }
 	color: #fff;
 	background-color: #16a5c9;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 .category_name {
