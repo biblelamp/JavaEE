@@ -1,4 +1,4 @@
-<%@ page isELIgnored="false" contentType="text/html; charset=UTF-8"
+<%@page isELIgnored="false" contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
@@ -15,7 +15,11 @@
 <body>
 	<div id="templatemo_header_wrapper">
 		<div id="templatemo_header">
-			<div id="site_title"></div>
+			<div id="site_title">
+				<a href="${contextPath}">
+					<img src="${resPath}/images/templatemo_logo.png" title="Software Blog.">
+				</a>
+			</div>
 			<div id="templatemo_rss">
 				<a href="" target="_parent">SUBSCRIBE<br /><span>OUR FEED</span></a>
 			</div>

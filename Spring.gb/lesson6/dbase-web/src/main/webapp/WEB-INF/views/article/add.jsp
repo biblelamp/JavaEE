@@ -1,4 +1,4 @@
-<%@ page isELIgnored="false" contentType="text/html; charset=UTF-8"
+<%@page isELIgnored="false" contentType="text/html; charset=UTF-8"
   pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
@@ -17,7 +17,11 @@
 <body>
 	<div id="templatemo_header_wrapper">
 		<div id="templatemo_header">
-			<div id="site_title"></div>
+			<div id="site_title">
+				<a href="${contextPath}">
+					<img src="${resPath}/images/templatemo_logo.png" title="Software Blog.">
+				</a>
+			</div>
 			<div id="templatemo_rss">
 				<a href="" target="_parent">SUBSCRIBE<br /><span>OUR FEED</span></a>
 			</div>
@@ -36,7 +40,7 @@
 				<div class="post_section">
 					<form:form modelAttribute="article" class="add_article_form" method="POST" action="${contextPath}/articles"> 
 					<h2 class="message">Создание статьи</h2>
-					<strong class="add_category">Категория*</strong>
+					<span class="add_category">Категория*</span>
 					<select id="categoryId" name="categoryId" class="cd-select">
 					<c:if test="${not empty categories}">
 						<option value="0" selected>Выберите категорию</option>
@@ -45,8 +49,9 @@
 						</c:forEach>
 					</c:if>
 					</select>
-					<p><form:label path="title" class="add_title">Заголовок*</form:label><form:input type="text" path="title" class="add_title_input" placeholder="Заголовок статьи" />
-					<p style="padding-top:50px;">
+					<div class="cleaner"></div>
+					<form:label path="title" class="add_title">Заголовок*</form:label><form:input type="text" path="title" class="add_title_input" placeholder="Заголовок статьи" />
+					<div class="cleaner_h40"></div>
 					<form:textarea path="content" id="content" class="contentarea"></form:textarea>
 					<div class="author_add">
 						<span class="author_info_title">Данные автора*</span>
@@ -57,9 +62,7 @@
 					<input type="submit" class="button_sub" value="Опубликовать" />
 					</form:form>
 				</div>
-				<div class="cleaner_h40"><!-- a spacing between 2 posts --></div>
 			</div>
-			<div class="cleaner_h40"></div>
 		</div>
 		<div class="cleaner"></div>
 	</div> <!-- end of content wrapper -->
