@@ -36,6 +36,8 @@
     <appengine.app.version>1</appengine.app.version>
     <appengine.target.version>1.9.54</appengine.target.version>
     <appengine-maven-plugin-version>1.3.1</appengine-maven-plugin-version>
+
+    <jetty.maven.plugin>9.4.3.v20170317</jetty.maven.plugin>
   </properties>
 
   <dependencies>
@@ -86,8 +88,14 @@
     
   <build>
     <outputDirectory>target/${project.artifactId}/WEB-INF/classes</outputDirectory> 
-                   
     <plugins>
+
+      <plugin>                          <!-- Used for local debugging -->
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <version>${jetty.maven.plugin}</version>
+      </plugin>
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
