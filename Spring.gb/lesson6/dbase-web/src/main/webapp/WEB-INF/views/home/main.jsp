@@ -4,13 +4,13 @@
 
 <c:set value="${pageContext.request.contextPath}" var="contextPath" />
 <c:set value="${contextPath}/resources" var="resPath" />
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>IT SITE</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<link href="${resPath}/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="${resPath}/style.css" />
 </head>
 <body>
 	<div id="templatemo_header_wrapper">
@@ -40,7 +40,7 @@
 				<ul class="templatemo_list">
 					<c:if test="${not empty categories}">
 					<c:forEach items="${categories}" var="category" >
-						<li><a class="category_reff" href="./categories/${category.id}" />${category.name}</a></li>
+						<li><a class="category_reff" href="${contextPath}/categories/${category.id}" />${category.name}</a></li>
 					</c:forEach>
 					</c:if>
 				</ul>

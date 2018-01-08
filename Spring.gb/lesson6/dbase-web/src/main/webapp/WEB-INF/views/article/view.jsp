@@ -5,12 +5,12 @@
 
 <c:set value="${pageContext.request.contextPath}" var="contextPath" />
 <c:set value="${contextPath}/resources" var="resPath" />
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>IT SITE : ${article.title}</title>
-	<link href="${resPath}/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="${resPath}/style.css" />
 </head>
 <body>
 	<div id="templatemo_header_wrapper">
