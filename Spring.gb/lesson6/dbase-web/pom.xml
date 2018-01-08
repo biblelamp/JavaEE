@@ -154,6 +154,20 @@
         <version>3.0-r1756463</version>
       </plugin>
       <!-- mvn tomcat8:run-war -->
+
+      <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-maven-plugin -->
+      <plugin>                                 <!-- for cloud.google.com/appengine -->
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <version>9.4.8.v20171121</version>
+        <configuration>
+          <webAppConfig>
+            <contextPath>/${artifactId}</contextPath>
+          </webAppConfig>
+        </configuration>
+      </plugin>
+      <!-- mvn jetty:run-war -->
+
     </plugins>
   </build>
 
