@@ -1,4 +1,4 @@
-package dbase.domain;
+package spring.domain;
 
 import java.util.List;
 

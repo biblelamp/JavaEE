@@ -1,4 +1,4 @@
-package dbase.config;
+package spring.config;
 
 import javax.sql.DataSource;
 
@@ -41,7 +41,7 @@ public class AppConfig {
         factory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 
         // указание пакета в котором находятся классы-сущности
-        factory.setPackagesToScan("dbase.domain");
+        factory.setPackagesToScan("spring.domain");
 
         //создание свойств для настройки Hibernate
         Properties jpaProperties = new Properties();
