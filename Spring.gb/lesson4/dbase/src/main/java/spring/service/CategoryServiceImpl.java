@@ -1,4 +1,4 @@
-package dbase.service;
+package spring.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import dbase.domain.Category;
-import dbase.repository.CategoryRepository;
+import spring.domain.Category;
+import spring.repository.CategoryRepository;
 
 @Service
 public class CategoryServiceImpl implements CategoryService {
