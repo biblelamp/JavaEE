@@ -1,32 +1,25 @@
 DROP TABLE IF EXISTS author;
-CREATE TABLE author 
-( 
-  id serial, 
-  first_name varchar(30) NOT NULL, 
-  last_name varchar(30) NOT NULL, 
-  email varchar(30) NOT NULL, 
-  PRIMARY KEY(id)
-  );
+CREATE TABLE author (
+  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  first_name VARCHAR(30) NOT NULL,
+  last_name VARCHAR(30) NOT NULL,
+  email VARCHAR(30) NOT NULL
+);
 
 DROP TABLE IF EXISTS category;
-CREATE TABLE category
-(
-  id serial,
-  name varchar(30),
-  PRIMARY KEY(id)
-
+CREATE TABLE category (
+  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  name VARCHAR(30)
 );
 
 DROP TABLE IF EXISTS article;
-CREATE TABLE article
-(
-  id serial,
-  published_date TIMESTAMP DEFAULT current_timestamp,
-  title text,
-  content text,
-  author_id int NOT NULL,
-  category_id int NOT NULL,
-  PRIMARY KEY(id),
-  FOREIGN KEY(author_id) REFERENCES  author(id),
+CREATE TABLE article (
+  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  published_date TIMESTAMP DEFAULT (julianday('now')),
+  title TEXT,
+  content TEXT,
+  author_id INT NOT NULL,
+  category_id INT NOT NULL,
+  FOREIGN KEY(author_id) REFERENCES author(id),
   FOREIGN KEY(category_id) REFERENCES category(id)
 );
