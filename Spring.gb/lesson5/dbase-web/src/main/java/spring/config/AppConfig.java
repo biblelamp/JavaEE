@@ -1,4 +1,4 @@
-package dbase.config;
+package spring.config;
 
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
@@ -16,9 +16,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import java.util.Properties;
 
 @Configuration
-@EnableJpaRepositories("dbase.repository")
+@EnableJpaRepositories("spring.repository")
 @EnableTransactionManagement
-@ComponentScan("dbase.service")
+@ComponentScan("spring.service")
 public class AppConfig {
 
     @Bean(name="dataSource")
@@ -49,7 +49,7 @@ public class AppConfig {
         factory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 
         // указание пакета в котором находятся классы-сущности
-        factory.setPackagesToScan("dbase.domain");
+        factory.setPackagesToScan("spring.domain");
 
         //создание свойств для настройки Hibernate
         Properties jpaProperties = new Properties();
