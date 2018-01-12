@@ -1,0 +1,13 @@
+Introduction
+
+This tutorial will have you deploying a Java app in minutes.
+
+Hang on for a few more minutes to learn how it all works, so you can make the most out of Heroku.
+
+The tutorial assumes that you have:
+* a free Heroku account.
+* Java 8 installed locally.
+* Maven 3 installed locally.
+
+If you’d prefer to use Gradle instead of Maven, please see the Getting Started with Gradle on Heroku guide.
+
