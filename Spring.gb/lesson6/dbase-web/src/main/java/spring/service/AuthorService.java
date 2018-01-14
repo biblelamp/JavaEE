@@ -1,8 +1,8 @@
-package dbase.service;
+package spring.service;
 
 import java.util.List;
 
-import dbase.domain.Author;
+import spring.domain.Author;
 
 public interface AuthorService {
     public Author get(Long id);

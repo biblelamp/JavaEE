@@ -1,8 +1,8 @@
-package dbase.service;
+package spring.service;
 
 import java.util.List;
 
-import dbase.domain.Category;
+import spring.domain.Category;
 
 public interface CategoryService {
     public Category get(Long id);

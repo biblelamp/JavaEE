@@ -1,4 +1,4 @@
-package dbase.web;
+package spring.web;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import dbase.domain.Category;
-import dbase.service.CategoryService;
+import spring.domain.Category;
+import spring.service.CategoryService;
 
 @Controller
 @RequestMapping("/")

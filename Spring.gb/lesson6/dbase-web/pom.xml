@@ -1,11 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-        http://maven.apache.org/maven-v4_0_0.xsd">
+<project>
   <modelVersion>4.0.0</modelVersion>
   <packaging>war</packaging>
 
-  <groupId>dbase</groupId>
+  <groupId>spring</groupId>
   <artifactId>lesson6</artifactId>
   <version>0.4</version>
   <name>dbase-web</name>
@@ -162,7 +159,7 @@
         <version>9.4.8.v20171121</version>
         <configuration>
           <webAppConfig>
-            <contextPath>/${artifactId}</contextPath>
+            <contextPath>/${project.artifactId}</contextPath>
           </webAppConfig>
         </configuration>
       </plugin>

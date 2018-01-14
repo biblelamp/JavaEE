@@ -1,4 +1,4 @@
-package dbase.config;
+package spring.config;
 
 import javax.servlet.Filter;
 

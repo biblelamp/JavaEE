@@ -1,8 +1,8 @@
-package dbase.web.ajax;
+package spring.web.ajax;
 
 import java.util.List;
 
-import dbase.domain.Article;
+import spring.domain.Article;
 
 public class ArticlesAjax {
     private List<Article> articles;

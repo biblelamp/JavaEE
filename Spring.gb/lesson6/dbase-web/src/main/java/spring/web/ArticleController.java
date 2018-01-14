@@ -1,4 +1,4 @@
-package dbase.web;
+package spring.web;
 
 import java.util.List;
 
@@ -18,12 +18,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.common.collect.Lists;
 
-import dbase.domain.Article;
-import dbase.domain.Author;
-import dbase.domain.Category;
-import dbase.service.ArticleService;
-import dbase.service.CategoryService;
-import dbase.web.ajax.ArticlesAjax;
+import spring.domain.Article;
+import spring.domain.Author;
+import spring.domain.Category;
+import spring.service.ArticleService;
+import spring.service.CategoryService;
+import spring.web.ajax.ArticlesAjax;
 
 @Controller
 @RequestMapping("/articles")

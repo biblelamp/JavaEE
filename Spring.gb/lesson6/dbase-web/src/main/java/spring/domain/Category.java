@@ -1,4 +1,4 @@
-package dbase.domain;
+package spring.domain;
 
 import java.util.List;
 
@@ -14,25 +14,18 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-@Table(name="author")
-public class Author {
+@Table(name="category")
+public class Category {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name="id")
     private Long id;
 
-    @Column(name="first_name")
-    private String firstname;
-
-    @Column(name="last_name")
-    private String lastname;
-
-    @Column(name="email")
-    private String email;
+    @Column(name="name")
+    private String name;
 
     @JsonIgnore
-    @OneToMany(mappedBy="author", fetch=FetchType.LAZY)
+    @OneToMany(mappedBy="category", fetch=FetchType.LAZY)
     private List<Article> articles;
 
     public List<Article> getArticles() {
@@ -51,27 +44,11 @@ public class Author {
         this.id = id;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
-
-    public String getLastname() {
-        return lastname;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setName(String name) {
+        this.name = name;
     }
 }

@@ -1,9 +1,9 @@
-package dbase.service;
+package spring.service;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import dbase.domain.Article;
+import spring.domain.Article;
 
 public interface ArticleService {
     public Page<Article> getAll(Pageable pageable);
