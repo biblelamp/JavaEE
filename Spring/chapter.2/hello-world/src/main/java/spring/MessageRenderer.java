@@ -1,4 +1,4 @@
-package chapter2;
+package spring;
 
 public interface MessageRenderer {
     void render();

@@ -1,4 +1,4 @@
-package chapter2;
+import spring.*;
 
 public class HelloWorldDecoupled {
     public static void main(String[] args) {

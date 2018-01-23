@@ -1,7 +1,7 @@
-package chapter2;
-
 import java.io.FileInputStream;
 import java.util.Properties;
+
+import spring.*;
 
 public class MessageSupportFactory {
     private static MessageSupportFactory instance;
@@ -14,7 +14,7 @@ public class MessageSupportFactory {
         props = new Properties();
 
         try {
-            props.load(new FileInputStream("src/main/java/chapter2/msf.properties"));
+            props.load(new FileInputStream("src/main/java/msf.properties"));
 
             String rendererClass = props.getProperty("renderer.class");
             String providerClass = props.getProperty("provider.class");

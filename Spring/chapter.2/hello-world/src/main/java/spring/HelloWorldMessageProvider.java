@@ -1,4 +1,4 @@
-package chapter2;
+package spring;
 
 public class HelloWorldMessageProvider implements MessageProvider {
     @Override

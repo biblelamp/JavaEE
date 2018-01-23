@@ -1,5 +1,3 @@
-package chapter2;
-
 public class HelloWorldWithCommandLine {
     public static void main(String[] args) {
         if (args.length > 0) {
