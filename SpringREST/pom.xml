@@ -1,5 +1,5 @@
 <project>
-  <!-- based on example https://www.boraji.com/spring-mvc-4-restcontroller-example -->
+  <!-- based on https://www.boraji.com/spring-mvc-4-restcontroller-example -->
   <modelVersion>4.0.0</modelVersion>
   <packaging>war</packaging>
 
@@ -8,6 +8,9 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <properties>
+    <spring.version>4.3.18.RELEASE</spring.version>
+    <servlet.version>3.1.0</servlet.version>
+    <jackson.version>2.9.6</jackson.version>
     <failOnMissingWebXml>false</failOnMissingWebXml>
   </properties>
 
@@ -16,14 +19,14 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>4.3.18.RELEASE</version>
+      <version>${spring.version}</version>
     </dependency>
   
     <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version>
+      <version>${servlet.version}</version>
       <scope>provided</scope>
     </dependency>
 
@@ -31,7 +34,7 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>2.9.6</version>
+      <version>${jackson.version}</version>
     </dependency>
   </dependencies>
 
