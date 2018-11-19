@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Link
+Icon=mate-panel-launcher
+Icon[en_US]=mate-panel-launcher
+URL=http://www.mastertheboss.com/jboss-server/jboss-jms/a-jms-browser-for-jboss-wildfly
+Name[en_US]=JMS browser
+Name=JMS browser
