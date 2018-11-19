@@ -13,6 +13,8 @@ import javax.inject.Named;
 @SessionScoped
 public class Manager implements Serializable{
 
+	@EJB EJBBrowser ejb;
+
     public String getQueue() {
         return queue;
     }
@@ -42,7 +44,6 @@ public class Manager implements Serializable{
         this.testmessages = testmessages;
     }
 
-    @EJB EJBBrowser ejb;
     public List<MessageDTO> getList() {
         return list;
     }
