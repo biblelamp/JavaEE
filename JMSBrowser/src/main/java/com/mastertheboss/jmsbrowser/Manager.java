@@ -15,6 +15,11 @@ public class Manager implements Serializable{
 
 	@EJB EJBBrowser ejb;
 
+	private String queue;
+	private int testmessages;
+	private List<MessageDTO> list;
+	List<QueueDTO> listQueue;
+
     public String getQueue() {
         return queue;
     }
@@ -22,11 +27,6 @@ public class Manager implements Serializable{
     public void setQueue(String queue) {
         this.queue = queue;
     }
-    private String queue;
-    private List<MessageDTO> list;
-    private int testmessages;
-
-    List<QueueDTO> listQueue;
 
     public int getTestmessages() {
         return testmessages;
