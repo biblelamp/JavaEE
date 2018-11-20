@@ -31,6 +31,8 @@ import javax.jms.QueueBrowser;
 
 import javax.jms.Session;
 import javax.jms.TextMessage;
+import javax.jms.Message;
+
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import org.jboss.as.controller.client.ModelControllerClient;
@@ -43,10 +45,14 @@ public class EJBBrowser {
 
     @Inject ConnectionFactory cf;
     Properties properties;
-    
+
     public List<MessageDTO> browseMessage(String q) {
         List<MessageDTO> list = new ArrayList();
-       
+
+        if (q == null) {
+            return list;
+        }
+
         Queue queue = null;
         try {
             queue = (Queue) new InitialContext().lookup(q);
@@ -66,7 +72,6 @@ public class EJBBrowser {
             while (messageEnum.hasMoreElements()) {
                 TextMessage message = (TextMessage) messageEnum.nextElement();
                 list.add(new MessageDTO(message.getJMSMessageID(), message.getText(), message.getJMSPriority()));
-
             }
             browser.close();
         } catch (Exception e) {
@@ -123,7 +128,7 @@ public class EJBBrowser {
     public List<QueueDTO> getListQueues() {
         String host = properties.getProperty("host");
         int port = Integer.parseInt(properties.getProperty("port"));
-        System.out.println("PORT---->"+port);
+        System.out.println("PORT -> " + port);
         final ModelNode req = new ModelNode();
         req.get(ClientConstants.OP).set("read-children-resources");
         req.get("child-type").set("jms-queue");
@@ -167,28 +172,35 @@ public class EJBBrowser {
         }
        return listQueues;
     }
-	
+
     public void consumeMessages(String strQueue) {
          try {
              Connection connection = null;
              Session session = null;
              MessageConsumer consumer = null;
-             
+
              connection = cf.createConnection();
              session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-             Queue queueConsume=null;
+             Queue queueConsume = null;
              try {
                  queueConsume = (Queue) new InitialContext().lookup(strQueue);
              } catch (NamingException ex) {
                  Logger.getLogger(EJBBrowser.class.getName()).log(Level.SEVERE, null, ex);
              }
+
+             //session.commit();
+
              consumer = session.createConsumer(queueConsume);
 
              connection.start();
 
-             javax.jms.Message msg = consumer.receiveNoWait();
+             Message msg = consumer.receiveNoWait();
 
-             Logger.getLogger(EJBBrowser.class.getName()).log(Level.INFO, "Received "+msg, "");
+             Logger.getLogger(EJBBrowser.class.getName()).log(Level.INFO,
+                     "Received from " + queueConsume.getQueueName() + ": " + msg, "");
+
+             //session.rollback();
+
              connection.close();
 
          } catch (JMSException ex) {
