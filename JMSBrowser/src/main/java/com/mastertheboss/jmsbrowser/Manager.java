@@ -19,6 +19,7 @@ public class Manager implements Serializable{
 	private int testmessages;
 	private List<MessageDTO> list;
 	List<QueueDTO> listQueue;
+	private boolean simulate;
 
     public String getQueue() {
         return queue;
@@ -62,12 +63,20 @@ public class Manager implements Serializable{
     }
 
     public void consumeMessages() {
-        ejb.consumeMessages(queue);
+        ejb.consumeMessages(queue, simulate);
         search();
     }
 
     @PostConstruct
     public void loadCombo() {
         listQueue = ejb.getListQueues();
+    }
+
+    public void setSimulate(boolean simulate) {
+        this.simulate = simulate;
+    }
+
+    public boolean getSimulate() {
+        return simulate;
     }
 }

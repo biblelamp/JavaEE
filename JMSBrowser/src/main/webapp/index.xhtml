@@ -28,11 +28,15 @@
                                      styleClass="buttons" value="Send" update="table" />
 
                 </p:panelGrid>
-                <p:panelGrid columns="2" rows="1">
+                <p:panelGrid columns="2">
                     <h:outputText value="Consume Message:" />
 
                     <p:commandButton actionListener="#{manager.consumeMessages}"
                                      styleClass="buttons" value="Consume" update="table" />
+
+                    <h:outputText value="Simulate Failure:" />
+
+                    <h:selectBooleanCheckbox value="#{manager.simulate}" />
 
                 </p:panelGrid>
             </p:panelGrid>

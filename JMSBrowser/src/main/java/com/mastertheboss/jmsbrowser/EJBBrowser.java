@@ -173,39 +173,52 @@ public class EJBBrowser {
        return listQueues;
     }
 
-    public void consumeMessages(String strQueue) {
-         try {
-             Connection connection = null;
-             Session session = null;
-             MessageConsumer consumer = null;
+    public void consumeMessages(String strQueue, boolean simulate) {
+        try {
+            Connection connection = null;
+            Session session = null;
+            MessageConsumer consumer = null;
 
-             connection = cf.createConnection();
-             session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-             Queue queueConsume = null;
-             try {
-                 queueConsume = (Queue) new InitialContext().lookup(strQueue);
-             } catch (NamingException ex) {
-                 Logger.getLogger(EJBBrowser.class.getName()).log(Level.SEVERE, null, ex);
-             }
+            connection = cf.createConnection();
 
-             //session.commit();
+            // create a *transacted* JMS Session if simulate
+            session = connection.createSession(simulate, Session.AUTO_ACKNOWLEDGE);
 
-             consumer = session.createConsumer(queueConsume);
+            Queue queueConsume = null;
+            try {
+                queueConsume = (Queue) new InitialContext().lookup(strQueue);
+            } catch (NamingException ex) {
+                Logger.getLogger(EJBBrowser.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
-             connection.start();
+            if (simulate) {
+                session.commit();
+            }
 
-             Message msg = consumer.receiveNoWait();
+            consumer = session.createConsumer(queueConsume);
 
-             Logger.getLogger(EJBBrowser.class.getName()).log(Level.INFO,
-                     "Received from " + queueConsume.getQueueName() + ": " + msg, "");
+            connection.start();
 
-             //session.rollback();
+            if (simulate) {
 
-             connection.close();
+                for (int i = 0; i < 3; i++) {
 
-         } catch (JMSException ex) {
-             Logger.getLogger(EJBBrowser.class.getName()).log(Level.SEVERE, null, ex);
-         }
+                    Message msg = consumer.receiveNoWait();
+                    Logger.getLogger(EJBBrowser.class.getName()).log(Level.INFO, "Received from " + queueConsume.getQueueName() + ": " + msg, "");
+
+                    session.rollback();
+                }
+            } else {
+
+                Message msg = consumer.receiveNoWait();
+                Logger.getLogger(EJBBrowser.class.getName()).log(Level.INFO, "Received from " + queueConsume.getQueueName() + ": " + msg, "");
+            }
+
+            connection.close();
+
+        } catch (JMSException ex) {
+            Logger.getLogger(EJBBrowser.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @PostConstruct
