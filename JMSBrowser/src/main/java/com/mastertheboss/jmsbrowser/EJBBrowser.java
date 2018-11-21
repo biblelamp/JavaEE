@@ -201,6 +201,12 @@ public class EJBBrowser {
 
             if (simulate) {
 
+                /*
+                 * You have to add
+                 * <max-delivery-attempts>3</max-delivery-attempts>
+                 *  in section <address-setting match="#">
+                 *  in file standalone.xml
+                 */
                 for (int i = 0; i < 3; i++) {
 
                     Message msg = consumer.receiveNoWait();
