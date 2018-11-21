@@ -20,6 +20,16 @@
            			}
            		});
            }
+           function listMessages() {
+               $.ajax({
+                   url : 'service',
+                   data : {
+                       mode : 'list' },
+                   success : function(response) {
+                       $('#listJMS').html(response);
+                   }
+               });
+           }
            function receiveMessages() {
        	       	$.ajax({
        	   		url : 'service',
@@ -35,11 +45,15 @@
   <body>
       <h2>Example JMS using JBoss</h2>
       <p>Send messages JBoss with prefix <input id="prefix" type="text" size="5"></p>
-         <input type="submit" width="80" value="Send" onClick="sendMessages()"><p />
+         <input type="submit" width="80" value="Send" onClick="sendMessages()">
          <span id="sendJMS" style="color: #3f48cc;">&nbsp;</span>
 
+      <p>List messages from queue JBoss</p>
+        <input type="submit" width="80" value="List" onClick="listMessages()">
+        <span id="listJMS" style="color: #7349a4;">&nbsp;</span>
+
       <p>Receive messages from queue JBoss</p>
-         <input type="submit" width="80" value="Receive" onClick="receiveMessages()"><p />
+         <input type="submit" width="80" value="Receive" onClick="receiveMessages()">
          <span id="receiveJMS" style="color: #7349a4;">&nbsp;</span>
   </body>
 </html>
