@@ -11,13 +11,16 @@ import javax.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
 public class Sender {
+
 	@Resource(mappedName = "jms/queue/ExpiryQueue")
-	//@Resource(mappedName = "java:/jms/queue/DLQ")
 	private Queue queue;
- 
+
+	@Resource(mappedName = "jms/queue/DLQ")
+	private Queue dlq;
+
 	@Inject
 	private JMSContext context;
- 
+
 	public void sendMessage(String txt) {
 		context.createProducer().send(queue, txt);
 	}

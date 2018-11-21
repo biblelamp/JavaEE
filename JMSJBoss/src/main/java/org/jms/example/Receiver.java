@@ -10,7 +10,7 @@ import javax.ejb.ActivationConfigProperty;
 import javax.jms.Message;
 import javax.jms.JMSException;
 import javax.jms.MessageListener;
- 
+
 @MessageDriven(name = "Receiver", activationConfig = {
   @ActivationConfigProperty(propertyName = "destinationLookup", 
                             propertyValue = "jms/queue/ExpiryQueue"),
@@ -21,12 +21,14 @@ import javax.jms.MessageListener;
                             propertyValue = "Auto-acknowledge") })
 public class Receiver implements MessageListener {
 	private static final Logger LOG = Logger.getLogger(Receiver.class.getName());
-	
-	public static List<String> messages = new ArrayList<String>();
- 
+
+	public static List<String> messages = new ArrayList<>();
+
 	public void onMessage(Message rcvMessage) {
 		try {
 			messages.add(rcvMessage.getBody(String.class));
+
+			LOG.log(Level.INFO, "Received: " + rcvMessage.getBody(String.class));
 		} catch (JMSException ex) {
 			LOG.log(Level.SEVERE, ex.getMessage(), ex);
 		}
