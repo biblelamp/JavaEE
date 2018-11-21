@@ -5,12 +5,12 @@
     <h:head></h:head>
 
     <h:body>
-        <h2>JMS Message Browser v.1.0.0 alpha</h2>
+        <h2>JMS Message Browser v.0.2.0</h2>
         <h:form id="jsfexample">
             <p:panelGrid columns="3">
                 <p:panelGrid columns="2">
 
-                    <p:outputLabel for="combo" value="Enter Queue:" />
+                    <p:outputLabel value="Enter Queue:" />
                     <p:selectOneMenu id="combo" value="#{manager.queue}">
                         <f:selectItem itemLabel="Select One" itemValue="" />
                         <f:selectItems value="#{manager.listQueue}" />
@@ -30,12 +30,10 @@
                 </p:panelGrid>
                 <p:panelGrid columns="2">
                     <h:outputText value="Consume Message:" />
-
                     <p:commandButton actionListener="#{manager.consumeMessages}"
                                      styleClass="buttons" value="Consume" update="table" />
 
                     <h:outputText value="Simulate Failure:" />
-
                     <h:selectBooleanCheckbox value="#{manager.simulate}" />
 
                 </p:panelGrid>
