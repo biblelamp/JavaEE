@@ -12,12 +12,17 @@ import javax.servlet.http.HttpServletResponse;
  
 public class ServiceServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
- 
+
+	private int counter = 0;
+
 	@Inject
 	Sender sender;
 
 	@Inject
 	Reader reader;
+
+	@Inject
+	Resender resender;
 
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) 
@@ -30,30 +35,39 @@ public class ServiceServlet extends HttpServlet {
     	
     	response.setContentType("text/html;charset=UTF-8");
     	PrintWriter out = response.getWriter();
-		if (mode.equalsIgnoreCase("send")) {
-	    	out.print("send messages :<br />");
-	    	for (int i = 0; i < 3; i++) {
-	    		String msg = prefix + " #" + i;
-	    		out.print("&bull; " + msg + "<br />");
-	    		sender.sendMessage(msg);
-	    	}
-	    	out.close();
-		} if (mode.equalsIgnoreCase("list")) {
-			out.print("list messages :<br />");
-			List<String> messages = reader.readMessages("java:/jms/queue/ExpiryQueue");
-			for (String str : messages) {
-				out.print("&mdash; " + str + "<br />");
-			}
-			out.close();
-		} else {
-	    	out.print("receive messages :<br />");
-	    	if (Receiver.messages.size() > 0) {
-	    		for (int i = 0; i < Receiver.messages.size(); i++) {
-		    		out.print("&mdash; " + Receiver.messages.get(i) + "<br />");
-	    		}
-	    		Receiver.messages.clear();
-	    	}
-	    	out.close();
+    	switch (mode) {
+			case "send":
+				out.print("send messages :<br />");
+				for (int i = 0; i < 3; i++) {
+					String msg = prefix + " #" + counter++;
+					out.print("&bull; " + msg + "<br />");
+					sender.sendMessage(msg);
+				}
+				break;
+			case "list":
+				out.print("list messages :<br />");
+				List<String> messages = reader.readMessages("java:/jms/queue/DLQ"); //java:/jms/queue/ExpiryQueue");
+				for (String str : messages) {
+					out.print("&mdash; " + str + "<br />");
+				}
+				break;
+			case "receive":
+				out.print("check received messages :<br />");
+				if (Receiver.messages.size() > 0) {
+					for (int i = 0; i < Receiver.messages.size(); i++) {
+						out.print("&mdash; " + Receiver.messages.get(i) + "<br />");
+					}
+					Receiver.messages.clear();
+				}
+				break;
+			case "resend":
+				out.print("resend messages :<br />");
+				List<String> dlqMessages = resender.resendMessages("java:/jms/queue/DLQ");
+				for (String str : dlqMessages) {
+					out.print("&mdash; " + str + "<br />");
+				}
+				break;
 		}
+		out.close();
     }
 }

@@ -31,14 +31,25 @@
                });
            }
            function receiveMessages() {
-       	       	$.ajax({
-       	   		url : 'service',
-       	   		data : {
-   					mode : 'receive' },
-          			success : function(response) {
-          				$('#receiveJMS').html(response);
-          			}
-          		});
+               $.ajax({
+                   url: 'service',
+                   data: {
+                       mode: 'receive'
+                   },
+                   success: function (response) {
+                       $('#receiveJMS').html(response);
+                   }
+               });
+           }
+           function resendMessages() {
+                $.ajax({
+                   url : 'service',
+                   data : {
+                       mode : 'resend' },
+                   success : function(response) {
+                       $('#resendJMS').html(response);
+                   }
+               });
           }
         </script>
   </head>
@@ -48,12 +59,16 @@
          <input type="submit" width="80" value="Send" onClick="sendMessages()">
          <span id="sendJMS" style="color: #3f48cc;">&nbsp;</span>
 
-      <p>List messages from queue JBoss</p>
+      <p>List messages from DLQueue</p>
         <input type="submit" width="80" value="List" onClick="listMessages()">
         <span id="listJMS" style="color: #7349a4;">&nbsp;</span>
 
-      <p>Receive messages from queue JBoss</p>
-         <input type="submit" width="80" value="Receive" onClick="receiveMessages()">
+      <p>Check received messages from ExpiryQueue</p>
+         <input type="submit" width="80" value="Check" onClick="receiveMessages()">
          <span id="receiveJMS" style="color: #7349a4;">&nbsp;</span>
+
+      <p>Resend messages from DLQueue</p>
+        <input type="submit" width="80" value="Resend" onClick="resendMessages()">
+        <span id="resendJMS" style="color: #7349a4;">&nbsp;</span>
   </body>
 </html>
