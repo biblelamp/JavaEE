@@ -7,8 +7,12 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 
+import java.util.logging.*;
+
 @Path("/service")
 public class RestEasyExample {
+
+	private static final Logger LOG = Logger.getLogger(RestEasyExample.class.getName());
 
 	@GET
 	@Path("/{message}")
@@ -23,6 +27,9 @@ public class RestEasyExample {
 	@Path("/post")
 	@Consumes("application/json")
 	public Response postMessage(String message) {
+
+		LOG.log(Level.INFO, message);
+
 		return Response.status(200).entity(message).build();
 	}
 }
