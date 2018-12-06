@@ -32,8 +32,15 @@ Simple example Angular + Java RESTful + WildFly 8.2
 
 ### Part of Angular
 
+httpOptions = {
+    headers: new HttpHeaders({
+    'Content-Type': 'text/plain',
+    })
+};
+
+
 public testSend() {
-this.http.post('http://localhost:8080/RESTful/service/post', {body: 'qwerty'}, this.httpOptions)
+this.http.post('http://localhost:8080/RESTful/service/post', 'qwerty', this.httpOptions)
   .subscribe(
     value => {
       console.log('POST call successful value returned in body', value);
