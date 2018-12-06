@@ -25,7 +25,7 @@ public class RestEasyExample {
 
 	@POST
 	@Path("/post")
-	@Consumes("application/json")
+	@Consumes("text/plain")
 	public Response postMessage(String message) {
 
 		LOG.log(Level.INFO, message);
