@@ -58,7 +58,7 @@ public class Decrypt {
 
 			BufferedOutputStream bos =
 					new BufferedOutputStream(
-							new FileOutputStream(PATH + fileName));
+							new FileOutputStream(fileName));
 			bos.write(decryptedMessage);
 			bos.close();
 
@@ -73,7 +73,6 @@ public class Decrypt {
 
 	public static void main(String[] args) throws Exception {
 
-		/*
 		File file = new File("/home/lamp/Downloads/Ahoj jak se máš.encrypt");
 		byte[] buffer = new byte[(int) file.length()];
 		BufferedInputStream bis =
@@ -81,9 +80,7 @@ public class Decrypt {
 		bis.read(buffer);
 		bis.close();
 
-		decryptFile(buffer, "testFile.txt");
-		*/
-		String str = "Hello";
-		System.out.println(Arrays.toString(str.getBytes()));
+		decryptFile(buffer, "/home/lamp/Downloads/Ahoj jak se máš.txt");
+
 	}
 }
