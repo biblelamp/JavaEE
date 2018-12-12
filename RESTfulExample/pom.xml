@@ -6,11 +6,12 @@
 
     <groupId>cz.tendersystems</groupId>
     <artifactId>RESTfulExample</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.3</version>
     <packaging>war</packaging>
 
     <properties>
         <resteasy-jaxrs-version>2.3.2.Final</resteasy-jaxrs-version>
+        <org-bouncycastle-version>1.45</org-bouncycastle-version>
     </properties>
 
     <build>
@@ -26,32 +27,25 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.json/json -->
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20180813</version>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk16 -->
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk16</artifactId>
-            <version>1.45</version>
+            <version>${org-bouncycastle-version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcmail-jdk16 -->
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcmail-jdk16</artifactId>
-            <version>1.45</version>
+            <version>${org-bouncycastle-version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcpg-jdk16 -->
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcpg-jdk16</artifactId>
-            <version>1.45</version>
+            <version>${org-bouncycastle-version}</version>
         </dependency>
 
     </dependencies>
