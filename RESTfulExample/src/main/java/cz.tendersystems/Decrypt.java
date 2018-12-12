@@ -71,16 +71,27 @@ public class Decrypt {
 		}
 	}
 
+	public static byte[] readFile(String fileName) {
+		File file = new File(fileName);
+		byte[] buffer = new byte[(int) file.length()];
+
+		try {
+			BufferedInputStream bis =
+				new BufferedInputStream(new FileInputStream(file));
+			bis.read(buffer);
+			bis.close();
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		}
+		return buffer;
+	}
+
 	public static void main(String[] args) throws Exception {
 
-		File file = new File("/home/lamp/Downloads/Ahoj jak se máš.encrypt");
-		byte[] buffer = new byte[(int) file.length()];
-		BufferedInputStream bis =
-					 new BufferedInputStream(new FileInputStream(file));
-		bis.read(buffer);
-		bis.close();
+		byte[] buffer = readFile("/home/lamp/Downloads/Ahoj jak se máš.encrypt");
+
+		System.out.println(Arrays.toString(buffer));
 
 		decryptFile(buffer, "/home/lamp/Downloads/Ahoj jak se máš.txt");
-
 	}
 }
