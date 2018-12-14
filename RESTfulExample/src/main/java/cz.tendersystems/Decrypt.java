@@ -1,11 +1,11 @@
 package cz.tendersystems;
 
 import org.bouncycastle.cms.*;
+import org.bouncycastle.cms.jcajce.*;
 import org.bouncycastle.jce.provider.*;
 
 import java.io.*;
 import java.security.*;
-import java.security.cert.*;
 import java.util.*;
 import java.util.logging.*;
 
@@ -18,43 +18,33 @@ public class Decrypt {
 	}
 	private static final Logger LOG = Logger.getLogger(Decrypt.class.getName());
 
-	private static byte[] decrypt(byte[] content, KeyStore.PrivateKeyEntry pkEntry) throws Exception {
-		return decrypt(content, (X509Certificate) pkEntry.getCertificate(), pkEntry.getPrivateKey());
-	}
+	private static byte[] decrypt(byte[] encryptedData, PrivateKey decryptionKey) throws CMSException {
 
-	private static byte[] decrypt(byte[] content, X509Certificate cert, PrivateKey key) throws Exception {
-		CMSEnvelopedData enveloped = new CMSEnvelopedData(content);
+		byte[] decryptedData = null;
+		if (null != encryptedData && null != decryptionKey) {
+			CMSEnvelopedData envelopedData = new CMSEnvelopedData(encryptedData);
 
-		RecipientId recId = new RecipientId();
+			Collection<RecipientInformation> recipients
+					= envelopedData.getRecipientInfos().getRecipients();
+			KeyTransRecipientInformation recipientInfo
+					= (KeyTransRecipientInformation) recipients.iterator().next();
+			JceKeyTransRecipient recipient
+					= new JceKeyTransEnvelopedRecipient(decryptionKey);
 
-		recId.setSerialNumber(cert.getSerialNumber());
-		recId.setIssuer(cert.getIssuerX500Principal().getEncoded());
-
-		RecipientInformationStore recipients = enveloped.getRecipientInfos();
-		RecipientInformation recipient = recipients.get(recId);
-
-		if (recipient == null)
-			throw new Exception("Recipient not found");
-
-		return recipient.getContent(key, "BC");
+			return recipientInfo.getContent(recipient);
+		}
+		return decryptedData;
 	}
 
 	public static void decryptFile(byte[] buffer, String fileName) throws Exception {
 		KeyStore keyStore = KeyStore.getInstance("PKCS12");
-		try {
-			FileInputStream fileInputStream =
-					 new FileInputStream(PATH + CERT_FILE_NAME);
-			keyStore.load(fileInputStream, PASSW.toCharArray());
-			fileInputStream.close();
-		} catch (IOException ex) {
-			ex.printStackTrace();
-		}
-		KeyStore.PrivateKeyEntry privateKeyEntry =
-				(KeyStore.PrivateKeyEntry) keyStore.getEntry("tender systems",
-						new KeyStore.PasswordProtection(PASSW.toCharArray()));
+
+		keyStore.load(new FileInputStream(PATH + CERT_FILE_NAME), PASSW.toCharArray());
+		PrivateKey privateKey =
+				(PrivateKey) keyStore.getKey("tender systems", PASSW.toCharArray());
 
 		try {
-			byte[] decryptedMessage = decrypt(buffer, privateKeyEntry);
+			byte[] decryptedMessage = decrypt(buffer, privateKey);
 
 			BufferedOutputStream bos =
 					new BufferedOutputStream(
@@ -92,6 +82,6 @@ public class Decrypt {
 
 		System.out.println(Arrays.toString(buffer));
 
-		decryptFile(buffer, "/home/lamp/Downloads/Ahoj jak se máš.txt");
+		decryptFile(buffer, "/home/lamp/Public/Ahoj jak se máš.txt");
 	}
 }
