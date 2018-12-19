@@ -10,7 +10,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import java.io.*;
-import java.util.*;
 import java.util.logging.*;
 
 @Path("/service")
@@ -32,7 +31,7 @@ public class RestEasyExample {
 	@Consumes(MediaType.APPLICATION_OCTET_STREAM)
 	public Response getData(InputStream inputStream,
 			@HeaderParam("Content-Length") int contentLength,
-			@HeaderParam("Title") String fileName) {
+			@HeaderParam("Save-Data") String fileName) {
 
 		LOG.log(Level.INFO, Integer.toString(contentLength));
 		LOG.log(Level.INFO, fileName);
@@ -43,14 +42,12 @@ public class RestEasyExample {
 			inputStream.read(buffer);
 			inputStream.close();
 
-			// LOG.log(Level.INFO, Arrays.toString(buffer));
-
-			Decrypt.decryptFile(buffer, Decrypt.PATH + fileName);
+			Decrypt.decryptFile(buffer, Decrypt.PATH + Decrypt.hexDecode(fileName));
 
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
 
-		return Response.status(200).entity(fileName).build();
+		return Response.status(200).entity(contentLength).build();
 	}
 }

@@ -19,8 +19,8 @@ public class Decrypt {
 	private static final Logger LOG = Logger.getLogger(Decrypt.class.getName());
 
 	private static byte[] decrypt(byte[] encryptedData, PrivateKey decryptionKey) throws CMSException {
-
 		byte[] decryptedData = null;
+
 		if (null != encryptedData && null != decryptionKey) {
 			CMSEnvelopedData envelopedData = new CMSEnvelopedData(encryptedData);
 
@@ -76,12 +76,20 @@ public class Decrypt {
 		return buffer;
 	}
 
+	public static String hexDecode(String str) {
+		String result = "";
+		for (int i = 0; i < str.length(); i +=4) {
+			result += (char) Integer.parseInt(str.substring(i, i + 4), 16);
+		}
+		return result;
+	}
+
 	public static void main(String[] args) throws Exception {
 
-		byte[] buffer = readFile("/home/lamp/Downloads/Ahoj jak se máš.encrypt");
+		System.out.println(hexDecode("00410068006f006a0020006a0061006b0020007300650020006d00e10161"));
 
-		System.out.println(Arrays.toString(buffer));
-
-		decryptFile(buffer, "/home/lamp/Public/Ahoj jak se máš.txt");
+		//byte[] buffer = readFile("/home/lamp/Downloads/Ahoj jak se máš.encrypt");
+		//System.out.println(Arrays.toString(buffer));
+		//decryptFile(buffer, "/home/lamp/Public/Ahoj jak se máš.txt");
 	}
 }
