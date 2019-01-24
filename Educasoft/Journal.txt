@@ -1,32 +1,33 @@
 Pondělí 21. ledna
 
-To-install: Eclipse for Java EE, MariaDB
-To-use: https://toggl.com
-To-explore: Trombon-core, Trombon-web-app
-To-solve: i18n in backend (Trombon-core)
-https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#spring-core (1.15.1. Internationalization using MessageSource)
-https://phraseapp.com/blog/posts/spring-boot-internationalization
-use test method/service in AdminController.java
-https://memorynotfound.com/spring-mvc-internationalization-i18n-example
-added messageSource.setCacheSeconds(10) for updating resources
-Preferences/General/Workspaces/Text file encoding (UTF-8)
+- To-install: Eclipse for Java EE, MariaDB
+- To-use: https://toggl.com
+- To-explore: Trombon-core, Trombon-web-app
+- To-solve: i18n in backend (Trombon-core)
+  + https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#spring-core (1.15.1. Internationalization using MessageSource)
+  + https://phraseapp.com/blog/posts/spring-boot-internationalization
+  + use test method/service in AdminController.java
+  + https://memorynotfound.com/spring-mvc-internationalization-i18n-example
+  + added messageSource.setCacheSeconds(10) for updating resources
+  + Preferences/General/Workspaces/Text file encoding (UTF-8)
 
 Úterý 22. ledna
 
-To-resolve: why I see red lines in tests Trombon-web-app?
-https://stackoverflow.com/questions/2555845/how-to-update-maven-repository-in-eclipse and https://stackoverflow.com/questions/4262186/missing-maven-dependencies-in-eclipse-project
-To-explore: testing in Spring
-To-explore: working with db in Trombon-core
-packages domain, domain.specification, repositories, service.domain
-play in AdminController.java
-Spring Data based on JPA https://habr.com/ru/post/139421/
+- To-resolve: why I see red lines in tests Trombon-web-app?
+  + https://stackoverflow.com/questions/2555845/how-to-update-maven-repository-in-eclipse and https://stackoverflow.com/questions/4262186/missing-maven-dependencies-in-eclipse-project
+- To-explore: testing in Spring
+- To-explore: working with db in Trombon-core
+  + packages domain, domain.specification, repositories, service.domain
+  + play in AdminController.java
+  + Spring Data based on JPA https://habr.com/ru/post/139421/
 
 Středa 23. ledna
 
-To-explore: using AdminController.java to play with data...
-To-learn: using Specification interface for getting from Repository level and using Specifications static methods where(), or(), etc... to combine queries, https://www.baeldung.com/rest-api-search-language-spring-data-specifications
-To-do: writing own Specification, using interfaces Subquery<T>, Root<T> and Join<T, K> https://stackoverflow.com/questions/12061502/spring-data-subquery-within-a-specification and https://www.baeldung.com/spring-data-criteria-queries
+- To-explore: using AdminController.java to play with data...
+- To-learn: using Specification interface for getting from Repository level and using Specifications static methods where(), or(), etc... to combine queries, https://www.baeldung.com/rest-api-search-language-spring-data-specifications
+- To-do: writing own Specification, using interfaces Subquery<T>, Root<T> and Join<T1, T2> https://stackoverflow.com/questions/12061502/spring-data-subquery-within-a-specification and https://www.baeldung.com/spring-data-criteria-queries
 
 Čtvrtek 24. ledna
 
-To-do: write specification getChildActivityFromActivityRunByParentActivity()
+- To-do: write specification getChildActivityFromActivityRunByParentActivity()
+  + how to work Join<T1, T2>
