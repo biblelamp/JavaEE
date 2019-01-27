@@ -31,3 +31,13 @@ Středa 23. ledna
 
 - To-do: write specification getChildActivityFromActivityRunByParentActivity()
   + how to work Join<T1, T2>
+  + https://docs.spring.io/spring-data/jpa/docs/1.11.18.RELEASE/reference/html (5.5. Specifications)
+
+Pátek 25. ledna
+
+- To-do: creating a training project Bookstore
+  + introduction https://habr.com/ru/post/257223/
+  + starting https://start.spring.io + Web, JPA
+  + hello aplication https://spring.io/guides/gs/spring-boot
+  + creating Bookstore-spring project (init)
+  + work with MySQL https://spring.io/guides/gs/accessing-data-mysql/
