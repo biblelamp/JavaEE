@@ -18,7 +18,7 @@ public class Book {
 	@Column(unique=true, nullable=false)
 	private Integer id;
 
-	@ManyToOne(fetch=FetchType.LAZY)
+	@ManyToOne(fetch=FetchType.EAGER) // not .LAZY
 	private Author authorOfBook;
 
     private String name;
