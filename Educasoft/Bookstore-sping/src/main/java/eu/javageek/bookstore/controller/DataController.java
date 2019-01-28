@@ -1,6 +1,9 @@
-package eu.javageek.bookstore.service;
+package eu.javageek.bookstore.controller;
+
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -8,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import eu.javageek.bookstore.domain.Author;
 import eu.javageek.bookstore.domain.Book;
+import eu.javageek.bookstore.domain.specification.BookSpecification;
 import eu.javageek.bookstore.repositories.BookRepository;
 import eu.javageek.bookstore.repositories.AuthorRepository;
 
@@ -16,9 +20,19 @@ public class DataController {
 
 	@Autowired
 	BookRepository bookRepository;
-	
+
 	@Autowired
 	AuthorRepository authorRepository;
+
+	@GetMapping(path="/by_author")
+	public @ResponseBody List<Book> getBooksByAuthor(@RequestParam Integer id) {
+
+		Specification<Book> specBook = 
+				BookSpecification.getBookByAuthor(authorRepository.findOne(id));
+		List<Book> books = bookRepository.findAll(specBook);
+
+		return books;
+	}
 
 	@GetMapping(path="/add")
 	public @ResponseBody String addNewBook(@RequestParam String name, 
