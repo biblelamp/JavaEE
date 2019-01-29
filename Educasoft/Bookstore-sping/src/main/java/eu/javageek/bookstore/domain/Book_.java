@@ -9,7 +9,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 public abstract class Book_ {
 
 	public static volatile SingularAttribute<Book, Integer> id;
-	public static volatile SingularAttribute<Book, Author> author;
+	public static volatile SingularAttribute<Book, Author> authorOfBook;
 	public static volatile SingularAttribute<Book, Genre> genre;
 	public static volatile SingularAttribute<Book, String> name;
 	

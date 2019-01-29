@@ -10,7 +10,6 @@ import org.springframework.data.jpa.domain.Specification;
 import eu.javageek.bookstore.domain.Book;
 import eu.javageek.bookstore.domain.Book_;
 import eu.javageek.bookstore.domain.Author;
-import eu.javageek.bookstore.domain.Author_;
 
 public class BookSpecification {
 
@@ -30,7 +29,7 @@ public class BookSpecification {
 			public Predicate toPredicate(final Root<Book> root, final CriteriaQuery<?> query,
 					final CriteriaBuilder cb) {
 
-				query.where(cb.equal(root.get(Book_.author), author));
+				query.where(cb.equal(root.get(Book_.authorOfBook), author));
 				query.distinct(true);
 
 				return query.getRestriction();
