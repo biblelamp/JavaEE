@@ -1,11 +1,14 @@
 package eu.javageek.bookstore.domain;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -21,10 +24,10 @@ public class Book {
 	@ManyToOne(fetch=FetchType.EAGER) // not .LAZY
 	private Author authorOfBook;
 
-    @ManyToOne
-    private Genre genre;
-
     private String name;
+
+	@ManyToMany
+    private List<Genre> genre;
 
 	public Integer getId() {
 		return id;
@@ -42,14 +45,6 @@ public class Book {
 		this.authorOfBook = authorOfBook;
 	}
 
-	public Genre getGenre() {
-		return genre;
-	}
-
-	public void setGenre(Genre genre) {
-		this.genre = genre;
-	}
-
 	public String getName() {
 		return name;
 	}
@@ -57,4 +52,13 @@ public class Book {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public List<Genre> getGenre() {
+		return genre;
+	}
+
+	public void setGenre(List<Genre> genre) {
+		this.genre = genre;
+	}
+
 }
