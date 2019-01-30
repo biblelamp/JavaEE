@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `author` (
   UNIQUE KEY `UK_or6k6jmywerxbme223c988bmg` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
--- Dumping data for table bookstore.author: ~0 rows (approximately)
+-- Dumping data for table bookstore.author: ~5 rows (approximately)
 /*!40000 ALTER TABLE `author` DISABLE KEYS */;
 INSERT INTO `author` (`id`, `name`) VALUES
 	(2, 'Andrew Tanenbaum'),
@@ -36,22 +36,23 @@ CREATE TABLE IF NOT EXISTS `book` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
   `author_of_book_id` int(11) DEFAULT NULL,
+  `year_of_publishing` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FKmgduq3hpx93l0hjnh5gflagjn` (`author_of_book_id`),
   CONSTRAINT `FKmgduq3hpx93l0hjnh5gflagjn` FOREIGN KEY (`author_of_book_id`) REFERENCES `author` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
--- Dumping data for table bookstore.book: ~0 rows (approximately)
+-- Dumping data for table bookstore.book: ~8 rows (approximately)
 /*!40000 ALTER TABLE `book` DISABLE KEYS */;
-INSERT INTO `book` (`id`, `name`, `author_of_book_id`) VALUES
-	(1, 'Thinking in Java', 1),
-	(2, 'Modern Operating System', 2),
-	(3, 'Computer Architecture', 2),
-	(4, 'Programming in Scala', NULL),
-	(5, 'Java Cookbook', 4),
-	(6, 'Pet Sematary', 5),
-	(7, 'The Shining', 5),
-	(8, 'The Green Mile', 5);
+INSERT INTO `book` (`id`, `name`, `author_of_book_id`, `year_of_publishing`) VALUES
+	(1, 'Thinking in Java', 1, 2006),
+	(2, 'Modern Operating System', 2, 2014),
+	(3, 'Structured Computer Organization', 2, 2006),
+	(4, 'Programming in Scala', NULL, 2008),
+	(5, 'Java Cookbook', 4, 2014),
+	(6, 'Pet Sematary', 5, 1983),
+	(7, 'The Shining', 5, 1977),
+	(8, 'The Green Mile', 5, 1996);
 /*!40000 ALTER TABLE `book` ENABLE KEYS */;
 
 -- Dumping structure for table bookstore.book_genre
@@ -65,7 +66,7 @@ CREATE TABLE IF NOT EXISTS `book_genre` (
   CONSTRAINT `FK8l6ops8exmjrlr89hmfow4mmo` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table bookstore.book_genre: ~0 rows (approximately)
+-- Dumping data for table bookstore.book_genre: ~9 rows (approximately)
 /*!40000 ALTER TABLE `book_genre` DISABLE KEYS */;
 INSERT INTO `book_genre` (`book_id`, `genre_id`) VALUES
 	(1, 1),
@@ -88,7 +89,7 @@ CREATE TABLE IF NOT EXISTS `genre` (
   UNIQUE KEY `UK_ctffrbu4484ft8dlsa5vmqdka` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
--- Dumping data for table bookstore.genre: ~0 rows (approximately)
+-- Dumping data for table bookstore.genre: ~4 rows (approximately)
 /*!40000 ALTER TABLE `genre` DISABLE KEYS */;
 INSERT INTO `genre` (`id`, `name`) VALUES
 	(2, 'Cookbook'),

@@ -13,5 +13,6 @@ public abstract class Book_ {
 	public static volatile SingularAttribute<Book, Author> authorOfBook;
 	public static volatile SingularAttribute<Book, String> name;
 	public static volatile ListAttribute<Book, Genre> genre;
-	
+	public static volatile SingularAttribute<Book, Integer> yearOfPublishing;
+
 }

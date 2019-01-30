@@ -29,6 +29,9 @@ public class Book {
 	@ManyToMany
     private List<Genre> genre;
 
+	@Column(name="year_of_publishing")
+	private Integer yearOfPublishing;
+
 	public Integer getId() {
 		return id;
 	}
@@ -59,6 +62,14 @@ public class Book {
 
 	public void setGenre(List<Genre> genre) {
 		this.genre = genre;
+	}
+
+	public Integer getYearOfPublishing() {
+		return yearOfPublishing;
+	}
+
+	public void setYearOfPublishing(Integer yearOfPublishing) {
+		this.yearOfPublishing = yearOfPublishing;
 	}
 
 }
