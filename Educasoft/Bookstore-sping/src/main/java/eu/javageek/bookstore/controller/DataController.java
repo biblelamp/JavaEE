@@ -13,6 +13,7 @@ import eu.javageek.bookstore.domain.Author;
 import eu.javageek.bookstore.domain.Book;
 import eu.javageek.bookstore.domain.specification.BookSpecification;
 import eu.javageek.bookstore.repositories.BookRepository;
+import eu.javageek.bookstore.repositories.GenreRepository;
 import eu.javageek.bookstore.repositories.AuthorRepository;
 
 @Controller
@@ -23,13 +24,26 @@ public class DataController {
 
 	@Autowired
 	AuthorRepository authorRepository;
+	
+	@Autowired
+	GenreRepository genreRepository;
 
 	@GetMapping(path="/by_author")
 	public @ResponseBody List<Book> getBooksByAuthor(@RequestParam Integer id) {
 
-		Specification<Book> specBook = 
+		Specification<Book> specification = 
 				BookSpecification.getBookByAuthor(authorRepository.findOne(id));
-		List<Book> books = bookRepository.findAll(specBook);
+		List<Book> books = bookRepository.findAll(specification);
+
+		return books;
+	}
+
+	@GetMapping(path="/by_genre")
+	public @ResponseBody List<Book> getBooksByGenre(@RequestParam Integer id) {
+
+		Specification<Book> specification = 
+				BookSpecification.getBookByGenre(genreRepository.findOne(id));
+		List<Book> books = bookRepository.findAll(specification);
 
 		return books;
 	}
