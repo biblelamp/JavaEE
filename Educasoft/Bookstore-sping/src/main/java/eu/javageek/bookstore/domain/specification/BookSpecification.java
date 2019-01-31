@@ -59,4 +59,25 @@ public class BookSpecification {
 			}
 		};
 	}
+
+	/**
+	 * get {@link Specification} to get all {@link Book} if author != null
+	 * @param none
+	 * @return
+	 */
+	public static Specification<Book> getBookWithAuthor() {
+		return new Specification<Book>() {
+
+			@Override
+			public Predicate toPredicate(final Root<Book> root, final CriteriaQuery<?> query,
+					final CriteriaBuilder cb) {
+
+				Join<Book, Author> bookAuthor = root.join(Book_.authorOfBook);
+				query.where(bookAuthor.in(root.get(Book_.authorOfBook)));
+				query.distinct(true);
+
+				return query.getRestriction();
+			}
+		};
+	}
 }
