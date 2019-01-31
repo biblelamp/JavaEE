@@ -1,6 +1,7 @@
 package eu.javageek.bookstore.domain;
 
 import javax.annotation.Generated;
+import javax.persistence.metamodel.ListAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
@@ -10,5 +11,6 @@ public abstract class Author_ {
 
 	public static volatile SingularAttribute<Author, Integer> id;
 	public static volatile SingularAttribute<Author, String> name;
+	public static volatile ListAttribute<Author, Book> books;
 
 }
