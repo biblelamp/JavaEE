@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import eu.javageek.bookstore.domain.Author;
 import eu.javageek.bookstore.domain.Book;
+import eu.javageek.bookstore.domain.specification.AuthorSpecification;
 import eu.javageek.bookstore.domain.specification.BookSpecification;
 import eu.javageek.bookstore.repositories.BookRepository;
 import eu.javageek.bookstore.repositories.GenreRepository;
@@ -31,8 +32,7 @@ public class DataController {
 	@GetMapping(path="/by_author")
 	public @ResponseBody List<Book> getBooksByAuthor(@RequestParam Integer id) {
 
-		Specification<Book> specification = 
-				BookSpecification.getBookByAuthor(authorRepository.findOne(id));
+		Specification<Book> specification = BookSpecification.getBookByAuthor(authorRepository.findOne(id));
 		List<Book> books = bookRepository.findAll(specification);
 
 		return books;
@@ -41,11 +41,28 @@ public class DataController {
 	@GetMapping(path="/by_genre")
 	public @ResponseBody List<Book> getBooksByGenre(@RequestParam Integer id) {
 
-		Specification<Book> specification = 
-				BookSpecification.getBookByGenre(genreRepository.findOne(id));
+		Specification<Book> specification = BookSpecification.getBookByGenre(genreRepository.findOne(id));
 		List<Book> books = bookRepository.findAll(specification);
 
 		return books;
+	}
+
+	@GetMapping(path="/booksWithAuthor")
+	public @ResponseBody List<Book> getBookWithAuthor() {
+
+		Specification<Book> specification = BookSpecification.getBookWithAuthor();
+		List<Book> books = bookRepository.findAll(specification);
+
+		return books;
+	}
+
+	@GetMapping(path="/authorsWithBook")
+	public @ResponseBody List<Author> getAuthorsWithBook() {
+
+		Specification<Author> specification = AuthorSpecification.getAuthorWithBook();
+		List<Author> authors = authorRepository.findAll(specification);
+
+		return authors;
 	}
 
 	@GetMapping(path="/add")
@@ -70,7 +87,7 @@ public class DataController {
 		return "Added";
 	}
 
-	@GetMapping(path="/delete")
+	@GetMapping(path="/deleteBook")
 	public @ResponseBody String deleteBookById(@RequestParam Integer id) {
 		if (bookRepository.exists(id)) {
 			bookRepository.delete(id);
@@ -79,13 +96,13 @@ public class DataController {
 		return "Not found";
 	}
 
-	@GetMapping(path="/deleteAll")
+	@GetMapping(path="/deleteAllBook")
 	public @ResponseBody String deleteAll() {
 		bookRepository.deleteAll();
 		return "Deleted all";
 	}
 
-	@GetMapping(path="/all")
+	@GetMapping(path="/allBooks")
 	public @ResponseBody Iterable<Book> getAllBooks() {
 		return bookRepository.findAll();
 	}
