@@ -35,8 +35,8 @@ DROP TABLE IF EXISTS `book`;
 CREATE TABLE IF NOT EXISTS `book` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
-  `author_of_book_id` int(11) DEFAULT NULL,
   `year_of_publishing` int(11) DEFAULT NULL,
+  `author_of_book_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FKmgduq3hpx93l0hjnh5gflagjn` (`author_of_book_id`),
   CONSTRAINT `FKmgduq3hpx93l0hjnh5gflagjn` FOREIGN KEY (`author_of_book_id`) REFERENCES `author` (`id`)
@@ -44,15 +44,15 @@ CREATE TABLE IF NOT EXISTS `book` (
 
 -- Dumping data for table bookstore.book: ~8 rows (approximately)
 /*!40000 ALTER TABLE `book` DISABLE KEYS */;
-INSERT INTO `book` (`id`, `name`, `author_of_book_id`, `year_of_publishing`) VALUES
-	(1, 'Thinking in Java', 1, 2006),
-	(2, 'Modern Operating System', 2, 2014),
-	(3, 'Structured Computer Organization', 2, 2006),
-	(4, 'Programming in Scala', NULL, 2008),
-	(5, 'Java Cookbook', 4, 2014),
-	(6, 'Pet Sematary', 5, 1983),
-	(7, 'The Shining', 5, 1977),
-	(8, 'The Green Mile', 5, 1996);
+INSERT INTO `book` (`id`, `name`, `year_of_publishing`, `author_of_book_id`) VALUES
+	(1, 'Thinking in Java', 2006, 1),
+	(2, 'Modern Operating System', 2014, 2),
+	(3, 'Structured Computer Organization', 2006, 2),
+	(4, 'Programming in Scala', 2008, NULL),
+	(5, 'Java Cookbook', 2014, 4),
+	(6, 'Pet Sematary', 1983, 5),
+	(7, 'The Shining', 1977, 5),
+	(8, 'The Green Mile', 1996, 5);
 /*!40000 ALTER TABLE `book` ENABLE KEYS */;
 
 -- Dumping structure for table bookstore.book_genre
@@ -97,6 +97,31 @@ INSERT INTO `genre` (`id`, `name`) VALUES
 	(1, 'Technical writing'),
 	(4, 'Thriller');
 /*!40000 ALTER TABLE `genre` ENABLE KEYS */;
+
+-- Dumping structure for table bookstore.genre_books
+DROP TABLE IF EXISTS `genre_books`;
+CREATE TABLE IF NOT EXISTS `genre_books` (
+  `genre_id` int(11) NOT NULL,
+  `books_id` int(11) NOT NULL,
+  KEY `FKkkehxbty9ixe9a43ob7kubi0h` (`books_id`),
+  KEY `FKa6krdp5t6rmy057vyo5f6lls7` (`genre_id`),
+  CONSTRAINT `FKa6krdp5t6rmy057vyo5f6lls7` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`),
+  CONSTRAINT `FKkkehxbty9ixe9a43ob7kubi0h` FOREIGN KEY (`books_id`) REFERENCES `book` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Dumping data for table bookstore.genre_books: ~9 rows (approximately)
+/*!40000 ALTER TABLE `genre_books` DISABLE KEYS */;
+INSERT INTO `genre_books` (`genre_id`, `books_id`) VALUES
+	(1, 1),
+	(1, 2),
+	(1, 3),
+	(1, 4),
+	(1, 5),
+	(2, 5),
+	(3, 6),
+	(3, 7),
+	(4, 8);
+/*!40000 ALTER TABLE `genre_books` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
