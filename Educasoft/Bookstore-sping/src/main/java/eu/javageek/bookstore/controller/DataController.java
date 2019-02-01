@@ -9,13 +9,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import eu.javageek.bookstore.domain.Author;
 import eu.javageek.bookstore.domain.Book;
-import eu.javageek.bookstore.domain.specification.AuthorSpecification;
+import eu.javageek.bookstore.domain.Author;
+import eu.javageek.bookstore.domain.Genre;
 import eu.javageek.bookstore.domain.specification.BookSpecification;
+import eu.javageek.bookstore.domain.specification.AuthorSpecification;
+import eu.javageek.bookstore.domain.specification.GenreSpecification;
 import eu.javageek.bookstore.repositories.BookRepository;
-import eu.javageek.bookstore.repositories.GenreRepository;
 import eu.javageek.bookstore.repositories.AuthorRepository;
+import eu.javageek.bookstore.repositories.GenreRepository;
 
 @Controller
 public class DataController {
@@ -29,7 +31,7 @@ public class DataController {
 	@Autowired
 	GenreRepository genreRepository;
 
-	@GetMapping(path="/by_author")
+	@GetMapping(path="/byAuthor")
 	public @ResponseBody List<Book> getBooksByAuthor(@RequestParam Integer id) {
 
 		Specification<Book> specification = BookSpecification.getBookByAuthor(authorRepository.findOne(id));
@@ -38,13 +40,22 @@ public class DataController {
 		return books;
 	}
 
-	@GetMapping(path="/by_genre")
+	@GetMapping(path="/byGenre")
 	public @ResponseBody List<Book> getBooksByGenre(@RequestParam Integer id) {
 
 		Specification<Book> specification = BookSpecification.getBookByGenre(genreRepository.findOne(id));
 		List<Book> books = bookRepository.findAll(specification);
 
 		return books;
+	}
+
+	@GetMapping(path="/genreByAuthor")
+	public @ResponseBody List<Genre> getGenreByAuthor(@RequestParam Integer id) {
+
+		Specification<Genre> specification = GenreSpecification.getGenreByAuthor(authorRepository.findOne(id));
+		List<Genre> genres = genreRepository.findAll(specification);
+
+		return genres;
 	}
 
 	@GetMapping(path="/booksWithAuthor")
