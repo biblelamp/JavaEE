@@ -58,6 +58,15 @@ public class DataController {
 		return genres;
 	}
 
+	@GetMapping(path="/genreWithDefine")
+	public @ResponseBody List<Genre> getGenreWithDefineAtLeastNBook(@RequestParam Long  n) {
+
+		Specification<Genre> specification = GenreSpecification.getGenreWithDefineAtLeastNBook(n);
+		List<Genre> genres = genreRepository.findAll(specification);
+
+		return genres;
+	}
+
 	@GetMapping(path="/booksWithAuthor")
 	public @ResponseBody List<Book> getBookWithAuthor() {
 
