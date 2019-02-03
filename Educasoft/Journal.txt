@@ -41,3 +41,40 @@ Pátek 25. ledna
   + hello aplication https://spring.io/guides/gs/spring-boot
   + creating Bookstore-spring project (init)
   + work with MySQL https://spring.io/guides/gs/accessing-data-mysql/
+  
+Pondělí 28. ledna
+
+- To-solve: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data (when call getAllBooks() from DataController class) https://stackoverflow.com/questions/24994440/no-serializer-found-for-class-org-hibernate-proxy-pojo-javassist-javassist
+  + solved: @ManyToOne(fetch=FetchType.EAGER) // not .LAZY
+- To-learn: working with Specification (create my own)
+
+Úterý 29. ledna
+
+- To-solve: working with Specification, more precisely: why it not working?
+  + solved: it was wrong name of field (author vs authorOfBook) in Book_.java
+- To-learn: writing own Specification, using interfaces Subquery<T>, Root<T> and Join<T1, T2>
+  + change type of field Genre (to ManyToMany)
+  + about Join<T1, T2> https://stackoverflow.com/questions/38168108/spring-data-join-with-specifications
+
+Středa 30. ledna
+
+- To-solve: to write Specification<Book>: get all book by genre
+  + relations between objects (OneToOne, OneToMany, ManyToMany) https://easyjava.ru/data/jpa/jpa-i-svyazi-mezhdu-obektami/
+https://easyjava.ru/spring/spring-data-project/ispolzovanie-jpa-criteria-v-spring-data-jpa/
+  + solved using Join<T1, T2>
+- To-solve: to write Specification<Book>: get all books with author
+  + solved using Join<T1, T2>
+
+Čtvrtek 31. ledna
+
+- To-solve:  to write Specification<Author>: get all authors of our books
+  + improved a bit code of Author.java
+  + https://stackoverflow.com/questions/48647847/jpa-specifications-by-example
+  + solved using Join<T1, T2>
+- To-solve: to write Specification<Genre>: to get all genres by author
+  + solved using Join<T1, T2>
+
+Pátek 1. února
+
+- To-explore:  how to work with Subquery
+  + https://thoughts-on-java.org/hibernate-tip-subquery-criteriaquery/
