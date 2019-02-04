@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `author` (
   UNIQUE KEY `UK_or6k6jmywerxbme223c988bmg` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
--- Dumping data for table bookstore.author: ~5 rows (approximately)
+-- Dumping data for table bookstore.author: ~4 rows (approximately)
 /*!40000 ALTER TABLE `author` DISABLE KEYS */;
 INSERT INTO `author` (`id`, `name`) VALUES
 	(2, 'Andrew Tanenbaum'),
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `book` (
   CONSTRAINT `FKmgduq3hpx93l0hjnh5gflagjn` FOREIGN KEY (`author_of_book_id`) REFERENCES `author` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
--- Dumping data for table bookstore.book: ~8 rows (approximately)
+-- Dumping data for table bookstore.book: ~7 rows (approximately)
 /*!40000 ALTER TABLE `book` DISABLE KEYS */;
 INSERT INTO `book` (`id`, `name`, `year_of_publishing`, `author_of_book_id`) VALUES
 	(1, 'Thinking in Java', 2006, 1),
@@ -66,7 +66,7 @@ CREATE TABLE IF NOT EXISTS `book_genre` (
   CONSTRAINT `FK8l6ops8exmjrlr89hmfow4mmo` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table bookstore.book_genre: ~9 rows (approximately)
+-- Dumping data for table bookstore.book_genre: ~8 rows (approximately)
 /*!40000 ALTER TABLE `book_genre` DISABLE KEYS */;
 INSERT INTO `book_genre` (`book_id`, `genre_id`) VALUES
 	(1, 1),
@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `genre_books` (
   CONSTRAINT `FKkkehxbty9ixe9a43ob7kubi0h` FOREIGN KEY (`books_id`) REFERENCES `book` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table bookstore.genre_books: ~9 rows (approximately)
+-- Dumping data for table bookstore.genre_books: ~8 rows (approximately)
 /*!40000 ALTER TABLE `genre_books` DISABLE KEYS */;
 INSERT INTO `genre_books` (`genre_id`, `books_id`) VALUES
 	(1, 1),
