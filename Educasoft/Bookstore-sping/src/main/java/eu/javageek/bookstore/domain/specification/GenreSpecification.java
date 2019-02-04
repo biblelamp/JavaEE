@@ -33,8 +33,14 @@ public class GenreSpecification {
 			public Predicate toPredicate(final Root<Genre> root, final CriteriaQuery<?> query,
 					final CriteriaBuilder cb) {
 
+				Subquery<Author> sub = query.subquery(Author.class);
+				Root<Book> subRoot = sub.from(Book.class);
+
+				sub.select(subRoot.get(Book_.authorOfBook));
+				sub.where(cb.equal(subRoot.get(Book_.authorOfBook), author));
+
 				Join<Genre, Book> genreBook = root.join(Genre_.books);
-				query.where(cb.equal(genreBook.get(Book_.authorOfBook), author));
+				query.where(genreBook.get(Book_.authorOfBook).in(sub.getSelection()));
 				query.distinct(true);
 
 				return query.getRestriction();
