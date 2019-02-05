@@ -53,7 +53,7 @@ public class GenreSpecification {
 	 * @param genre
 	 * @return
 	 */
-	public static Specification<Genre> getGenreWithDefineAtLeastNBook(final Long nBook) {
+	public static Specification<Genre> getGenreWhitcDefineAtLeastNBook(final Long nBook) {
 		return new Specification<Genre>() {
 
 			@Override

@@ -58,10 +58,10 @@ public class DataController {
 		return genres;
 	}
 
-	@GetMapping(path="/genreWithDefine")
-	public @ResponseBody List<Genre> getGenreWithDefineAtLeastNBook(@RequestParam Long  n) {
+	@GetMapping(path="/genreWhichDefine")
+	public @ResponseBody List<Genre> getGenreWhichDefineAtLeastNBook(@RequestParam Long  n) {
 
-		Specification<Genre> specification = GenreSpecification.getGenreWithDefineAtLeastNBook(n);
+		Specification<Genre> specification = GenreSpecification.getGenreWhitcDefineAtLeastNBook(n);
 		List<Genre> genres = genreRepository.findAll(specification);
 
 		return genres;
