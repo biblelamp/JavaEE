@@ -83,3 +83,31 @@ Pondělí 4. února
 
 - To-solve: to write Specification<Genre>: to get all genres by author
   + solved using Subquery<F>, Root<T> and Join<T1, T2>
+- To-learn: work with H2 database
+  + https://o7planning.org/en/11893/integrating-spring-boot-jpa-and-h2-database
+  + http://www.springboottutorial.com/spring-boot-and-h2-in-memory-database 
+- To-install: putty, TortoiseSVN and tune it
+
+Úterý 5. února
+
+- To-do: move all messages from Exception in DataService.java the message.properties file and replace it calling getMessage() using MessageSource interface/service
+
+Středa 6. února
+
+- To-do: to continue work with all *.java files in Service folder/package and message.properties file. Mode all messages to properties file and insert call getMessageSource()
+  + making changes in files BaseService.java, AppConfig.java
+  + creating two way calling of getMessageSource() method like standart (@Autowired) and static
+
+Čtvrtek 7. února
+
+- To-do: to finish process *.java files from Service folder
+- To-do: to write in utils package PropertiesFileUtils class for control message.properties file
+- To-do: to continue changes in whole project Trombon-core: boot, controller, core, domain, dto, jaxb, service, utils
+  + make commit
+
+Pátek 8. února
+
+- To-fix: to fix duplicates (keys and values) in message.properties file
+- To-do: to write extract method in PropertiesFileUtils class
+- To-do: to continue changes in whole project Trombon-core: boot, controller, core, domain, dto, jaxb, service, utils
+  + make commit
