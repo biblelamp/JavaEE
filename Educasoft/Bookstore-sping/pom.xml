@@ -43,6 +43,13 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
+        <!-- Use Microsoft SQL 2014 Express -->
+
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
