@@ -111,3 +111,9 @@ Pátek 8. února
 - To-do: to write extract method in PropertiesFileUtils class
 - To-do: to continue changes in whole project Trombon-core: boot, controller, core, domain, dto, jaxb, service, utils
   + make commit
+
+Pondělí 11. února
+
+- To-do: to continue changes in whole project Trombon-core: boot, controller, core, domain, dto, enums, jaxb, service (domain, mail, workflow), utils
+  + make commit
+
