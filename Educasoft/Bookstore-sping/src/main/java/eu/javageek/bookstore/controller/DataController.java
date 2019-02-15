@@ -2,6 +2,8 @@ package eu.javageek.bookstore.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Controller;
@@ -9,18 +11,20 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import eu.javageek.bookstore.domain.Book;
 import eu.javageek.bookstore.domain.Author;
+import eu.javageek.bookstore.domain.Book;
 import eu.javageek.bookstore.domain.Genre;
-import eu.javageek.bookstore.domain.specification.BookSpecification;
 import eu.javageek.bookstore.domain.specification.AuthorSpecification;
+import eu.javageek.bookstore.domain.specification.BookSpecification;
 import eu.javageek.bookstore.domain.specification.GenreSpecification;
-import eu.javageek.bookstore.repositories.BookRepository;
 import eu.javageek.bookstore.repositories.AuthorRepository;
+import eu.javageek.bookstore.repositories.BookRepository;
 import eu.javageek.bookstore.repositories.GenreRepository;
 
 @Controller
 public class DataController {
+
+	protected final Logger log = LoggerFactory.getLogger(this.getClass());
 
 	@Autowired
 	BookRepository bookRepository;
@@ -124,6 +128,9 @@ public class DataController {
 
 	@GetMapping(path="/allBooks")
 	public @ResponseBody Iterable<Book> getAllBooks() {
+
+		log.info("We have {} books", bookRepository.count());
+
 		return bookRepository.findAll();
 	}
 }

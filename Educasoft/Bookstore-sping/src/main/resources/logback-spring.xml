@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<!-- use Spring default values -->
+	<include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+	<appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+ 		<encoder>
+  			<pattern>${CONSOLE_LOG_PATTERN}</pattern> 
+  		</encoder>
+  	</appender>
+
+    <appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>C:/Users/lamp/JavaEE/Educasoft/Bookstore-sping/app.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+
+            <fileNamePattern>C:/Users/lamp/JavaEE/Educasoft/Bookstore-sping/app.%d{yyyy-MM-dd}.log</fileNamePattern>
+
+        </rollingPolicy>
+ 		<encoder>
+  			<pattern>${CONSOLE_LOG_PATTERN}</pattern>
+  		</encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="consoleAppender"/>
+        <appender-ref ref="dailyRollingFileAppender"/>
+    </root>
+
+</configuration>
