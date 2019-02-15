@@ -1,8 +1,10 @@
 package cz.educasoft.trombon.utils;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -14,6 +16,10 @@ public class ConvertLogStrings {
     static String ext = ".java";
     static String search = "log.";
     static String plus = "+";
+    static String comma = ",";
+    static String leftBracket = "(";
+    static String rightBracket = ")";
+    static String quote = "\"";
 
     public static void main(String[] args) {
         new ConvertLogStrings().search(new File(path));
@@ -21,31 +27,49 @@ public class ConvertLogStrings {
 
     private void readAndChangeFile(File file) {
         boolean isChanged = false;
-        List<String> list = readFileAsList(file);
+        List<String> lines = readFileAsList(file);
 
-        for (String str : list) {
-            if (str.indexOf(search) > -1 && str.indexOf(plus) > -1) {
+        for (int i = 0; i < lines.size(); i++) {
+            if (lines.get(i).indexOf(search) > -1 && lines.get(i).indexOf(plus) > -1) {
 
                 if (!isChanged) {
                     System.out.println("\n" + file.getName() + "\n");
                     isChanged = true;
                 }
 
-                int x1 = str.indexOf("(") + 1;
-                int x2 = str.lastIndexOf(")");
+                int x1 = lines.get(i).indexOf(leftBracket) + 1;
+                int x2 = lines.get(i).lastIndexOf(rightBracket);
 
-                if (str.indexOf(", e") > -1 && str.lastIndexOf("+") < str.indexOf(", e")) {
-                    x2 = str.lastIndexOf(", e");
+                if (lines.get(i).indexOf(comma) > -1 
+                        && lines.get(i).lastIndexOf(plus) < lines.get(i).indexOf(comma)
+                        && lines.get(i).lastIndexOf(quote) < lines.get(i).indexOf(comma)) {
+                    x2 = lines.get(i).lastIndexOf(comma);
                 }
 
-                String s1 = str.substring(x1, x2);
+                String s1 = lines.get(i).substring(x1, x2);
 
-                String s2 = str.substring(0, x1) + transformString(s1) + str.substring(x2);
+                String s2 = lines.get(i).substring(0, x1) + transformString(s1) + lines.get(i).substring(x2);
 
-                System.out.println(str.trim());
+                System.out.println(lines.get(i).trim());
                 System.out.println(s2.trim());
 
+                lines.set(i, s2);                
             }
+        }
+
+        if (isChanged) {
+            writeFile(file, lines);
+        }
+    }
+
+    private void writeFile(File file, List<String> lines) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file))) {
+            for (String str : lines) {
+                bw.write(str);
+                bw.newLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -98,7 +122,7 @@ public class ConvertLogStrings {
 
         return "\"" + sb.toString() + "\", "+ listArgs.substring(1, listArgs.length() - 1);
     }
-    
+
     private List<String> readFileAsList(File file) {
         List<String> list = new ArrayList<>();
 
