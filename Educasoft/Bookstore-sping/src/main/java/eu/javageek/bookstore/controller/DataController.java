@@ -130,6 +130,9 @@ public class DataController {
 	public @ResponseBody Iterable<Book> getAllBooks() {
 
 		log.info("We have {} books", bookRepository.count());
+		log.error("We have {} errors.", 0);
+
+		int a = 12 / 0; // error simulation
 
 		return bookRepository.findAll();
 	}
