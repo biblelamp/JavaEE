@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-	<!-- use Spring default values -->
+	<!-- use Spring default values: CONSOLE_LOG_PATTERN & FILE_LOG_PATTERN -->
 	<include resource="org/springframework/boot/logging/logback/defaults.xml"/>
 
 	<appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
@@ -11,14 +11,14 @@
   	</appender>
 
     <appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>C:/Users/lamp/JavaEE/Educasoft/Bookstore-sping/app.log</file>
+        <file>${LOG_PATH}/app.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-
-            <fileNamePattern>C:/Users/lamp/JavaEE/Educasoft/Bookstore-sping/app.%d{yyyy-MM-dd}.log</fileNamePattern>
-
+            <fileNamePattern>${LOG_PATH}/app.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <cleanHistoryOnStart>true</cleanHistoryOnStart>
+			<maxHistory>4</maxHistory> <!-- asynchronously deleting if cleanHistoryOnStart is false -->
         </rollingPolicy>
  		<encoder>
-  			<pattern>${CONSOLE_LOG_PATTERN}</pattern>
+  			<pattern>${CONSOLE_LOG_PATTERN}</pattern> <!-- or FILE_LOG_PATTERN -->
   		</encoder>
     </appender>
 
