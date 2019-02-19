@@ -10,9 +10,19 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+
+/**
+ * Java. Tool to replace text messages in log|logger.[info|error|debug] expression
+ *       like (“one = “ + one + “ two = “ + two) to (“one = {} two = {}”, one, two)
+ *
+ * @author Sergey Iryupin
+ * @version 0.2 dated Feb 19, 2019
+ */
+
 public class ConvertLogStrings {
 
-    static String path = "C:/Users/lamp/eclipse-workspace/Trombon-core/src/main/java";
+    static String path = "C:/Users/lamp/eclipse-workspace/DocumentTemplater/src/main/java";
     static String ext = ".java";
     static String search = "log.";
     static String plus = "+";
@@ -20,6 +30,10 @@ public class ConvertLogStrings {
     static String leftBracket = "(";
     static String rightBracket = ")";
     static String quote = "\"";
+    
+    static String finalLogger = "final Logger";
+
+    boolean saveChanges = true;
 
     public static void main(String[] args) {
         new ConvertLogStrings().search(new File(path));
@@ -30,7 +44,11 @@ public class ConvertLogStrings {
         List<String> lines = readFileAsList(file);
 
         for (int i = 0; i < lines.size(); i++) {
-            if (lines.get(i).indexOf(search) > -1 && lines.get(i).indexOf(plus) > -1) {
+            if (lines.get(i).trim().startsWith(finalLogger)) { // variable name of logger
+                String[] fields = lines.get(i).split(" ");
+                search = fields[2] + ".";
+            }
+            if (lines.get(i).indexOf(search) > -1 && (lines.get(i).indexOf(plus) > -1 || lines.get(i).indexOf(");") == -1)) { // exclude string without '+'
 
                 if (!isChanged) {
                     System.out.println("\n" + file.getName() + "\n");
@@ -46,6 +64,10 @@ public class ConvertLogStrings {
                     x2 = lines.get(i).lastIndexOf(comma);
                 }
 
+                if (x2 < 0) { // unclosed string
+                    x2 = x1;
+                }
+                
                 String s1 = lines.get(i).substring(x1, x2);
 
                 String s2 = lines.get(i).substring(0, x1) + transformString(s1) + lines.get(i).substring(x2);
@@ -57,7 +79,7 @@ public class ConvertLogStrings {
             }
         }
 
-        if (isChanged) {
+        if (isChanged && saveChanges) {
             writeFile(file, lines);
         }
     }
@@ -110,7 +132,7 @@ public class ConvertLogStrings {
             }
         }
 
-        if (sb.charAt(sb.length() - 1) == '{') {
+        if (sb.length() > 1 && sb.charAt(sb.length() - 1) == '{') {
             sb.append("}");
         }
 
@@ -120,7 +142,11 @@ public class ConvertLogStrings {
 
         String listArgs = args.toString();
 
-        return "\"" + sb.toString() + "\", "+ listArgs.substring(1, listArgs.length() - 1);
+        if (sb.length() > 0) {
+            return "\"" + sb.toString() + "\", "+ listArgs.substring(1, listArgs.length() - 1);
+        } else {
+            return "";
+        }
     }
 
     private List<String> readFileAsList(File file) {
