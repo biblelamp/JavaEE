@@ -117,3 +117,23 @@ Pondělí 11. února
 - To-do: to continue changes in whole project Trombon-core: boot, controller, core, domain, dto, enums, jaxb, service (domain, mail, workflow), utils
   + make commit
 
+Úterý 12. února
+
+- To-do: to continue changes in whole project Trombon-core: boot, controller, core, domain, dto, enums, jaxb, service (domain, mail, workflow), utils
+- To-solve: connect Competent (trombon-core) with MS SQL Express
+  + downloading Microsoft® SQL Server® 2014 Express
+  + downloading Microsoft® SQL Server® 2014 Service Pack 2 (SP2)
+  + downloading Microsoft JDBC Driver 6.0 for SQL Server
+  + added dependency in pom.xml:
+    <dependency>
+        <groupId>com.microsoft.sqlserver</groupId>
+        <artifactId>mssql-jdbc</artifactId>
+    </dependency>
+  + added two lines in application.properties file:
+    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.SQLServer2012Dialect
+    spring.datasource.url=jdbc:sqlserver://localhost;databaseName=competent;integratedSecurity=true
+        another authentication option is possible: instead of integratedSecurity=true writing user=ca;password=root
+  + put file sqljdbc_auth.dll (from JDBC Driver) to folder %JAVA_HOME%\bin
+  + tune IP (127.0.0.1) and port (1433) in SQL Server Configuration Manager (SQL Server Network Configuration) according https://kb.sos-berlin.com/pages/viewpage.action?pageId=17499564
+  + use HeidiSQL for creating database competent (connect using pipe \\.\pipe\MSSQL$SQLEXPRESS\sql\query)
+  
