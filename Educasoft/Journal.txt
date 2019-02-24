@@ -136,4 +136,33 @@ Pondělí 11. února
   + put file sqljdbc_auth.dll (from JDBC Driver) to folder %JAVA_HOME%\bin
   + tune IP (127.0.0.1) and port (1433) in SQL Server Configuration Manager (SQL Server Network Configuration) according https://kb.sos-berlin.com/pages/viewpage.action?pageId=17499564
   + use HeidiSQL for creating database competent (connect using pipe \\.\pipe\MSSQL$SQLEXPRESS\sql\query)
-  
+
+Středa 13. února
+
+- To-explore: continue to explore some details with MS SQL connection
+  + downloading Microsoft SQL Server Management Studio (need Microsoft .NET Framework 4.6.2) for managing users
+    = Security/Logins/<Right-Click>/New Login…
+    = Note: If the user created attempts to change his settings will be unsuccessful.
+- To-do: to continue changes in whole project Trombon-core: boot, controller, core, domain, dto, enums, jaxb, service (domain, mail, workflow), utils
+  + make commit
+
+Čtvrtek 14. února
+
+- To-do: to continue changes in whole project Trombon-core: boot, controller, core, domain, dto, enums, jaxb, service (domain, mail, workflow), utils
+checking and fixing using PropertiesFileUtils.java
+  + finished, make commit
+- To-do: to replace in Trombon-core code log.[info|error|debug] expressions like (“one = “ + one + “ two = “ + two) to (“one = {} two = {}”, one, two)
+  + Walking the File Tree https://docs.oracle.com/javase/tutorial/essential/io/walk.html
+  + https://www.mkyong.com/java/search-directories-recursively-for-file-in-java/
+
+Pátek 15. února
+
+- To-do: to replace in Trombon-core code log.[info|error|debug] expressions like (“one = “ + one + “ two = “ + two) to (“one = {} two = {}”, one, two)
+  + finished, make commit
+- To-explore: how to tune slf4j to make logs rotate daily
+  + about slf4j https://ru.wikipedia.org/wiki/Slf4J
+  + about logging systems https://habr.com/ru/post/113145/
+  + Spring Boot: Logging https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-logging.html
+  + Chapter 4: Appenders https://logback.qos.ch/manual/appenders.html
+  + Logback RollingFileAppender Example https://examples.javacodegeeks.com/enterprise-java/logback/logback-rollingfileappender-example/ 
+
