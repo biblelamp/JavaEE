@@ -19,6 +19,11 @@ objectclass: top
 objectclass: organizationalUnit
 ou: people
 
+dn: ou=users,dc=springframework,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: users
+
 dn: ou=space cadets,dc=springframework,dc=org
 objectclass: top
 objectclass: organizationalUnit
@@ -34,7 +39,7 @@ objectclass: top
 objectclass: organizationalUnit
 ou: otherpeople
 
-dn: uid=ben,ou=people,dc=springframework,dc=org
+dn: uid=ben,ou=users,dc=springframework,dc=org
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson
@@ -44,7 +49,7 @@ sn: Alex
 uid: ben
 userPassword: {SHA}nFCebWjxfaLbHHG1Qk5UU4trbvQ=
 
-dn: uid=bob,ou=people,dc=springframework,dc=org
+dn: uid=bob,ou=users,dc=springframework,dc=org
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson
@@ -103,8 +108,6 @@ cn: Space Cadet
 sn: Cadet
 uid: space cadet
 userPassword: spacecadetspassword
-
-
 
 dn: cn=developers,ou=groups,dc=springframework,dc=org
 objectclass: top
