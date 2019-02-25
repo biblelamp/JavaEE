@@ -22,13 +22,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
             .ldapAuthentication()
-                .userDnPatterns("uid={0},ou=people")
-                .groupSearchBase("ou=groups")
+                .userDnPatterns("uid={0},ou=users")
+                //.groupSearchBase("ou=groups")
                 .contextSource()
                     .url("ldap://localhost:389/dc=springframework,dc=org")
+                    //.url("ldap://34.253.140.111:389/dc=educasoft,dc=local")
                     .and()
                 .passwordCompare()
-                    .passwordEncoder(new LdapShaPasswordEncoder())
+                    //.passwordEncoder(new LdapShaPasswordEncoder())
                     .passwordAttribute("userPassword");
     }
 
