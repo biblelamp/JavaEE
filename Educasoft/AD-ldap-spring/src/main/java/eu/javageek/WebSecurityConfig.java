@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.password.LdapShaPasswordEncoder;
 
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -27,8 +28,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .url("ldap://localhost:389/dc=springframework,dc=org")
                     .and()
                 .passwordCompare()
-                	.passwordEncoder(null)
-                    //.passwordEncoder(new LdapShaPasswordEncoder())
+                    .passwordEncoder(new LdapShaPasswordEncoder())
                     .passwordAttribute("userPassword");
     }
 
