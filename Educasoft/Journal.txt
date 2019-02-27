@@ -166,3 +166,16 @@ Pátek 15. února
   + Chapter 4: Appenders https://logback.qos.ch/manual/appenders.html
   + Logback RollingFileAppender Example https://examples.javacodegeeks.com/enterprise-java/logback/logback-rollingfileappender-example/ 
 
+Pondělí 18. února
+
+- To-do: to finish task ‘Make logs rotate daily’ with possible feature deleting N th oldest file ((for example keep only 7 days of logs = 7 logs)
+  + task is done
+- To-do: to make ‘better exception stacktrace loging’
+  + Spring AOP - Annotation Based After Throwing Advice https://www.tutorialspoint.com/springaop/springaop_after_throwing1.htm
+
+Úterý 19. února
+
+- To-do: to replace exception messages in DocumentTemplater with the possibility of internationalization later
+  + make commit
+- To-do: to replace in DocumentTemplater code log|logger.[info|error|debug] expressions like (“one = “ + one + “ two = “ + two) to (“one = {} two = {}”, one, two)
+  + make commit
