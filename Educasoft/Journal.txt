@@ -179,3 +179,26 @@ Pondělí 18. února
   + make commit
 - To-do: to replace in DocumentTemplater code log|logger.[info|error|debug] expressions like (“one = “ + one + “ two = “ + two) to (“one = {} two = {}”, one, two)
   + make commit
+
+Středa 20. února
+
+- To-explore: to install Active Directory in Windows Server 2012 R2
+  + https://github.com/ladybirdweb/faveo-helpdesk/wiki/Install-Active-Directory-Domain-Services-in-Windows-Server-2012-R2 and https://www.petri.com/windows-server-2012-as-domain-controller
+- To-explore: LDAP Authentication in Spring Boot
+  + https://docs.spring.io/spring-security/site/docs/3.0.x/reference/ldap.html
+  + How to configure LDAP Auth using Spring Boot https://www.opencodez.com/java/configure-ldap-authentication-using-spring-boot.htm and https://spring.io/guides/gs/authenticating-ldap/
+
+Čtvrtek 21. února
+
+- To-explore: LDAP Authentication in Spring Boot
+  + 2 Ways to Setup LDAP AD Authentication https://www.javacodegeeks.com/2018/04/2-ways-to-setup-ldap-active-directory-authentication-in-java-spring-security-example-tutorial.html
+- To-prepare: iTrivio with MS SQL Server
+  + https://www.mssqltips.com/sqlservertutorial/2203/mysql-to-sql-server-data-type-comparisons/
+  + @Column(columnDefinition=”BOOLEAN | MEDIUMTEXT”) to replace:
+    BOOLEAN -> BIT, MEDIUMTEXT -> TEXT
+
+Pátek 22. února
+
+- To-test: iTrivio works with MS SQL Server
+  + https://stackoverflow.com/questions/6997721/applying-the-min-aggregate-function-to-a-bit-field and we changed AgregateOrder.java
+- To-explore: connect with our LDAP server, using www.ldapadmin.org
