@@ -202,3 +202,13 @@ Pátek 22. února
 - To-test: iTrivio works with MS SQL Server
   + https://stackoverflow.com/questions/6997721/applying-the-min-aggregate-function-to-a-bit-field and we changed AgregateOrder.java
 - To-explore: connect with our LDAP server, using www.ldapadmin.org
+
+Pondělí 25. února
+
+- To-explore: Spring authentication with Windows AD (LDAP)
+  + RU example http://spring-projects.ru/guides/authenticating-ldap/
+  + http://code-addict.pl/spring-security-kerberos
+  + https://stackoverflow.com/questions/53389999/spring-boot-microsoft-ad-authentication
+    = https://docs.oracle.com/javase/jndi/tutorial/ldap/security/ldap.html
+    = https://stackoverflow.com/questions/390150/authenticating-against-active-directory-with-java-on-linux
+
