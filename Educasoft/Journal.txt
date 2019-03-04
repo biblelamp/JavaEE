@@ -212,3 +212,34 @@ Pondělí 25. února
     = https://docs.oracle.com/javase/jndi/tutorial/ldap/security/ldap.html
     = https://stackoverflow.com/questions/390150/authenticating-against-active-directory-with-java-on-linux
 
+Úterý 26. února
+
+- To-explore: Kerberos authentication
+  + https://docs.bmc.com/docs/sso90/end-to-end-steps-for-configuring-active-directory-kerberos-authentication-474057067.html
+  + https://docs.bmc.com/docs/sso90/generating-a-keytab-file-for-the-service-principal-493584584.html
+  + Group Protected Users http://winitpro.ru/index.php/2014/12/11/protected-users-group-active-directory-2012r2/
+  + https://www.ibm.com/support/knowledgecenter/en/SSEQTP_9.0.0/com.ibm.websphere.base.doc/ae/tsec_kerb_create_spn.html
+
+Středa 27. února
+
+- To-explore: Kerberos authentication
+  + Windows AD+Kerberos Authentication in Java https://www.parks-informatik.de/blog_en/items/windows-authentication-in-java.html
+
+Čtvrtek 28. února
+
+- To-do: Add custom smtp server configuration for company
+
+Pátek 1. března
+
+- To-do: Add custom smtp server configuration for company
+  + https://urvanov.ru/2015/11/14/spring-javamailsenderimpl-%D0%BE%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0-%D0%BF%D0%BE%D1%87%D1%82%D1%8B-%D1%81-gmail-com-%D0%B8-mail-ru/
+- To-do: Unit tests for Trombon (Competent)
+  + https://www.baeldung.com/spring-boot-testing
+  + http://www.springboottutorial.com/spring-boot-unit-testing-and-mocking-with-mockito-and-junit
+  + Testing the Web Layer https://spring.io/guides/gs/testing-web
+  + How to tell Spring Boot to use another DB for test? https://stackoverflow.com/questions/45653753/how-to-tell-spring-boot-to-use-another-db-for-test
+
+Pondělí 4. března
+
+- To-explore: Data export / import into Competent
+  + step 1: explore controller, service and data structure
