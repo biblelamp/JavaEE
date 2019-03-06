@@ -250,5 +250,10 @@ Pondělí 4. března
   + 1st error: SUPER_ADMIN_ROLE in ObjectRole must be set internal (1) in AppLoader class line 818
   + 2nd error: with UserMt/admin/default_user
   + 3rd error: WRONG_CONFIGURATION: Error in configuration Too much config cycles! fixed ExportImportService.java line 410
-  + explore ExportImportService.java class ...
+
+Středa 6. března
+
+- To-explore: Data export / import into Competent
+  + explore class ExportImportService.java
+  + found simple way how to avoid idle cycles in ExportImportService.importFromJson(String jsondata)
 
