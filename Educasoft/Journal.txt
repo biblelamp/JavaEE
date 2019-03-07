@@ -255,5 +255,20 @@ Středa 6. března
 
 - To-explore: Data export / import into Competent
   + explore class ExportImportService.java
-  + found simple way how to avoid idle cycles in ExportImportService.importFromJson(String jsondata)
+  + found simple way how to avoid idle cycles in ExportImportService.importFromJson(String jsondata), using this code:
+    equalsList = list.size() == leftToProcess.size() && list.containsAll(leftToProcess);
+
+Čtvrtek 7. března
+
+- To-explore: Data export / import into Competent
+  + we have to init data in idMapping map before import (according situation with object_role table) or add some code (in line 137):
+    if (targetObjectType.equals(CtObjectTypeEnum.OBJECT_ROLE)) {
+        ObjectRole candidate = (ObjectRole)targetService.getService().findOne(targetId, false);
+        if (candidate.getInternal()) {
+            targetEntity = candidate;
+        } else {
+            return null;
+        }
+    }
+  + testing and make commit
 
