@@ -260,7 +260,7 @@ Středa 6. března
 
 Čtvrtek 7. března
 
-- To-explore: Data export / import into Competent
+- To-fix: Data export / import into Competent
   + we have to init data in idMapping map before import (according situation with object_role table) or add some code (in line 137):
     if (targetObjectType.equals(CtObjectTypeEnum.OBJECT_ROLE)) {
         ObjectRole candidate = (ObjectRole)targetService.getService().findOne(targetId, false);
@@ -272,3 +272,7 @@ Středa 6. března
     }
   + testing and make commit
 
+Pátek 8. března
+
+- To-explore: Data export / import into Competent
+  + added more data/record and testing export/import
