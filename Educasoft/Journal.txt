@@ -276,3 +276,8 @@ Pátek 8. března
 
 - To-explore: Data export / import into Competent
   + added more data/record and testing export/import
+
+Pondělí 11. března
+
+- To-fix: Data export / import into Competent
+  + fixed bug in  ExportImportService.java
