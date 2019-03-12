@@ -281,3 +281,14 @@ Pondělí 11. března
 
 - To-fix: Data export / import into Competent
   + fixed bug in  ExportImportService.java
+  + fixed problem with UserActivitySet Tree, added to ExportToJson()
+  + added to getValuesMap()
+
+Úterý 12. března
+
+- To-fix: Data export / import into Competent
+  + added more exclusions (+3) to exportToJson()
+  + added more afterfixing (+3) to getValuesMap()
+  + checking, testing and discussing
+  + make commit
+- To-do: to extend service export.srv using (object_id, object_type_id) parameters
