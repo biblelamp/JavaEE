@@ -281,8 +281,33 @@ Pondělí 11. března
 
 - To-fix: Data export / import into Competent
   + fixed bug in  ExportImportService.java
+    if (targetObjectType.equals(CtObjectTypeEnum.OBJECT_ROLE)) {
+       ObjectRole candidate;
+       try {
+           candidate = (ObjectRole)targetService.getService().findOne(targetId, false);
+       } catch (TrbRuntimeException ex) {
+           if (TrbExceptionCode.OBJECT_NOT_FOUND.equals(ex.getCode())) {
+               candidate = null;
+           } else {
+                throw ex;
+           }
+       }
+       if (candidate != null && candidate.getInternal()) {
+           targetEntity = candidate;
+       } else {
+           return null;
+       }
+    }
   + fixed problem with UserActivitySet Tree, added to ExportToJson()
+    if (ctObjectType.equals(CtObjectTypeEnum.USER_ACTIVITY_SET)) {
+        if (((UserActivitySet)entity).getInherited()) {
+            continue;
+        }
+    }
   + added to getValuesMap()
+    if (objectType.equals(CtObjectTypeEnum.USER_ACTIVITY_SET) && trueKey.equals(UserActivitySet_.userRoleSubtreeUid.getName())) {
+        values.put(trueKey, null);
+    }
 
 Úterý 12. března
 
@@ -291,4 +316,8 @@ Pondělí 11. března
   + added more afterfixing (+3) to getValuesMap()
   + checking, testing and discussing
   + make commit
-- To-do: to extend service export.srv using (object_id, object_type_id) parameters
+- To-do: to extend service export.srv using (objectId, objectTypeId) parameters
+
+Středa 13. března
+
+- To-do: to extend service export.srv using (objectId, objectTypeId) parameters
