@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Spring Boot + AngularJS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script th:src="@{/main.js}"></script>
+	<link th:href="@{/main.css}" rel="stylesheet" />
+</head>
+<body ng-app="EmployeeManagement" ng-controller="EmployeeController">
+	<h3>
+		CRUD: Spring Boot + Rest + AngularJS
+	</h3>
+	<form ng-submit="submitEmployee()">
+		<table border="0">
+			<tr>
+               <td>Emp Id</td>
+               <td>{{employeeForm.empId}}</td>
+            </tr>
+            <tr>
+               <td>Emp No</td>
+               <td><input type="text" ng-model="employeeForm.empNo" /></td>
+            </tr>
+            <tr>
+               <td>Emp Name</td>
+               <td><input type="text" ng-model="employeeForm.empName"  /></td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <input type="submit" value="Submit" class="blue-button" />
+               </td>
+            </tr>
+		</table>
+	</form>
+	<br/>
+	<a class="create-button" ng-click="createEmployee()">Create Employee</a>
+	<table border="1">
+		<tr>
+			<th>Emp Id</th>
+            <th>Emp No</th>
+            <th>Emp Name</th>
+            <th>Edit</th>
+            <th>Delete</th>
+         </tr>
+         <!-- $scope.employees -->
+         <tr ng-repeat="employee in employees">
+            <td> {{ employee.empId }}</td>
+            <td> {{ employee.empNo }}</td>
+            <td>{{ employee.empName }}</td>
+            <td>
+            	<a ng-click="editEmployee(employee)" class="edit-button">Edit</a>
+            </td>
+            <td>
+            	<a ng-click="deleteEmployee(employee)" class="delete-button">Delete</a>
+            </td>
+		</tr>
+	</table>
+</body>
+</html>
