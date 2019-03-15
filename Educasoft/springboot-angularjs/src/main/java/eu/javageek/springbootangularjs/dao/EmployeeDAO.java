@@ -25,7 +25,7 @@ public class EmployeeDAO {
         Employee emp1 = new Employee(1L, "E01", "Smith", "Clerk");
         Employee emp2 = new Employee(2L, "E02", "Allen", "Salesman");
         Employee emp3 = new Employee(3L, "E03", "Jones", "Manager");
-  
+
         empMap.put(emp1.getEmpId(), emp1);
         empMap.put(emp2.getEmpId(), emp2);
         empMap.put(emp3.getEmpId(), emp3);
@@ -47,17 +47,17 @@ public class EmployeeDAO {
     }
 
     public Employee addEmployee(EmployeeForm empForm) {
-        Long empId= this.getMaxEmpId()+ 1;
+        Long empId = this.getMaxEmpId() + 1;
         empForm.setEmpId(empId);
         Employee newEmp = new Employee(empForm);  
-         
+
         empMap.put(newEmp.getEmpId(), newEmp);
         return newEmp;
     }
 
     public Employee updateEmployee(EmployeeForm empForm) {
         Employee emp = this.getEmployee(empForm.getEmpId());
-        if(emp!= null)  {
+        if(emp!= null) {
             emp.setEmpNo(empForm.getEmpNo());
             emp.setEmpName(empForm.getEmpName());
             emp.setPosition(empForm.getPosition());
