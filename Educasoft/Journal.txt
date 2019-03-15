@@ -321,3 +321,16 @@ Pondělí 11. března
 Středa 13. března
 
 - To-do: to extend service export.srv using (objectId, objectTypeId) parameters
+- To-explore: Trombon-web-app (AngularJS)
+
+Čtvrtek 14. března
+
+- To-explore: Trombon-web-app (AngularJS)
+  + to create simple app Spring boot + AngularJS
+
+Pátek 15. března
+
+- To-explore: Trombon-web-app (AngularJS)
+- To-do: simple app for processing messages files (iTrivio)
+  + https://stackoverflow.com/questions/40165151/how-to-handle-multiple-files-and-messages-for-internationalization-in-spring
+
