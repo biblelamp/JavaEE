@@ -16,7 +16,7 @@ import eu.javageek.springbootangularjs.model.Employee;
 import eu.javageek.springbootangularjs.model.EmployeeForm;
 
 @RestController 
-public class MainRESTController {
+public class RESTController {
 
     @Autowired
     private EmployeeDAO employeeDAO;

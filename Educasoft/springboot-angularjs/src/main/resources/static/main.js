@@ -22,15 +22,13 @@ app.controller("EmployeeController", function($scope, $http) {
 
         if ($scope.employeeForm.empId == -1) {
             method = "POST";
-            url = '/employee';
         } else {
             method = "PUT";
-            url = '/employee';
         }
 
         $http({
             method: method,
-            url: url,
+            url: '/employee',
             data: angular.toJson($scope.employeeForm),
             headers: {
                 'Content-Type': 'application/json'
