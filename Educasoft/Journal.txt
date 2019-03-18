@@ -332,5 +332,12 @@ Pátek 15. března
 
 - To-explore: Trombon-web-app (AngularJS)
 - To-do: simple app for processing messages files (iTrivio)
+- To-do: using multiple files and messages (iTrivio)
   + https://stackoverflow.com/questions/40165151/how-to-handle-multiple-files-and-messages-for-internationalization-in-spring
 
+Pondělí 18. března
+
+- To-do: using multiple property files for locales (iTrivio)
+  + https://stackoverflow.com/questions/5618071/spring-i18n-problem-with-multiple-property-files/5618229
+  + to finish
+- To-do: localize Constants and JForum (iTrivio)
