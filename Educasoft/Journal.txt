@@ -341,3 +341,10 @@ Pondělí 18. března
   + https://stackoverflow.com/questions/5618071/spring-i18n-problem-with-multiple-property-files/5618229
   + to finish
 - To-do: localize Constants and JForum (iTrivio)
+
+Úterý 19. března
+
+- To-do: Language cleanup in iTrivio
+  + import all JForum locale files (en, cs, sk, de, ru, hu, pl)
+  + import all Messages into resources excluded keys from JForum
+
