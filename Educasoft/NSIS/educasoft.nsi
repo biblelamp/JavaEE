@@ -1,6 +1,6 @@
-!define DEST_DIR  "C:\Users\lamp\Downloads\"
-!define SQL_MSI   "mariadb-10.3.12-winx64.msi"
-!define JETTY_ZIP "jetty-distribution-9.4.15.v20190215.zip"
+!define SOURCE_DIR "C:\Users\lamp\Downloads\"
+!define MYSQL_MSI  "mariadb-10.3.12-winx64.msi"
+!define JETTY_ZIP  "jetty-distribution-9.4.15.v20190215.zip"
 
 ;--------------------------------
 ;Include Modern UI
@@ -46,19 +46,22 @@ FunctionEnd
 ;--------------------------------
 ;Installer Sections
 
-Section "${SQL_MSI}" MySQL
+Section "${MYSQL_MSI}" MySQL
 
-    ;File "${DEST_DIR}${SQL_MSI}"
-    ;ExecWait "msiexec /i ${DEST_DIR}${SQL_MSI}"
+    SetOutpath "$TEMP"
+    ;File "${SOURCE_DIR}${MYSQL_MSI}"
+    ;ExecWait "msiexec /i $TEMP\${MYSQL_MSI}"
+
+    Delete "$TEMP\${MYSQL_MSI}"
 
 SectionEnd
 
 Section "${JETTY_ZIP}" Jetty
 
     SetOutpath "$TEMP"
-    File "${DEST_DIR}${JETTY_ZIP}"
-    ZipDLL::extractall "${JETTY_ZIP}" "$INSTDIR"
+    File "${SOURCE_DIR}${JETTY_ZIP}"
+    ZipDLL::extractall "$TEMP\${JETTY_ZIP}" "$INSTDIR"
 
-    Delete "$TEMP${JETTY_ZIP}"
+    Delete "$TEMP\${JETTY_ZIP}"
 
 SectionEnd
