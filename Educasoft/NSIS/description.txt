@@ -1,0 +1,67 @@
+0. Introduction
+
+NSIS (Nullsoft Scriptable Install System https://nsis.sourceforge.io) is a professional open source system to create Windows installers. The script file * .nsi is a simple text file that is passed to the NSIS compiler to create an exe installer.
+
+1. Variables and built-in constants
+
+Using the directive !define we define text variables. There are also built-in constants, like $TEMP which points to a temporary directory. Example:
+
+    !define SOURCE_DIR "F:\iTrivio\source\"
+    !define JETTY_ZIP  "jetty-distribution-9.4.14.zip"
+
+2. Standart pages
+
+Using directive !insertmacro we can add call standard pages to the script. They have predefined names:
+
+    MUI_PAGE_WELCOME - welcome page, does not have any important functionality
+    MUI_PAGE_COMPONENTS - choice of components for installation (according to Sections)
+    MUI_PAGE_DIRECTORY - choice of value for variable $INSTDIR
+    MUI_PAGE_INSTFILES - display of the installation process
+    MUI_PAGE_FINISH - finishing page, does not have any important functionality
+
+In addition, it is worth using MUI_LANGUAGE with parameter "English". This will download the required service messages in English. It is interesting that the call to this page in the script file should go after calling the pages described above.
+
+3. Sections
+
+Using sections we describe the work with each component for installation:
+
+    Section "<Name of section>"
+        <Body of section>
+    SectionEnd
+
+String <Name of section> used to display in the list on the page MUI_PAGE_COMPONENTS. In the body of section, we can use the following command:
+
+    SetOutpath "<Folder name>" - where to save the file from the installer
+    File "<File name with full path>" - specify some file to save to the installer
+    ExecWait "<Command line>" - execution exe or msi files, for example:
+
+        ExecWait "jdk-8u201-windows-x64.exe"
+        ExecWait "msiexec /i mariadb-5.5.63-winx64.msi"
+
+    Delete "<File name with full path>" - delete the file
+
+Example 1: installer inside the installer
+
+    !define SOURCE_DIR "F:\iTrivio\source\"
+    !define JDK8_EXE   "jdk-8u201-windows-x64.exe"
+    ...
+    Section "${JDK8_EXE}" JDK8
+        SetOutPath "$TEMP"
+        File "${SOURCE_DIR}${JDK8_EXE}"
+        ExecWait "$TEMP\${JDK8_EXE}"
+        Delete "$TEMP\${JDK8_EXE}"
+    SectionEnd
+
+Example 2: zip file unpacking
+
+    !define SOURCE_DIR "F:\iTrivio\source\"
+    !define JETTY_ZIP  "jetty-distribution-9.4.14.zip"
+    ...
+    Section "${JETTY_ZIP}" Jetty
+        SetOutpath "$TEMP"
+        File "${SOURCE_DIR}${JETTY_ZIP}"
+        ZipDLL::extractall "$TEMP\${JETTY_ZIP}" "$INSTDIR"
+        Delete "$TEMP\${JETTY_ZIP}"
+    SectionEnd
+
+    ZipDLL::extractall - call unzip plugin (https://nsis.sourceforge.io/ZipDLL_plug-in)
