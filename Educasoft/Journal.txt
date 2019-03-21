@@ -357,3 +357,9 @@ Středa 20. března
   + to finish
 - To-study: how to make windows installer (using NSIS + ZipDLL plugin)
   + 1st step: create *.nsi to install MySql and unzip Jetty https://nsis.sourceforge.io
+
+Čtvrtek 21. března
+
+- To-do: Windows installer (NSIS) for iTrivio
+  + to make 1st version itrivio.nsi
+  + to write short description
