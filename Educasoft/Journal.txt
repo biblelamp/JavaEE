@@ -348,3 +348,12 @@ Pondělí 18. března
   + import all JForum locale files (en, cs, sk, de, ru, hu, pl)
   + import all Messages into resources excluded keys from JForum
 
+Středa 20. března
+
+- To-do: Language cleanup in iTrivio
+  + make export from Localise itrivio Constants - czech language
+  + write program to compare exported version according key with current itrivio version
+  + write program to check Constants.java https://docs.oracle.com/javase/tutorial/reflect/class/classMembers.html
+  + to finish
+- To-study: how to make windows installer (using NSIS + ZipDLL plugin)
+  + 1st step: create *.nsi to install MySql and unzip Jetty https://nsis.sourceforge.io
