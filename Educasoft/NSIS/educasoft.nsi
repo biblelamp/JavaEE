@@ -39,7 +39,7 @@
 
 Function .onInit
 
-    StrCpy $INSTDIR "$PROFILE"
+    StrCpy $INSTDIR $PROFILE
 
 FunctionEnd
 
