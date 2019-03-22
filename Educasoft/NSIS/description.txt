@@ -4,12 +4,32 @@ NSIS (Nullsoft Scriptable Install System https://nsis.sourceforge.io) is a profe
 
 1. Variables and built-in constants
 
-Using the directive !define we define text variables. There are also built-in constants, like $TEMP which points to a temporary directory. Example:
+Using the directive !define we define text variables. There are also built-in constants, like $TEMP which points to a temporary directory. For example:
 
     !define SOURCE_DIR "F:\iTrivio\source\"
     !define JETTY_ZIP  "jetty-distribution-9.4.14.zip"
 
-2. Standart pages
+2. Usefull commands
+
+You should start your script with these commands.
+
+    !include "MUI2.nsh" - include modern UI
+    Name "<Name of installer>" - set name of installer
+    OutFile "<Name of exe file>" - set name of exe file
+    RequestExecutionLevel [user|admin] - request application privileges
+    SetOverWrite try - allow file overwriting
+
+3. Functions
+
+It is possible to define functions or use predefined ones. For example:
+
+    Function .onInit
+        StrCpy $INSTDIR $PROFILE
+    FunctionEnd
+
+    This function is performed before everything and can be used to initialize embedded variables.
+
+4. Standart pages
 
 Using directive !insertmacro we can add call standard pages to the script. They have predefined names:
 
@@ -21,7 +41,7 @@ Using directive !insertmacro we can add call standard pages to the script. They 
 
 In addition, it is worth using MUI_LANGUAGE with parameter "English". This will download the required service messages in English. It is interesting that the call to this page in the script file should go after calling the pages described above.
 
-3. Sections
+5. Sections
 
 Using sections we describe the work with each component for installation:
 
