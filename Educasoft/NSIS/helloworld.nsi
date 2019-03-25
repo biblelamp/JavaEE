@@ -1,10 +1,20 @@
 # set the name of the installer
-Outfile "hello_world.exe"
+Outfile "helloworld.exe"
+!define TEMP_FILE "wherejava.tmp"
 
-# create a default section.
+RequestExecutionLevel user
+
+# create a default section
 Section
 
+    ExecWait 'cmd.exe /c "where java > ${TEMP_FILE}"'
+    FileOpen $4 ${TEMP_FILE} r
+    FileRead $4 $1
+    FileClose $4
+    Delete ${TEMP_FILE}
+    StrCpy $0 $1 -14 ; bin/java.exe
+
     # create a popup box, with an OK button and the text "Hello world!"
-    MessageBox MB_OK "Hello world!"
+    MessageBox MB_OK "$0"
 
 SectionEnd
