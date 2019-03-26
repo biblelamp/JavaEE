@@ -1,4 +1,4 @@
-!define SOURCE_DIR   "C:\Users\lamp\Desktop\iTrivio\"
+!define SOURCE_DIR   ".\iTrivio\"
 !define ITRIVIO_DIR  "\itrivio\"
 !define IROOT_DIR    "\webapps\ROOT"
 !define ITRIVIO_DATA "\itrivio_data"
@@ -8,14 +8,14 @@
 !define PSPAD_EXE    "pspad501inst_cz.exe"
 !define FREECOMM_MSI "FreeCommanderXE-32-public_790.msi"
 !define JETTY_DIR    "jetty-distribution-9.4.14"
-!define JBASEIN_BAT  "jettyBaseInstall.bat"
-!define JSTART_BAT   "start.bat"
-!define INSTS_BAT    "install_service.bat"
-!define UNINSTS_BAT  "uninstall_service.bat"
+!define JBASEIN_BAT  "jettyBaseInstall.bat"  ; replacements: JETTYDIR
+!define JSTART_BAT   "start.bat"             ; replacements: JETTYDIR
+!define INSTS_BAT    "install_service.bat"   ; replacements: INSTDIR, JETTYDIR, JDKDIR
+!define UNINSTS_BAT  "uninstall_service.bat" ; replacements: INSTDIR, JETTYDIR
 !define COMMONS_DIR  "commons-daemon"
 !define ITRIVIO_WAR  "ROOT_itrivio.war"
 !define ISETPROP_DIR "\WEB-INF\classes\"
-!define ISPROP_FILE  "settings.properties"
+!define ISPROP_FILE  "settings.properties"  ; replacements: INSTDIR
 
 ;--------------------------------
 ;For replacing in files
@@ -70,7 +70,7 @@ FunctionEnd
 Section "${JDK8_EXE}" JDK8
 
     SetOutPath "$TEMP"
-    File "${SOURCE_DIR}${JDK8_EXE}"
+    ;File "${SOURCE_DIR}${JDK8_EXE}"
     ExecWait "$TEMP\${JDK8_EXE}"
 
     Delete "$TEMP\${JDK8_EXE}"
@@ -80,7 +80,7 @@ SectionEnd
 Section "${MYSQL_MSI}" MySQL
 
     SetOutPath "$TEMP"
-    File "${SOURCE_DIR}${MYSQL_MSI}"
+    ;File "${SOURCE_DIR}${MYSQL_MSI}"
     ExecWait "msiexec /i $TEMP\${MYSQL_MSI}"
 
     Delete "$TEMP\${MYSQL_MSI}"
@@ -90,7 +90,7 @@ SectionEnd
 Section "${LOFFICE_MSI}" LibreOffice
 
     SetOutPath "$TEMP"
-    File "${SOURCE_DIR}${LOFFICE_MSI}"
+    ;File "${SOURCE_DIR}${LOFFICE_MSI}"
     ExecWait "msiexec /i $TEMP\${LOFFICE_MSI}"
 
     Delete "$TEMP\${LOFFICE_MSI}"
@@ -100,7 +100,7 @@ SectionEnd
 Section "${PSPAD_EXE}" PSPad
 
     SetOutPath "$TEMP"
-    File "${SOURCE_DIR}${PSPAD_EXE}"
+    ;File "${SOURCE_DIR}${PSPAD_EXE}"
     ExecWait "$TEMP\${PSPAD_EXE}"
 
     Delete "$TEMP\${PSPAD_EXE}"
@@ -110,7 +110,7 @@ SectionEnd
 Section "${FREECOMM_MSI}" FreeCommander
 
     SetOutPath "$TEMP"
-    File "${SOURCE_DIR}${FREECOMM_MSI}"
+    ;File "${SOURCE_DIR}${FREECOMM_MSI}"
     ExecWait "msiexec /i $TEMP\${FREECOMM_MSI}"
 
     Delete "$TEMP\${FREECOMM_MSI}"
@@ -122,10 +122,6 @@ Section "${JETTY_DIR}" Jetty
     SetOutPath "$TEMP"
     File "${SOURCE_DIR}${JETTY_DIR}.zip"
 
-    SetOutPath "$INSTDIR"
-    File "${SOURCE_DIR}${INSTS_BAT}"
-    File "${SOURCE_DIR}${UNINSTS_BAT}"
-
     SetOutPath "$INSTDIR\${COMMONS_DIR}"
     File "${SOURCE_DIR}${COMMONS_DIR}\*"
 
@@ -136,22 +132,43 @@ Section "${JETTY_DIR}" Jetty
     SetOutPath "$INSTDIR${ITRIVIO_DIR}"
     File "${SOURCE_DIR}${JBASEIN_BAT}"
 
-    !insertmacro ReplaceInFile "${SOURCE_DIR}${JBASEIN_BAT}" "{JETTY_DIR}" ${JETTY_DIR}
+    !insertmacro ReplaceInFile "$INSTDIR${ITRIVIO_DIR}${JBASEIN_BAT}" "{JETTYDIR}" ${JETTY_DIR}
 
     ExpandEnvStrings $0 %COMSPEC%
-    ExecWait '"$0" /C "${SOURCE_DIR}${JBASEIN_BAT}"'
+    ExecWait '"$0" /C "$INSTDIR${ITRIVIO_DIR}${JBASEIN_BAT}"'
+
+    CreateDirectory $INSTDIR${ITRIVIO_DATA}
 
     SetOutPath "$INSTDIR${ITRIVIO_DIR}"
     File "${SOURCE_DIR}${JSTART_BAT}"
 
-    !insertmacro ReplaceInFile "${SOURCE_DIR}${JSTART_BAT}" "{JETTY_DIR}" ${JETTY_DIR}
+    !insertmacro ReplaceInFile "$INSTDIR${ITRIVIO_DIR}${JSTART_BAT}" "{JETTYDIR}" ${JETTY_DIR}
+
+    # getting path to JDK
+    nsExec::ExecToStack 'cmd /c "where java"'
+    Pop $0
+    Pop $1
+    StrCpy $0 $1 -15 ; cutting "\bin\java.exe"
+
+    SetOutPath "$INSTDIR"
+    File "${SOURCE_DIR}${INSTS_BAT}"
+    File "${SOURCE_DIR}${UNINSTS_BAT}"
+
+    # replacements in install_service.bat
+    !insertmacro ReplaceInFile "$INSTDIR\${INSTS_BAT}" "{INSTDIR}" $INSTDIR
+    !insertmacro ReplaceInFile "$INSTDIR\${INSTS_BAT}" "{JETTYDIR}" ${JETTY_DIR}
+    !insertmacro ReplaceInFile "$INSTDIR\${INSTS_BAT}" "{JDKHOME}" $0
+
+    # replacements in uninstall_service.bat
+    !insertmacro ReplaceInFile "$INSTDIR\${UNINSTS_BAT}" "{INSTDIR}" $INSTDIR
+    !insertmacro ReplaceInFile "$INSTDIR\${UNINSTS_BAT}" "{JETTYDIR}" ${JETTY_DIR}
 
 SectionEnd
 
 Section "${ITRIVIO_WAR}" iTrivio.war
 
     SetOutPath "$TEMP"
-    File "${SOURCE_DIR}${ITRIVIO_WAR}"
+    ;File "${SOURCE_DIR}${ITRIVIO_WAR}"
 
     ZipDLL::extractall "$TEMP\${ITRIVIO_WAR}" "$INSTDIR\${ITRIVIO_DIR}\${IROOT_DIR}"
 
