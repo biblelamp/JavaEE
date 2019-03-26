@@ -363,3 +363,10 @@ Středa 20. března
 - To-do: Windows installer (NSIS) for iTrivio
   + to make 1st version itrivio.nsi
   + to write short description
+
+Pátek 22. března
+
+- To-finish: short description about NSIS script
+- To-study: user roles and access rights (Competent) according some example
+  + http://demo.competent.cz/slogin/
+  + https://docs.google.com/document/d/1GgtH71WQIddaQ8BR9LJPT5ucVAi2TKnElcsA_ERA1iM
