@@ -370,3 +370,32 @@ Pátek 22. března
 - To-study: user roles and access rights (Competent) according some example
   + http://demo.competent.cz/slogin/
   + https://docs.google.com/document/d/1GgtH71WQIddaQ8BR9LJPT5ucVAi2TKnElcsA_ERA1iM
+
+Pondělí 25. března
+
+- To-do: Windows installer (NSIS) for iTrivio, 2nd version
+  + using replacing strings in files
+
+Úterý 26. března
+
+- To-do: Windows installer (NSIS) for iTrivio, 3nd version
+  + getting JDK path using ‘where java’
+- To-study: user roles and access rights (Competent) according the example
+  + http://demo.competent.cz/slogin
+  + https://docs.google.com/document/d/1GgtH71WQIddaQ8BR9LJPT5ucVAi2TKnElcsA_ERA1iM
+
+Středa 27. března
+
+- To-study: user roles and access rights (Competent) according the example
+  + added Qualifications
+- To-write: cookbook for Competent
+  + https://docs.google.com/document/d/1zk2dO61f-ASHgDupvT0S6eU3Kz3hEC3HgSd0wU9AkI0
+
+Čtvrtek 28. března
+
+- To-write: cookbook for Competent
+
+Pátek 29. března
+
+- To-write: cookbook for Competent
+
