@@ -399,3 +399,19 @@ Pátek 29. března
 
 - To-write: cookbook for Competent
 
+Pondělí 1. dubna
+
+- To-write: cookbook for Competent
+  + skype discussion
+  + using https://www.screentogif.com for gif movies
+  + https://docs.google.com/document/d/1zk2dO61f-ASHgDupvT0S6eU3Kz3hEC3HgSd0wU9AkI0
+
+Úterý 2. dubna
+
+- To-do: changing subject of the letter (iTrivio)
+  + class MailService, adding files in resources/emails/subjects
+- To-do: test HTTPS of iTrivio
+  + using https://ngrok.com, reports don’t work via https
+  + try to find the cause (found: Mixed Content)
+  + https://stackoverflow.com/questions/14607218/how-to-make-xmlhttprequest-work-over-https-on-google-chrome
+
