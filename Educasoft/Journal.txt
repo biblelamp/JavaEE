@@ -415,3 +415,26 @@ Pondělí 1. dubna
   + try to find the cause (found: Mixed Content)
   + https://stackoverflow.com/questions/14607218/how-to-make-xmlhttprequest-work-over-https-on-google-chrome
 
+Středa 3. dubna
+
+- To-do: fix problem with report via HTTPS of iTrivio
+  + 1st step - insert in waitToJobFinish.jsp in function pageInit() some code in begin:
+    urlReady = urlReady.substring(5)
+    urlCheck = urlCheck.substring(5)
+  + 2nd step - fixed 2 lines in ReportController.java in method createWaitResponse()
+  + 3rd step - refactoring a bit ReportController.java and RequestUtil.java
+  + to finish
+- To-continue: cookbook for Competent
+
+Čtvrtek 4. dubna
+
+- To-continue: cookbook for Competent
+- To-do: checked code in RequestUtil.java and fixed it
+- To-do: work with translation files for emails (iTrivio)
+  + https://localise.biz/educasoft
+
+Pátek 5. dubna
+
+- To-do: work with translation files for emails (iTrivio)
+  + added all translation to localise.biz
+  + develop a procedure for exporting from json to files
