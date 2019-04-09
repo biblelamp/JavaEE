@@ -8,20 +8,22 @@
 !define PSPAD_EXE    "pspad501inst_cz.exe"
 !define FREECOMM_MSI "FreeCommanderXE-32-public_790.msi"
 !define JETTY_DIR    "jetty-distribution-9.4.14"
-!define JBASEIN_BAT  "jettyBaseInstall.bat"  ; replacements: JETTYDIR
-!define JSTART_BAT   "start.bat"             ; replacements: JETTYDIR
-!define INSTS_BAT    "install_service.bat"   ; replacements: INSTDIR, JETTYDIR, JDKDIR
-!define UNINSTS_BAT  "uninstall_service.bat" ; replacements: INSTDIR, JETTYDIR
+!define JBASEIN_BAT  "jettyBaseInstall.bat"  ; replace: JETTYDIR
+!define JSTART_BAT   "start.bat"             ; replace: JETTYDIR
+!define INSTS_BAT    "install_service.bat"   ; replace: INSTDIR, JETTYDIR, JDKHOME
+!define UNINSTS_BAT  "uninstall_service.bat" ; replace: INSTDIR, JETTYDIR
 !define COMMONS_DIR  "commons-daemon"
 !define ITRIVIO_WAR  "ROOT_itrivio.war"
 !define ISETPROP_DIR "\WEB-INF\classes\"
-!define ISPROP_FILE  "settings.properties"  ; replacements: INSTDIR
+!define ISPROP_FILE  "settings.properties"   ; replace: INSTDIR
+!define DBPROP_FILE  "database.properties"   ; replace: DHOST, DPORT, DNAME, DUSER, UPSWD
 
 ;--------------------------------
-;For replacing in files
+;Include header files
 
-  !include StrRep.nsh
-  !include ReplaceInFile.nsh
+  !include StrRep.nsh           ; replacing in string
+  !include ReplaceInFile.nsh    ; replacing in file(s)
+  !include nsDialogs.nsh        ; creating dialogs
 
 ;--------------------------------
 ;Include Modern UI
@@ -47,6 +49,7 @@
   !insertmacro MUI_PAGE_WELCOME
   !insertmacro MUI_PAGE_COMPONENTS
   !insertmacro MUI_PAGE_DIRECTORY
+  Page Custom nsDialogsPage nsDialogExitPage
   !insertmacro MUI_PAGE_INSTFILES
   !insertmacro MUI_PAGE_FINISH
 
@@ -56,11 +59,74 @@
   !insertmacro MUI_LANGUAGE "English"
 
 ;--------------------------------
+;Variables for nsDialogs
+
+Var DHOST   ; host of database
+Var DPORT   ; port
+Var DNAME   ; name of database
+Var DUSER   ; user name
+Var DPSWD   ; password
+
+;--------------------------------
 ;Functions
 
-Function .onInit
+Function .onInit    ; predefined function
 
     StrCpy $INSTDIR $PROFILE
+    StrCpy $DHOST "jdbc:mysql://127.0.0.1"
+    StrCpy $DPORT "3306"
+    StrCpy $DNAME "itrivio"
+    StrCpy $DUSER "root"
+    StrCpy $DPSWD "root"
+
+FunctionEnd
+
+Function nsDialogsPage
+
+    nsDialogs::Create 1018
+    Pop $0
+
+    ${NSD_CreateLabel} 0 0 100% 12u "Host of database"
+    Pop $0
+
+    ${NSD_CreateText} 0 12u 100% 12u $DHOST
+    Pop $1
+
+    ${NSD_CreateLabel} 0 24u 100% 12u "Port of database"
+    Pop $0
+
+    ${NSD_CreateText} 0 36u 100% 12u $DPORT
+    Pop $2
+
+    ${NSD_CreateLabel} 0 48u 100% 12u "Name of database"
+    Pop $0
+
+    ${NSD_CreateText} 0 60u 100% 12u $DNAME
+    Pop $3
+
+    ${NSD_CreateLabel} 0 72u 100% 12u "Database username"
+    Pop $0
+
+    ${NSD_CreateText} 0 84u 100% 12u $DUSER
+    Pop $4
+
+    ${NSD_CreateLabel} 0 96u 100% 12u "Database password"
+    Pop $0
+
+    ${NSD_CreateText} 0 108u 100% 12u $DPSWD
+    Pop $5
+
+    nsDialogs::Show
+
+FunctionEnd
+
+Function nsDialogExitPage
+
+    ${NSD_GetText} $1 $DHOST
+    ${NSD_GetText} $2 $DPORT
+    ${NSD_GetText} $3 $DNAME
+    ${NSD_GetText} $4 $DUSER
+    ${NSD_GetText} $5 $DPSWD
 
 FunctionEnd
 
@@ -174,7 +240,15 @@ Section "${ITRIVIO_WAR}" iTrivio.war
 
     Delete "$TEMP\${ITRIVIO_WAR}"
 
+    # replace in settings.properties
     !insertmacro StrRep $1 $INSTDIR "\" "/"
     !insertmacro ReplaceInFile "$INSTDIR${ITRIVIO_DIR}${IROOT_DIR}${ISETPROP_DIR}${ISPROP_FILE}" "{INSTDIR}" $1
+
+    # replace in database.properties
+    !insertmacro ReplaceInFile "$INSTDIR${ITRIVIO_DIR}${IROOT_DIR}${ISETPROP_DIR}${DBPROP_FILE}" "{DHOST}" $DHOST
+    !insertmacro ReplaceInFile "$INSTDIR${ITRIVIO_DIR}${IROOT_DIR}${ISETPROP_DIR}${DBPROP_FILE}" "{DPORT}" $DPORT
+    !insertmacro ReplaceInFile "$INSTDIR${ITRIVIO_DIR}${IROOT_DIR}${ISETPROP_DIR}${DBPROP_FILE}" "{DNAME}" $DNAME
+    !insertmacro ReplaceInFile "$INSTDIR${ITRIVIO_DIR}${IROOT_DIR}${ISETPROP_DIR}${DBPROP_FILE}" "{DUSER}" $DUSER
+    !insertmacro ReplaceInFile "$INSTDIR${ITRIVIO_DIR}${IROOT_DIR}${ISETPROP_DIR}${DBPROP_FILE}" "{DPSWD}" $DPSWD
 
 SectionEnd
