@@ -438,3 +438,13 @@ Pátek 5. dubna
 - To-do: work with translation files for emails (iTrivio)
   + added all translation to localise.biz
   + develop a procedure for exporting from json to files
+
+Pondělí 8. dubna
+
+- To-do: Windows installer (NSIS) for iTrivio, 4th version
+  + https://stackoverflow.com/questions/7497910/simple-input-dialog-in-nsis
+
+Úterý 9. dubna
+
+- To-do: Windows installer (NSIS) for iTrivio, 4th version
+  + to finish
