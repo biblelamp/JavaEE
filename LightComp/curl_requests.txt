@@ -1,8 +1,32 @@
-rem eZpriptupneni
+/* eZpriptupneni */
+
+.createOrder:
 
 curl -v -X POST -H "Content-Type: application/json" -d @order.json http://localhost:8092/api/orders
 
-curl -v -X PUT -H "Content-Type: application/json" -d @user.json http://localhost:8092/api/users
+{
+  "orderType": "AIP",
+  "originator": "Ministerstvo vnitra",
+  "acceptanceCode": "101",
+  "fundId": 1,
+  "content": "Nemocnice",
+  "researchSheetId": 1
+}
+
+.putResearchSheet:
+
+curl -v -X PUT -H "Content-Type: application/json" -d @research_sheet.json http://localhost:8092/api/researchsheets
+
+{
+  "validTo": "2019-10-10",
+  "archiveName": "Národní archiv",
+  "scope": "",
+  "legalPerson": "User",
+  "rstype": "PRIVATE",
+  "userName": "sergey"
+}
 
 curl -v -X PATCH -H "Content-Type: application/json" -d @rsstate.json http://localhost:8092/api/researchsheets/1/state
+
+curl -v -X PUT -H "Content-Type: application/json" -d @user.json http://localhost:8092/api/users
 
