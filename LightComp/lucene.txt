@@ -1,0 +1,2 @@
+Working with Apache Lucene and creating the simplest fuzzy search (RU)
+https://habr.com/ru/post/277509/
