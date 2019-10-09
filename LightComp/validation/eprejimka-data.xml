@@ -6,7 +6,10 @@
         <jmeno>Korporace 1</jmeno>
     </puvodce>
     <cjPuvodce>1</cjPuvodce>
-    <predavajici/>
+    <predavajici>
+        <cislo>sergey</cislo>
+        <jmeno>Sergey Iryupin</jmeno>
+    </predavajici>
     <prejimajiciArchiv>
         <identifikator>Národní archiv</identifikator>
     </prejimajiciArchiv>
