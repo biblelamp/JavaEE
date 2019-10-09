@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.nacr.cz/nda/eprejimka-data/2019" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://www.nacr.cz/nda/eprejimka-data/2019" elementFormDefault="qualified">
+	<xs:element name="prejimka" type="s1:PrejimkaInfo"/>
+	<xs:simpleType name="CisloJednaci">
+		<xs:annotation>
+			<xs:documentation>Číslo jednací</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="CisloOsoby">
+		<xs:annotation>
+			<xs:documentation>Obvykle číslo původce z evidence původců Archivního portálu.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="HodnotaIdentifikatoru">
+		<xs:annotation>
+			<xs:documentation>Hodnota identifikátoru</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="IdentifikatorArchivu">
+		<xs:annotation>
+			<xs:documentation>Identifikátor archivu z číselníku archivů.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="JmenoOsoby">
+		<xs:annotation>
+			<xs:documentation>Jméno osoby (právnické, fyzické).</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="TypIdentifikatoru">
+		<xs:annotation>
+			<xs:documentation>Typ identifikátoru, například INTERPI</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="UzivatelId">
+		<xs:annotation>
+			<xs:documentation>Jméno uživatele</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="VyberId">
+		<xs:annotation>
+			<xs:documentation>Identfifikátor v eSkartace</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:complexType name="Archiv">
+		<xs:annotation>
+			<xs:documentation>Informace a identifikace archivu</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="identifikator" type="s1:IdentifikatorArchivu" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Identifikator">
+		<xs:annotation>
+			<xs:documentation>Identifikator entity, osoby. Kazdy identifikator musi mit urcen typ a hodnotu.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="typ" type="s1:TypIdentifikatoru" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="hodnota" type="s1:HodnotaIdentifikatoru" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Osoba">
+		<xs:annotation>
+			<xs:documentation>Informace popisujici osobu. Kazda osoba ma definovano cislo, jmeno a pripadne dalsi doplnujici identifikatory</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="cislo" type="s1:CisloOsoby" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="jmeno" type="s1:JmenoOsoby" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="identifikator" type="s1:Identifikator" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PrejimkaInfo">
+		<xs:annotation>
+			<xs:documentation>Data pro ePřejímka</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="vyberId" type="s1:VyberId" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="puvodce" type="s1:Osoba" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="cjPuvodce" type="s1:CisloJednaci" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="predavajici" type="s1:Osoba" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="prejimajiciArchiv" type="s1:Archiv" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="cjArchivu" type="s1:CisloJednaci" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="opravneni" type="s1:SeznamOpravneni" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SeznamOpravneni">
+		<xs:sequence>
+			<xs:element name="uzivatel" type="s1:UzivatelId" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<prejimka xmlns="http://www.nacr.cz/nda/eprejimka-data/2019">
+    <vyberId>1</vyberId>
+    <puvodce>
+        <cislo>100001</cislo>
+        <jmeno>Korporace 1</jmeno>
+    </puvodce>
+    <cjPuvodce>1</cjPuvodce>
+    <predavajici/>
+    <prejimajiciArchiv>
+        <identifikator>Národní archiv</identifikator>
+    </prejimajiciArchiv>
+    <cjArchivu>123</cjArchivu>
+    <opravneni>
+        <uzivatel>sergey</uzivatel>
+    </opravneni>
+</prejimka>

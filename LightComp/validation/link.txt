@@ -1,0 +1,2 @@
+Using Notepad++ to validate XML against an XSD
+https://stackoverflow.com/questions/15436183/using-notepad-to-validate-xml-against-an-xsd/30167471
