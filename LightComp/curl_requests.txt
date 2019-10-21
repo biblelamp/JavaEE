@@ -33,3 +33,7 @@ curl -v -X PUT -H "Content-Type: application/json" -d @user.json http://localhos
 /* eSkartace */
 
 curl -v -X PUT -d action=generateValidationReport http://localhost:8091/api/discards/2
+
+/* ePrejimka */
+
+curl -v -X PUT -d action=generateValidationReport http://localhost:8203/api/ingests/2
