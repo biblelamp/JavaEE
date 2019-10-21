@@ -30,3 +30,6 @@ curl -v -X PATCH -H "Content-Type: application/json" -d @rsstate.json http://loc
 
 curl -v -X PUT -H "Content-Type: application/json" -d @user.json http://localhost:8092/api/users
 
+/* eSkartace */
+
+curl -v -X PUT -d action=generateValidationReport http://localhost:8091/api/discards/2
