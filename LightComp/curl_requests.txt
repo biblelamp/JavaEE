@@ -28,7 +28,13 @@ curl -v -X PUT -H "Content-Type: application/json" -d @research_sheet.json http:
 
 curl -v -X PATCH -H "Content-Type: application/json" -d @rsstate.json http://localhost:8092/api/researchsheets/1/state
 
+.addUser
+
 curl -v -X PUT -H "Content-Type: application/json" -d @user.json http://localhost:8092/api/users
+
+.userVerified
+
+curl -v -X PUT http://localhost:8092/api/user/1/verified
 
 /* eSkartace */
 
