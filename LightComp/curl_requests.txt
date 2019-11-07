@@ -1,4 +1,6 @@
-/* eZpriptupneni */
+/*
+ * eZpriptupneni
+ */
 
 .createOrder:
 
@@ -36,12 +38,18 @@ curl -v -X PUT -H "Content-Type: application/json" -d @user.json http://localhos
 
 curl -v -X PUT http://localhost:8092/api/user/1/verified
 
-/* eSkartace */
+/*
+ * eSkartace
+ */
 
 curl -v -X PUT -d action=generateValidationReport http://localhost:8091/api/discards/2
 
 curl -v -X DELETE http://localhost:8091/api/discards/4
 
-/* ePrejimka */
+curl -v -X POST -H "Content-Type: application/json" -d @newLevel.json http://localhost:8091/api/discards/3/levels
+
+/* 
+ * ePrejimka
+ */
 
 curl -v -X PUT -d action=generateValidationReport http://localhost:8203/api/ingests/2
