@@ -53,3 +53,5 @@ curl -v -X POST -H "Content-Type: application/json" -d @newLevel.json http://loc
  */
 
 curl -v -X PUT -d action=generateValidationReport http://localhost:8203/api/ingests/2
+
+curl -v -X PUT -d action=uplRequest http://localhost:8203/api/ingests/2
