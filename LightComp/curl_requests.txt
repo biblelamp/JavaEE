@@ -42,6 +42,10 @@ curl -v -X PUT http://localhost:8092/api/user/1/verified
 
 curl -v -X PUT -H "Content-Type: application/json" -d @newCart.json http://localhost:8092/api/orders/1/cart
 
+.createOrder
+
+curl -v -X POST -H "Content-Type: application/json" -d @newOrder.json http://localhost:8092/api/orders/1/cart
+
 .deleteCart
 
 curl -v -X DELETE -H "Content-Type: application/json" -d @deleteCart.json http://localhost:8092/api/orders/1/cart
