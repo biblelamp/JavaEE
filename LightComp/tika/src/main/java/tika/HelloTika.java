@@ -1,13 +1,16 @@
 package tika;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 public class HelloTika {
 
-    public static void main(String[] args) {
-        HelloTika hello = new HelloTika();
-        System.out.println(hello.sayHello());
-    }
+    final static String path = "C:\\Users\\lamp\\JavaEE\\LightComp\\tika";
 
-    String sayHello() {
-        return "Hello, World!";
+    public static void main(String[] args) throws IOException {
+        Files.walk(Paths.get(path))
+                .filter(Files::isRegularFile)
+                .forEach(System.out::println);
     }
 }
