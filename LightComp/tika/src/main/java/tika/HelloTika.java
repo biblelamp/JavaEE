@@ -2,15 +2,22 @@ package tika;
 
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class HelloTika {
 
-    final static String path = "C:\\Users\\lamp\\JavaEE\\LightComp\\tika";
+    final static String PATH = "C:\\Users\\lamp\\JavaEE\\LightComp\\tika";
 
     public static void main(String[] args) throws IOException {
-        Files.walk(Paths.get(path))
+        List<Path> files = Files.walk(Paths.get(PATH))
                 .filter(Files::isRegularFile)
-                .forEach(System.out::println);
+                .collect(Collectors.toList());
+
+        for (Path path : files) {
+            System.out.println(path);
+        }
     }
 }
