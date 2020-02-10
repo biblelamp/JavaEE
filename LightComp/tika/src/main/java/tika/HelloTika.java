@@ -17,7 +17,8 @@ import org.apache.tika.sax.BodyContentHandler;
 
 public class HelloTika {
 
-    private final static String PATH = "C:\\temp\\upl-ws\\testdata\\MSK_Sada_01"; // "C:\\temp\\upl-ws\\testdata\\MSK_Sada_01_bad_files"; //"C:\\Users\\lamp\\JavaEE\\LightComp\\tika";
+    //private final static String PATH = "C:\\temp\\upl-ws\\testdata\\MSK_Sada_01"; // 
+    private final static String PATH = "C:\\temp\\upl-ws\\testdata\\MSK_Sada_01_bad_files"; //"C:\\Users\\lamp\\JavaEE\\LightComp\\tika";
 
     public static void main(String[] args) throws IOException {
         List<Path> files = Files.walk(Paths.get(PATH))
@@ -28,7 +29,7 @@ public class HelloTika {
 
         for (Path p : files) {
             String mimeType = tika.detect(p);
-            //System.out.print(mimeType + "\t" + p + "\r");
+            //System.out.print(mimeType + "\t" + p);
 
             try (TikaInputStream inputStream = TikaInputStream.get(p)) {
                 BodyContentHandler handler = new BodyContentHandler(-1);
