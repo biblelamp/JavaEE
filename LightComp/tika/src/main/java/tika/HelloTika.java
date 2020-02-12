@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.tika.Tika;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,7 +22,7 @@ public class HelloTika {
 
     private final static Logger log = LoggerFactory.getLogger(HelloTika.class);
 
-    private final static String PATH = "C:\\temp\\upl-ws\\testdata\\MSK_Sada_01";
+    private final static String PATH = "C:\\temp\\upl-ws\\testdata\\MSK_Sada_01\\DOC_67";
     //private final static String PATH = "C:\\temp\\upl-ws\\testdata\\MSK_Sada_01_bad_files";
 
     public static void main(String[] args) throws IOException {
@@ -40,16 +41,26 @@ public class HelloTika {
             log.info("{}\t{}", mimeType, p);
 
             Map<Tag, String> metadata = exifTool.getImageMeta(p.toFile());
-            modifyDateString(metadata.get(new UnspecifiedTag("CreationDate")));
-            modifyDateString(metadata.get(new UnspecifiedTag("ModifyDate")));
-            //System.out.println(modifyDateString(metadata.get(new UnspecifiedTag("CreationDate"))));
-            //System.out.println(modifyDateString(metadata.get(new UnspecifiedTag("ModifyDate"))));
-            //System.out.println(metadata.get(new UnspecifiedTag("UserComment")));
-            //System.out.println(metadata.get(new UnspecifiedTag("Keywords")));
+            String createDate = modifyDateString(metadata.get(new UnspecifiedTag("CreateDate")));
+            String modifyDate = modifyDateString(metadata.get(new UnspecifiedTag("ModifyDate")));
+            String comments = metadata.get(new UnspecifiedTag("Comments"));
+            String keywords = metadata.get(new UnspecifiedTag("Keywords"));
+            if (StringUtils.isEmpty(comments)) {
+                comments = null;
+            }
+            if (StringUtils.isEmpty(keywords)) {
+                keywords = null;
+            }
+
+            System.out.println(createDate);
+            System.out.println(modifyDate);
+            System.out.println(comments);
+            System.out.println(keywords);
 
             //for (Entry<Tag, String> entry : metadata.entrySet()) {
             //    System.out.println(entry.getKey().getName() + ": " + entry.getValue());
             //}
+
             /*
             try (TikaInputStream inputStream = TikaInputStream.get(p)) {
                 BodyContentHandler handler = new BodyContentHandler(-1);
@@ -58,7 +69,7 @@ public class HelloTika {
                 Parser parser = new AutoDetectParser();
                 parser.parse(inputStream, handler, metadataFile, context);
             } catch (Exception e) {
-                System.out.println(mimeType + "\t" + p);
+                log.error("Error reading metadata from {} {}", mimeType, p);
                 e.printStackTrace();
             }*/
 
