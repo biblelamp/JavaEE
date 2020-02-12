@@ -6,10 +6,11 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
 import org.apache.tika.Tika;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.thebuzzmedia.exiftool.ExifTool;
 import com.thebuzzmedia.exiftool.ExifToolBuilder;
@@ -18,13 +19,17 @@ import com.thebuzzmedia.exiftool.core.UnspecifiedTag;
 
 public class HelloTika {
 
-    private final static String PATH = "C:\\temp\\upl-ws\\testdata\\MSK_Sada_01\\_2"; // 
-    //private final static String PATH = "C:\\temp\\upl-ws\\testdata\\MSK_Sada_01_bad_files"; //"C:\\Users\\lamp\\JavaEE\\LightComp\\tika";
+    private final static Logger log = LoggerFactory.getLogger(HelloTika.class);
+
+    private final static String PATH = "C:\\temp\\upl-ws\\testdata\\MSK_Sada_01";
+    //private final static String PATH = "C:\\temp\\upl-ws\\testdata\\MSK_Sada_01_bad_files";
 
     public static void main(String[] args) throws IOException {
         List<Path> files = Files.walk(Paths.get(PATH))
                 .filter(Files::isRegularFile)
                 .collect(Collectors.toList());
+
+        log.info("Start reading");
 
         Tika tika = new Tika();
 
@@ -32,17 +37,19 @@ public class HelloTika {
 
         for (Path p : files) {
             String mimeType = tika.detect(p);
-            System.out.println(mimeType + "\t" + p);
+            log.info("{}\t{}", mimeType, p);
 
             Map<Tag, String> metadata = exifTool.getImageMeta(p.toFile());
-            System.out.println(modifyDateString(metadata.get(new UnspecifiedTag("CreationDate"))));
-            System.out.println(modifyDateString(metadata.get(new UnspecifiedTag("ModifyDate"))));
-            System.out.println(metadata.get(new UnspecifiedTag("UserComment")));
-            System.out.println(metadata.get(new UnspecifiedTag("Keywords")));
+            modifyDateString(metadata.get(new UnspecifiedTag("CreationDate")));
+            modifyDateString(metadata.get(new UnspecifiedTag("ModifyDate")));
+            //System.out.println(modifyDateString(metadata.get(new UnspecifiedTag("CreationDate"))));
+            //System.out.println(modifyDateString(metadata.get(new UnspecifiedTag("ModifyDate"))));
+            //System.out.println(metadata.get(new UnspecifiedTag("UserComment")));
+            //System.out.println(metadata.get(new UnspecifiedTag("Keywords")));
 
-            for (Entry<Tag, String> entry : metadata.entrySet()) {
-                System.out.println(entry.getKey().getName() + ": " + entry.getValue());
-            }
+            //for (Entry<Tag, String> entry : metadata.entrySet()) {
+            //    System.out.println(entry.getKey().getName() + ": " + entry.getValue());
+            //}
             /*
             try (TikaInputStream inputStream = TikaInputStream.get(p)) {
                 BodyContentHandler handler = new BodyContentHandler(-1);
@@ -56,20 +63,26 @@ public class HelloTika {
             }*/
 
         }
+        log.info("Finish reading");
     }
 
     /**
      * Converting date from exif to standard form like 2020-02-11T09:24:08Z
      * 
      * @param date like '2020:02:11 09:24:08+01:00'
-     * @return String
+     * @return String like '2020-02-11T09:24:08Z' or null
      */
     static String modifyDateString(String date) {
         if (date == null) {
             return null;
         } else {
-            return date.substring(0, 4) + '-' + date.substring(5, 7) + '-' + date.substring(8, 10) +
-                'T' + date.substring(11, 19) + 'Z';
+            try {
+                return date.substring(0, 4) + '-' + date.substring(5, 7) + '-' + date.substring(8, 10) +
+                        'T' + date.substring(11, 19) + 'Z';
+            } catch (Exception e) {
+                log.error("Error in date string {}", date);
+                return null;
+            }
         }
     }
 
