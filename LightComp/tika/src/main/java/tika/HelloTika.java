@@ -4,11 +4,13 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -28,7 +30,9 @@ public class HelloTika {
     private final static String PATH = "C:\\temp\\upl-ws\\testdata\\MSK_Sada_01";
     //private final static String PATH = "C:\\temp\\upl-ws\\testdata\\MSK_Sada_01_bad_files";
 
-    private final static String[] DATE_PARSE_PATTERNS = new String[] { "yyyy:mm:dd", "yyyy-mm-dd", "mm/dd/yy" };
+    private final static String[] DATE_PARSE_PATTERNS = new String[] { "yyyy:mm:dd", "yyyy-mm-dd", "mm/dd/yy",
+            "EEE, MMM dd, yyyy", "EEE, dd MMM, yyyy", "EEE MMM dd HH:mm:ss yyyy", "d-MMM-YYYY", "HH:mm MM/dd/yyyy",
+            "yyyy MMM dd", "HH:mm a EEE, MMM dd, yyyy", "(HH:mm a EEE, MMM dd, yyyy)" };
 
     private static int total = 0;
     private static int error = 0;
@@ -73,7 +77,7 @@ public class HelloTika {
             }
             if (createDate != null) {
                 try {
-                    String modifyCreateDate = modifyDateString(createDate, DATE_PARSE_PATTERNS);
+                    String modifyCreateDate = normalizeFormatDate(createDate, DATE_PARSE_PATTERNS);
                     if (modifyCreateDate != null) {
                         Instant.parse(modifyCreateDate);
                     }
@@ -90,7 +94,7 @@ public class HelloTika {
             }
             if (modifyDate != null) {
                 try {
-                    String modifyModifyDate = modifyDateString(modifyDate, DATE_PARSE_PATTERNS);
+                    String modifyModifyDate = normalizeFormatDate(modifyDate, DATE_PARSE_PATTERNS);
                     if (modifyModifyDate != null) {
                         Instant.parse(modifyModifyDate);
                     }
@@ -122,20 +126,22 @@ public class HelloTika {
     }
 
     /**
-     * Converting date from exif to standard form like 2020-02-11T09:24:08Z
+     * Normalize format date from exif to standard view like '2020-02-11T09:24:08Z'
      * 
      * @param date in string
      * @param parsePatterns list of patters for parsing date
      * @return String
      */
-    static String modifyDateString(String date, String[] parsePatterns) {
+    static String normalizeFormatDate(String date, String[] parsePatterns) {
         if (date == null) {
             return null;
         } else {
+            Date dt;
+            DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
             for (final String pattern : parsePatterns) {
                 try {
-                    Date dt = new SimpleDateFormat(pattern).parse(date);
-                    return String.format("%tY-%tm-%tdT00:00:00Z", dt, dt, dt);
+                    dt = new SimpleDateFormat(pattern, Locale.ENGLISH).parse(date);
+                    return df.format(dt);
                 } catch (ParseException ignore) {
                     // the pattern didn't fit this date
                 }
