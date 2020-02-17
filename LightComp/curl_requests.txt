@@ -64,6 +64,7 @@ curl -v -X POST -H "Content-Type: application/json" -d @newLevel.json http://loc
 
 curl -v -X PATCH -H "Content-Type: application/json" -d @moveLevel.json http://localhost:8091/api/discards/9/levels/13/placement
 
+curl -v -X PATCH -H "Content-Type: application/json" -d @moveLevels.json http://localhost:8091/api/discards/1/levels/9/move
 
 /* 
  * ePrejimka
