@@ -30,10 +30,28 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency> -->
 
+	    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+	    <dependency>
+	      <groupId>org.slf4j</groupId>
+	      <artifactId>slf4j-api</artifactId>
+	      <version>1.7.30</version>
+	    </dependency>
+	   <dependency>
+	       <groupId>org.slf4j</groupId>
+	       <artifactId>slf4j-log4j12</artifactId>
+	      <version>1.7.30</version>
+	    </dependency>
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
+		<dependency>
+		    <groupId>org.liquibase</groupId>
+		    <artifactId>liquibase-core</artifactId>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.wix/wix-embedded-mysql -->
@@ -44,22 +62,22 @@
             <scope>test</scope>
         </dependency>
 
-		<!-- https://howtodoinjava.com/spring-boot2/testing/junit5-with-spring-boot2/ -->
-		<dependency>
-		    <groupId>org.junit.jupiter</groupId>
-		    <artifactId>junit-jupiter-api</artifactId>
-		    <scope>test</scope>
-		</dependency>
-		<dependency>
-		    <groupId>org.junit.jupiter</groupId>
-		    <artifactId>junit-jupiter-engine</artifactId>
-		    <scope>test</scope>
-		</dependency>
+        <!-- https://howtodoinjava.com/spring-boot2/testing/junit5-with-spring-boot2/ -->
+        <dependency>
+        <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
 
         <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
             <!-- exclude junit 4 -->
             <exclusions>
                 <exclusion>
