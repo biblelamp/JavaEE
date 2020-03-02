@@ -65,7 +65,7 @@ public class EmbeddedDatabaseTest {
                 .getInstance()
                 .findCorrectDatabaseImplementation(new JdbcConnection(dataSource.getConnection()));
 
-        Liquibase liquibase = new Liquibase("db/db.changelog-1.0.xml",
+        Liquibase liquibase = new Liquibase("db/db.changelog-master.xml",
                 new ClassLoaderResourceAccessor(),
                 database);
 
