@@ -3,20 +3,21 @@ package com.example.embeddedmysql;
 import static com.wix.mysql.distribution.Version.v5_7_19;
 import static org.junit.Assert.assertEquals;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
+import java.math.BigInteger;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.time.ZoneId;
 import java.util.TimeZone;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.sql.DataSource;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 
 import com.wix.mysql.EmbeddedMysql;
@@ -30,13 +31,13 @@ import liquibase.database.jvm.JdbcConnection;
 import liquibase.exception.LiquibaseException;
 import liquibase.resource.ClassLoaderResourceAccessor;
 
+// @ActiveProfiles("test")
 public class EmbeddedDatabaseTest {
 
-    private final static Logger log = LoggerFactory.getLogger(EmbeddedDatabaseTest.class);
+    @PersistenceContext
+    private EntityManager entityManager;
 
     private static EmbeddedMysql embeddedMysql;
-
-    private static Connection connection;
 
     @BeforeAll
     public static void init() throws SQLException, LiquibaseException {
@@ -59,8 +60,6 @@ public class EmbeddedDatabaseTest {
 
         DataSource dataSource = dataSourceBuilder.build();
 
-        connection = dataSource.getConnection();
-
         Database database = DatabaseFactory
                 .getInstance()
                 .findCorrectDatabaseImplementation(new JdbcConnection(dataSource.getConnection()));
@@ -82,9 +81,10 @@ public class EmbeddedDatabaseTest {
 
     @Test
     public void testSelect() throws SQLException {
-        Statement stmt = connection.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT 1");
-        assertEquals(true, true);
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("embedded-mysql");
+        EntityManager em = emf.createEntityManager();
+        Query query = em.createNativeQuery("SELECT 1");
+        assertEquals(BigInteger.valueOf(1L), query.getSingleResult());
     }
 
 }
