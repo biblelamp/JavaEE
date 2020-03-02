@@ -7,7 +7,7 @@
 	<persistence-unit name="embedded-mysql" transaction-type="RESOURCE_LOCAL">
 	    <description>Embedded MySQL</description>
 	    <provider>org.hibernate.ejb.HibernatePersistence</provider>
-	    <!-- <class>com.example.embeddedmysql.domain.ExampleEntity</class> --> 
+	    <class>com.example.embeddedmysql.domain.Book</class> 
 	    <exclude-unlisted-classes>true</exclude-unlisted-classes>
 	    <properties>
 	        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />

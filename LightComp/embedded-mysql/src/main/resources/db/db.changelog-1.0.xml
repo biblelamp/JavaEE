@@ -2,42 +2,18 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
 
-  <changeSet id="1" author="jtodt">
+  <changeSet id="1" author="javageek@email.cz">
 
-    <createTable tableName="rizeni">
-      <column name="rizeni_id" type="bigint" autoIncrement="true">
+    <createTable tableName="book">
+      <column name="book_id" type="int" autoIncrement="true">
         <constraints primaryKey="true" />
       </column>
-      <column name="typ" type="varchar(32)">
+      <column name="book_title" type="varchar(128)">
         <constraints nullable="false" />
       </column>
-      <column name="stav" type="varchar(32)">
+      <column name="book_author" type="varchar(64)">
         <constraints nullable="false" />
       </column>
-      <column name="cesta" type="varchar(128)">
-        <constraints nullable="false" />
-      </column>
-      <column name="cas_zalozeni" type="datetime">
-        <constraints nullable="false"/>
-      </column>
-      <column name="archiv_kod" type="varchar(50)">
-        <constraints nullable="false" />
-      </column>
-      <column name="archiv_nazev" type="varchar(255)">
-        <constraints nullable="false" />
-      </column>
-      <column name="cislo_jednaci_archivu" type="varchar(50)"/>
-      <column name="cislo_jednaci_puvodce" type="varchar(50)"/>
-      <column name="puvodce_id" type="varchar(50)">
-        <constraints nullable="false" />
-      </column>
-      <column name="puvodce_nazev" type="varchar(255)">
-        <constraints nullable="false" />
-      </column>
-      <column name="archivar_id" type="varchar(32)" />
-      <column name="archivar_jmeno" type="varchar(128)" />
-      <column name="smazat" type="boolean" />
-      <column name="skartacni_lhuta" type="date"/>
     </createTable>
 
   </changeSet>

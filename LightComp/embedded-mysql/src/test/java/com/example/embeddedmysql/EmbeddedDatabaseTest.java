@@ -6,12 +6,12 @@ import static org.junit.Assert.assertEquals;
 import java.math.BigInteger;
 import java.sql.SQLException;
 import java.time.ZoneId;
+import java.util.List;
 import java.util.TimeZone;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.sql.DataSource;
 
@@ -20,6 +20,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 
+import com.example.embeddedmysql.domain.Book;
 import com.wix.mysql.EmbeddedMysql;
 import com.wix.mysql.config.MysqldConfig;
 
@@ -34,10 +35,12 @@ import liquibase.resource.ClassLoaderResourceAccessor;
 // @ActiveProfiles("test")
 public class EmbeddedDatabaseTest {
 
-    @PersistenceContext
-    private EntityManager entityManager;
+    //@PersistenceContext
+    //private EntityManager entityManager;
 
     private static EmbeddedMysql embeddedMysql;
+
+    private static EntityManager em;
 
     @BeforeAll
     public static void init() throws SQLException, LiquibaseException {
@@ -70,6 +73,10 @@ public class EmbeddedDatabaseTest {
 
         liquibase.update(new Contexts());
 
+        // connect database
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("embedded-mysql");
+        em = emf.createEntityManager();
+
     }
 
     @AfterAll
@@ -80,11 +87,21 @@ public class EmbeddedDatabaseTest {
     }
 
     @Test
-    public void testSelect() throws SQLException {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("embedded-mysql");
-        EntityManager em = emf.createEntityManager();
+    public void testSelect() {
         Query query = em.createNativeQuery("SELECT 1");
         assertEquals(BigInteger.valueOf(1L), query.getSingleResult());
+    }
+
+    @Test
+    public void testAddBook() {
+        Book book = new Book();
+        book.setBookTitle("Spring 4 professionals");
+        book.setBookAuthor("Chris Schaefer, Clarence Ho, Rob Harrop");
+        em.persist(book);
+
+        Query query = em.createNativeQuery("SELECT * FROM book");
+        List<Book> books = query.getResultList();
+        assertEquals(1, books.size());
     }
 
 }
