@@ -11,7 +11,8 @@
 	    <exclude-unlisted-classes>true</exclude-unlisted-classes>
 	    <properties>
 	        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
-	        <property name="hibernate.hbm2ddl.auto" value="update" />
+	        <property name="hibernate.hbm2ddl.auto" value="create" />
+	        <property name="hibernate.connection.autocommit" value="true"/>
 	        <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
 	        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3307/test_database" />
 	        <property name="javax.persistence.jdbc.user" value="test" />

@@ -46,4 +46,9 @@ public class Book {
         this.bookAuthor = bookAuthor;
     }
 
+    public Book(String bookTitle, String bookAuthor) {
+        this.bookTitle = bookTitle;
+        this.bookAuthor = bookAuthor;
+    }
+
 }

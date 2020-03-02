@@ -94,10 +94,10 @@ public class EmbeddedDatabaseTest {
 
     @Test
     public void testAddBook() {
-        Book book = new Book();
-        book.setBookTitle("Spring 4 professionals");
-        book.setBookAuthor("Chris Schaefer, Clarence Ho, Rob Harrop");
+        Book book = new Book("Spring 4 professionals", "Chris Schaefer, Clarence Ho, Rob Harrop");
+        em.getTransaction().begin();
         em.persist(book);
+        em.getTransaction().commit();
 
         Query query = em.createNativeQuery("SELECT * FROM book");
         List<Book> books = query.getResultList();
