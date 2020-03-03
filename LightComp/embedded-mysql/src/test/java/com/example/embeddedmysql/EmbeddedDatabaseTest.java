@@ -1,6 +1,5 @@
 package com.example.embeddedmysql;
 
-import static com.wix.mysql.distribution.Version.v5_7_19;
 import static org.junit.Assert.assertEquals;
 
 import java.math.BigInteger;
@@ -22,7 +21,9 @@ import org.springframework.boot.jdbc.DataSourceBuilder;
 
 import com.example.embeddedmysql.domain.Book;
 import com.wix.mysql.EmbeddedMysql;
+import com.wix.mysql.config.Charset;
 import com.wix.mysql.config.MysqldConfig;
+import com.wix.mysql.distribution.Version;
 
 import liquibase.Contexts;
 import liquibase.Liquibase;
@@ -44,7 +45,8 @@ public class EmbeddedDatabaseTest {
 
     @BeforeAll
     public static void init() throws SQLException, LiquibaseException {
-        MysqldConfig config = MysqldConfig.aMysqldConfig(v5_7_19)
+        MysqldConfig config = MysqldConfig.aMysqldConfig(Version.v8_0_17) // v5_7_19 // v8_0_17
+                .withCharset(Charset.UTF8)
                 .withPort(3307)
                 .withTimeZone(TimeZone.getTimeZone(ZoneId.of("UTC")))
                 .withUser("test", "test")
