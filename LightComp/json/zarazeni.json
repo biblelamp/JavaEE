@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "pecujiciArchiv": "pA",
+  "pecujiciArchivId": "pAId",
+  "archivniFondCislo": "123456789",
+  "cisloVnejsiZmeny": "123",
+  "puvodce": {
+    "id": 1,
+    "name": "Karel",
+    "number": "karel",
+    "identifiers": null
+  }
+}
