@@ -1,0 +1,3 @@
+// install & build UI
+mvn -Pnpm exec:exec@npm-install
+mvn -Pnpm exec:exec@npm-build
