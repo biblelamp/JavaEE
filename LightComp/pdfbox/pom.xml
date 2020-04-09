@@ -11,13 +11,21 @@
   <properties>
     <main-class>pdfbox.HelloPDFBox</main-class>
     <java.version>1.8</java.version>
+    <pdfbox.version>2.0.19</pdfbox.version>
   </properties>
 
   <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox</artifactId>
-      <version>2.0.19</version>
+      <version>${pdfbox.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.pdfbox/xmpbox -->
+    <dependency>
+      <groupId>org.apache.pdfbox</groupId>
+      <artifactId>xmpbox</artifactId>
+      <version>${pdfbox.version}</version>
     </dependency>
   </dependencies>
 
