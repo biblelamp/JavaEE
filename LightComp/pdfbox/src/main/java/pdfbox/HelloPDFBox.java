@@ -21,7 +21,8 @@ public class HelloPDFBox {
 
     private static final String PDF_FILE =
             "C:\\temp\\eskartace\\data\\uo\\zz\\1585738589717\\reports\\"+
-                    "CZNDA10000010ESK1_seznam_k_provedeni_vyberu_1585765478765";
+                    //"CZNDA10000010ESK1_seznam_k_provedeni_vyberu_1585765478765";
+                    "CZNDA10000010ESK1_seznam_k_provedeni_vyberu_1586862297017";
 
     private static String getXMLMetadata(PDDocument document) throws IOException {
         PDDocumentCatalog catalog = document.getDocumentCatalog();
@@ -35,6 +36,12 @@ public class HelloPDFBox {
             sb.append(str);
         }
         return sb.toString();
+    }
+
+    private static String changePartNumber(String xml) {
+        xml = xml.replace("part>1<", "part>3<");
+        xml = xml.replaceAll(">\\s+<", "><");
+        return xml;
     }
 
     private static String[] getStrippedText(PDDocument document) throws IOException {
@@ -53,10 +60,11 @@ public class HelloPDFBox {
 
             PDDocumentInformation pddInfo = document.getDocumentInformation();
             for (String str : pddInfo.getMetadataKeys()) {
-                System.out.println(str + ": " + pddInfo.getCustomMetadataValue(str));
+                //System.out.println(str + ": " + pddInfo.getCustomMetadataValue(str));
             }
 
-            System.out.println(getXMLMetadata(document));
+            String xmlMetadata = getXMLMetadata(document);
+            System.out.println(changePartNumber(xmlMetadata));
 
             PDDocumentCatalog catalog = document.getDocumentCatalog();
             PDMetadata metadata = catalog.getMetadata();
@@ -87,14 +95,15 @@ public class HelloPDFBox {
                 ByteArrayOutputStream baos = new ByteArrayOutputStream();
                 serializer.serialize(xmp, baos, true);
 
-                metadata.importXMPMetadata(baos.toByteArray());
+                //metadata.importXMPMetadata(baos.toByteArray());
+                metadata.importXMPMetadata(changePartNumber(xmlMetadata).getBytes());
                 catalog.setMetadata(metadata);
 
             } catch (BadFieldValueException | TransformerException e) {
                 e.printStackTrace();
             }
 
-            document.save(new File(PDF_FILE + "_.pdf"));
+            document.save(new File(PDF_FILE + "_new.pdf"));
 
             if (!document.isEncrypted()) {
                 for (String line : getStrippedText(document)) {
