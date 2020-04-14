@@ -17,12 +17,20 @@ import org.apache.xmpbox.xml.XmpSerializer;
 import javax.xml.transform.TransformerException;
 import java.io.*;
 
+/**
+ * Error in pdf validation
+ *
+ * http://apache-fop.1065347.n5.nabble.com/PDFA-3-validation-fails-because-of-CID-font-set-td44900.html
+ * https://stackoverflow.com/questions/39791591/how-to-load-jasperreports-font-extensions-into-spring-based-application
+ * https://stackoverflow.com/questions/36625929/jasper-reports-font-extension-not-working
+ */
+
 public class HelloPDFBox {
 
     private static final String PDF_FILE =
             "C:\\temp\\eskartace\\data\\uo\\zz\\1585738589717\\reports\\"+
                     //"CZNDA10000010ESK1_seznam_k_provedeni_vyberu_1585765478765";
-                    "CZNDA10000010ESK1_seznam_k_provedeni_vyberu_1586862297017";
+                    "CZNDA10000010ESK1_seznam_k_provedeni_vyberu_1586878637718";
 
     private static String getXMLMetadata(PDDocument document) throws IOException {
         PDDocumentCatalog catalog = document.getDocumentCatalog();
