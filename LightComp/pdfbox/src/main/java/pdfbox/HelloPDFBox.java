@@ -18,6 +18,25 @@ import javax.xml.transform.TransformerException;
 import java.io.*;
 
 /**
+ * [file] jasperreports_extension.properties:
+ * net.sf.jasperreports.extension.registry.factory.simple.font.families=net.sf.jasperreports.engine.fonts.SimpleFontExtensionsRegistryFactory
+ * net.sf.jasperreports.extension.simple.font.families.dejavu=fonts/fonts.xml
+ *
+ * [file] fonts/fonts.xml
+ * <?xml version="1.0" encoding="UTF-8"?>
+ * <fontFamilies>
+ *     <fontFamily name="DejaVu Sans">
+ *         <normal><![CDATA[fonts/DejaVuSans.ttf]]></normal>
+ *         <bold><![CDATA[fonts/DejaVuSans-Bold.ttf]]></bold>
+ *         <pdfEncoding>Identity-H</pdfEncoding>
+ *         <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+ *     </fontFamily>
+ * </fontFamilies>
+ *
+ * Embedding full font set in pdf usibg jasperreport 6.11
+ *
+ * https://community.jaspersoft.com/questions/1112706/embedding-full-font-set-pdf
+ *
  * Error in pdf validation
  *
  * http://apache-fop.1065347.n5.nabble.com/PDFA-3-validation-fails-because-of-CID-font-set-td44900.html
