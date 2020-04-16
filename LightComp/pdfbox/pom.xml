@@ -1,7 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-        http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>pdfbox</groupId>
@@ -12,9 +11,82 @@
     <main-class>pdfbox.HelloPDFBox</main-class>
     <java.version>1.8</java.version>
     <pdfbox.version>2.0.19</pdfbox.version>
+    <jasperreports.version>6.11.0</jasperreports.version>
   </properties>
 
   <dependencies>
+    <!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports -->
+    <dependency>
+      <groupId>net.sf.jasperreports</groupId>
+      <artifactId>jasperreports</artifactId>
+      <version>${jasperreports.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-core</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-annotations</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.lucene</groupId>
+          <artifactId>lucene-core</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>lucene-analyzers-common</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.lucene</groupId>
+          <artifactId>lucene-queryparser</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.jfree</groupId>
+          <artifactId>jcommon</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.jfree</groupId>
+          <artifactId>jfreechart</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.eclipse.jdt.core.compiler</groupId>
+          <artifactId>ecj</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.codehaus.castor</groupId>
+          <artifactId>castor-xml</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.olap4j</groupId>
+          <artifactId>olap4j</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.google.zxing</groupId>
+          <artifactId>core</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.ibm.icu</groupId>
+          <artifactId>icu4j</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports-fonts -->
+    <dependency>
+      <groupId>net.sf.jasperreports</groupId>
+      <artifactId>jasperreports-fonts</artifactId>
+      <version>${jasperreports.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.adobe.xmp/xmpcore -->
+    <dependency>
+      <groupId>com.adobe.xmp</groupId>
+      <artifactId>xmpcore</artifactId>
+      <version>5.1.3</version>
+    </dependency>
     <!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
     <dependency>
       <groupId>org.apache.pdfbox</groupId>

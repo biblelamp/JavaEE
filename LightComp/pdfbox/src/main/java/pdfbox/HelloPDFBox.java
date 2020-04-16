@@ -1,9 +1,9 @@
 package pdfbox;
 
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDDocumentCatalog;
-import org.apache.pdfbox.pdmodel.PDDocumentInformation;
+import org.apache.pdfbox.pdmodel.*;
 import org.apache.pdfbox.pdmodel.common.PDMetadata;
+import org.apache.pdfbox.pdmodel.font.PDFont;
+import org.apache.pdfbox.pdmodel.font.PDTrueTypeFont;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.pdfbox.text.PDFTextStripperByArea;
 import org.apache.xmpbox.XMPMetadata;
@@ -18,6 +18,10 @@ import javax.xml.transform.TransformerException;
 import java.io.*;
 
 /**
+ * Embedding fonts in a pdf file using pdfBox
+ * https://pdfbox.apache.org/1.8/cookbook/workingwithfonts.html
+ * https://stackoverflow.com/questions/53818960/how-to-embed-an-standard-font-into-generated-pdf-with-pdfbox
+ *
  * [file] jasperreports_extension.properties:
  * net.sf.jasperreports.extension.registry.factory.simple.font.families=net.sf.jasperreports.engine.fonts.SimpleFontExtensionsRegistryFactory
  * net.sf.jasperreports.extension.simple.font.families.dejavu=fonts/fonts.xml
@@ -50,6 +54,8 @@ public class HelloPDFBox {
             "C:\\temp\\eskartace\\data\\uo\\zz\\1585738589717\\reports\\"+
                     //"CZNDA10000010ESK1_seznam_k_provedeni_vyberu_1585765478765";
                     "CZNDA10000010ESK1_seznam_k_provedeni_vyberu_1586878637718";
+
+    private static final String DEJAVU_FONT = "C:\\Windows\\Fonts\\DejaVuSans.ttf";
 
     private static String getXMLMetadata(PDDocument document) throws IOException {
         PDDocumentCatalog catalog = document.getDocumentCatalog();
@@ -95,6 +101,14 @@ public class HelloPDFBox {
 
             PDDocumentCatalog catalog = document.getDocumentCatalog();
             PDMetadata metadata = catalog.getMetadata();
+
+            // font embedding
+            //PDPage page = new PDPage();
+            //document.addPage(page);
+            //PDFont font = PDTrueTypeFont.loadTTF(document, new File(DEJAVU_FONT));
+            //PDPageContentStream contentStream = new PDPageContentStream(document, page);
+            //contentStream.setFont(font, 10);
+            //contentStream.close();*/
 
             try {
                 // change XMP metadata
