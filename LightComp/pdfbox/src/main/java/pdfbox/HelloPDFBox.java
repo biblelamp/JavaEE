@@ -73,6 +73,7 @@ public class HelloPDFBox {
 
     private static String changePartNumber(String xml) {
         xml = xml.replace("part>1<", "part>3<");
+        xml = xml.replace("conformance>A<", "conformance>B<");
         xml = xml.replaceAll(">\\s+<", "><");
         return xml;
     }
@@ -124,7 +125,7 @@ public class HelloPDFBox {
 
                 PDFAIdentificationSchema id = xmp.createAndAddPFAIdentificationSchema();
                 id.setPart(3);  // value => 2|3
-                id.setConformance("A"); // value => A|B|U
+                id.setConformance("B"); // value => A|B|U
 
                 XMPBasicSchema basicSchema = xmp.createAndAddXMPBasicSchema();
                 basicSchema.setCreateDate(pddInfo.getCreationDate());
@@ -136,8 +137,8 @@ public class HelloPDFBox {
                 ByteArrayOutputStream baos = new ByteArrayOutputStream();
                 serializer.serialize(xmp, baos, true);
 
-                //metadata.importXMPMetadata(baos.toByteArray());
-                metadata.importXMPMetadata(changePartNumber(xmlMetadata).getBytes());
+                metadata.importXMPMetadata(baos.toByteArray());
+                //metadata.importXMPMetadata(changePartNumber(xmlMetadata).getBytes());
                 catalog.setMetadata(metadata);
 
             } catch (BadFieldValueException | TransformerException e) {
