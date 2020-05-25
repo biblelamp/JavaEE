@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="expenseReport" type="ExpenseT" />
+<xs:complexType name="ExpenseT">
+    <xs:sequence>
+        <xs:element name="user" type="UserT"/>
+        <xs:element name="items" type="ItemListT"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="UserT">
+    <xs:sequence>
+        <xs:element name="userName" type="xs:string" />
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="ItemListT">
+     <xs:sequence>
+         <xs:element name="item" type="ItemT" maxOccurs="unbounded"/>
+     </xs:sequence>
+</xs:complexType>
+<xs:complexType name="ItemT">
+     <xs:sequence>
+         <xs:element name="itemName" type="xs:string" />
+         <xs:element name="purchasedOn" type="xs:string" />
+         <xs:element name="amount" type="xs:decimal" />
+     </xs:sequence>
+</xs:complexType>
+</xs:schema>
