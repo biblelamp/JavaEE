@@ -33,7 +33,7 @@ public class XMLfromXSD {
         expense.setUser(user);
         expense.setItems(itemList);
 
-        JAXBContext context = JAXBContext.newInstance("generated");
+        JAXBContext context = JAXBContext.newInstance(ObjectFactory.class);
         JAXBElement<ExpenseT> element = factory.createExpenseReport(expense);
         Marshaller marshaller = context.createMarshaller();
         marshaller.setProperty("jaxb.formatted.output", Boolean.TRUE);
