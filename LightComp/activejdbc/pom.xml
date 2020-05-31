@@ -22,6 +22,25 @@
                 </configuration>
             </plugin>
 
+            <!-- mvn liquibase:update -->
+            <plugin>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+                <version>3.4.2</version>
+                <configuration>
+                    <propertyFile>src/main/resources/liquibase.properties</propertyFile>
+                    <changeLogFile>src/main/resources/db/changelog/db.changelog-1.0.xml</changeLogFile>
+                </configuration>
+                <executions>
+                  <execution>
+                    <phase>process-resources</phase>
+                    <goals>
+                      <goal>update</goal>
+                    </goals>
+                  </execution>
+                </executions>
+            </plugin>
+
             <plugin>
                 <groupId>org.javalite</groupId>
                 <artifactId>activejdbc-instrumentation</artifactId>
@@ -41,10 +60,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+            <version>3.7.0</version>
         </dependency>
 
         <dependency>
