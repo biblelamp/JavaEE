@@ -14,6 +14,9 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
+import javax.xml.validation.Schema;
+import javax.xml.validation.Validator;
+import javax.xml.validation.ValidatorHandler;
 
 public class XMLfromXSD {
     public static void main(String[] args) throws JAXBException {
@@ -33,10 +36,25 @@ public class XMLfromXSD {
         expense.setUser(user);
         expense.setItems(itemList);
 
+        // schema?
+        Schema schema = new Schema() {
+            @Override
+            public Validator newValidator() {
+                return null;
+            }
+
+            @Override
+            public ValidatorHandler newValidatorHandler() {
+                return null;
+            }
+        };
+
         JAXBContext context = JAXBContext.newInstance(ObjectFactory.class);
         JAXBElement<ExpenseT> element = factory.createExpenseReport(expense);
         Marshaller marshaller = context.createMarshaller();
-        marshaller.setProperty("jaxb.formatted.output", Boolean.TRUE);
+        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+        marshaller.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
+        //marshaller.setSchema();
         marshaller.marshal(element, System.out);
     }
 }
