@@ -7,6 +7,7 @@ import generated.UserT;
 import generated.ObjectFactory;
 import generated.ItemListT;
 import generated.ExpenseT;
+import org.xml.sax.SAXException;
 
 import java.math.BigDecimal;
 
@@ -14,12 +15,14 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
+import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 import javax.xml.validation.ValidatorHandler;
 
 public class XMLfromXSD {
-    public static void main(String[] args) throws JAXBException {
+    public static void main(String[] args) throws JAXBException, SAXException {
         ObjectFactory factory = new ObjectFactory();
 
         UserT user = factory.createUserT();
@@ -36,25 +39,17 @@ public class XMLfromXSD {
         expense.setUser(user);
         expense.setItems(itemList);
 
-        // schema?
-        Schema schema = new Schema() {
-            @Override
-            public Validator newValidator() {
-                return null;
-            }
-
-            @Override
-            public ValidatorHandler newValidatorHandler() {
-                return null;
-            }
-        };
+        // validate using Schema and xsd file
+        SchemaFactory schemaFactory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
+        Schema schema = schemaFactory
+                .newSchema(new StreamSource(XMLfromXSD.class.getResourceAsStream("expence.xsd")));
 
         JAXBContext context = JAXBContext.newInstance(ObjectFactory.class);
         JAXBElement<ExpenseT> element = factory.createExpenseReport(expense);
         Marshaller marshaller = context.createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         marshaller.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
-        //marshaller.setSchema();
+        marshaller.setSchema(schema);
         marshaller.marshal(element, System.out);
     }
 }
