@@ -7,8 +7,13 @@ import javax.annotation.PostConstruct;
 @Component
 public class HelloComponent {
 
+    public HelloComponent() {
+        System.out.println("Constructor: Hello, world!");
+    }
+
     @PostConstruct
     public void init() {
-        System.out.println("Hello, world!");
+        System.out.println("PostConstruct: Hello, world!");
     }
+
 }
