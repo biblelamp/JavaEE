@@ -1,23 +1,24 @@
 package io.springboot.hello;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.SmartLifecycle;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 @Service
 public class HelloService implements SmartLifecycle {
 
-    @Scheduled(fixedRate = 5000)
+    static final Logger log = LoggerFactory.getLogger(HelloService.class);
+
+    @Scheduled(fixedRate = 5000) // 5000 ms = 5 s
     public void sheduled() {
-        System.out.printf("%tc Sheduled: Hello, world!\n", new Date());
+        log.info("Sheduled: Hello, world!");
     }
 
     @Override
     public void start() {
-        System.out.println("SmartLifecycle: Hello, world!");
+        log.info("SmartLifecycle: Hello, world!");
     }
 
     @Override
