@@ -1,0 +1,63 @@
+openapi: 3.0.2
+
+info:
+  version: 1.0.0
+  title: Springboot Rest Service Example
+
+tags:
+  - name: User
+    description: User tag for demo purposes
+
+paths:
+  /user/{id}:
+    get:
+      tags:
+        - User
+      summary: Retrieves User by ID
+      operationId: getUserById
+      parameters:
+        - name: id
+          in: path
+          description: retrieves user by user id
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        200:
+          description: Retrieves family members by person id
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: '#/components/schemas/User'
+
+components:
+  schemas:
+    User:
+      type: object
+      required:
+        - id"
+        - firstName
+        - lastName
+        - dateOfBirth
+        - gender
+      properties:
+        id:
+          type: integer
+          format: int64
+        firstName:
+          type: string
+          example: John
+        lastName:
+          type: string
+          example: Smith
+        dateOfBirth:
+          type: string
+          example: 1992-10-05
+        gender:
+          type: string
+          enum:
+            - MALE
+            - FEMALE
+            - UNKNOWN
