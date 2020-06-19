@@ -6,8 +6,10 @@ import org.springframework.context.SmartLifecycle;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import java.util.concurrent.TimeUnit;
+
 @Service
-public class HelloService implements SmartLifecycle {
+public class HelloService implements SmartLifecycle, Runnable {
 
     static final Logger log = LoggerFactory.getLogger(HelloService.class);
 
@@ -16,9 +18,23 @@ public class HelloService implements SmartLifecycle {
         log.info("Sheduled: Hello, world!");
     }
 
+    public void run() {
+        while (true) {
+            log.info("Thread run: Hello, world!");
+            try {
+                TimeUnit.SECONDS.sleep(2);
+            } catch (InterruptedException ie) {
+                Thread.currentThread().interrupt();
+            }
+        }
+    }
+
     @Override
     public void start() {
         log.info("SmartLifecycle: Hello, world!");
+        new Thread(() -> {
+            run();
+        }).start();
     }
 
     @Override
