@@ -1,4 +1,4 @@
-import service.HelloWorldImpl;
+import service.ws.HelloWorldImpl;
 
 import javax.xml.ws.Endpoint;
 
