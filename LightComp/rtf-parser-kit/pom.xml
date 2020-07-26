@@ -13,6 +13,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.github.joniles</groupId>
+            <artifactId>rtfparserkit</artifactId>
+            <version>1.12.0</version>
+        </dependency>
     </dependencies>
 
     <build>
