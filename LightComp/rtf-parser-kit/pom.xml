@@ -13,10 +13,11 @@
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.github.joniles/rtfparserkit -->
         <dependency>
             <groupId>com.github.joniles</groupId>
             <artifactId>rtfparserkit</artifactId>
-            <version>1.12.0</version>
+            <version>1.15.0</version> <!-- use last version -->
         </dependency>
     </dependencies>
 
