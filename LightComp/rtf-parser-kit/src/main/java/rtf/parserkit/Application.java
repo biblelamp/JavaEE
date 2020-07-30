@@ -10,9 +10,17 @@ public class Application {
     public static void main(String[] args) throws IOException {
 
         StringTextConverter converter = new StringTextConverter();
-        converter.convert(new RtfStreamSource(new FileInputStream("src/main/resources/testfile.rtf")));
-        String extractedText = converter.getText();
 
+        converter.convert(new RtfStreamSource(new FileInputStream("src/main/resources/wordpad.rtf")));
+        String extractedText = converter.getText();
+        System.out.println(extractedText);
+
+        converter.convert(new RtfStreamSource(new FileInputStream("src/main/resources/googledoc.rtf")));
+        extractedText = converter.getText();
+        System.out.println(extractedText);
+
+        converter.convert(new RtfStreamSource(new FileInputStream("src/main/resources/libreoffice.rtf")));
+        extractedText = converter.getText();
         System.out.println(extractedText);
     }
 }
