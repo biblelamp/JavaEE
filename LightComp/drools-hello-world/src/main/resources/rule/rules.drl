@@ -1,0 +1,16 @@
+package rule;
+
+import hello.drools.model.Product
+
+rule "Offer for Diamond"
+	when
+		productObject: Product(type == "diamond")
+	then
+		productObject.setDiscount(15);
+	end
+rule "Offer for Gold"
+	when
+		productObject: Product(type == "gold")
+	then
+		productObject.setDiscount(25);
+	end
