@@ -1,0 +1,1 @@
+https://kodejava.org/how-do-i-validate-xml-against-xsd-in-java/
