@@ -1,0 +1,1 @@
+14.9.2020   WhoIsConnector - bug 6522, Elza - 6508, 6521
