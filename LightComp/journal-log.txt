@@ -4,3 +4,4 @@
 17.9.2020	Elza - bug 6521, WhoIsConnector - 6535, 6533
 18.9.2020	Elza - bugs 6523, 6532
 21.9.2020	Elza - bugs 6523, 6547, 6548, WhoisConnector - 6534
+22.9.2020	Elza - bug 6548
