@@ -1,3 +1,9 @@
+September 2020
+
+08.9.2020	Elza - bug 6505
+09.9.2020	WhoIsConnector - bugs 6510, 6511, Elza - 6505	
+10.9.2020	Elza - bugs 6505, 6507	
+11.9.2020	WhoIsConnector - bug 6518, Elza - 6507, 6508
 14.9.2020	WhoIsConnector - bug 6522, Elza - 6508, 6521
 15.9.2020	Elza - bugs 6526, 6527, 6523
 16.9.2020	WhoIsConnector - bugs 6530, 6531, Elza - 6521
