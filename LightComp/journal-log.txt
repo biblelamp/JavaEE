@@ -1,3 +1,19 @@
+April 2019
+May 2019
+Juny 2019
+July 2019
+August 2019
+September 2019
+November 2019
+December 2019
+January 2020
+February 2020
+April 2020
+May 2020
+Juny 2020
+July 2020
+August 2020
+
 September 2020
 
 08.9.2020	Elza - bug 6505
@@ -14,3 +30,5 @@ September 2020
 23.9.2020	Elza - bugs 6548, 6549
 24.9.2020	WhoisConnector - bug 6555, Elza - 6549
 25.9.2020	Elza - bug 6549
+
+November 2020
