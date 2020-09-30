@@ -31,5 +31,6 @@ September 2020
 24.9.2020	WhoisConnector - bug 6555, Elza - 6549
 25.9.2020	Elza - bug 6549
 29.9.2020	Elza - bugs 6552, 6562
+30.9.2020	Elza - bugs 6552, 6549, 6562
 
 November 2020
