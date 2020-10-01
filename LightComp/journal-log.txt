@@ -34,3 +34,5 @@ September 2020
 30.9.2020	Elza - bugs 6552, 6549, 6562
 
 November 2020
+
+01.10.2020	Elza - bugs 6562, 6565
