@@ -38,4 +38,5 @@ November 2020
 01.10.2020	Elza - bugs 6562, 6565
 02.10.2020	Elza - bug 6562
 05.10.2020	WhoisConnector - bug 6576
+06.10.2020	WhoisConnector - bug 6576, Elza - 5432, 6565
 
