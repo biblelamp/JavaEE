@@ -43,3 +43,4 @@ November 2020
 08.10.2020	WhoisConnector - bug 6595
 09.10.2020	WhoisConnector - bugs 6595, 6593
 12.10.2020	WhoisConnector - bug 6593
+13.10.2020	WhoisConnector - bug 6593
