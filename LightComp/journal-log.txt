@@ -17,19 +17,23 @@ August 2020
 September 2020
 
 08.9.2020	Elza - bug 6505
-09.9.2020	WhoIsConnector - bugs 6510, 6511, Elza - 6505	
-10.9.2020	Elza - bugs 6505, 6507	
+09.9.2020	WhoIsConnector - bugs 6510, 6511, Elza - 6505
+10.9.2020	Elza - bugs 6505, 6507
 11.9.2020	WhoIsConnector - bug 6518, Elza - 6507, 6508
+
 14.9.2020	WhoIsConnector - bug 6522, Elza - 6508, 6521
 15.9.2020	Elza - bugs 6526, 6527, 6523
 16.9.2020	WhoIsConnector - bugs 6530, 6531, Elza - 6521
 17.9.2020	Elza - bug 6521, WhoIsConnector - 6535, 6533
 18.9.2020	Elza - bugs 6523, 6532
+
 21.9.2020	Elza - bugs 6523, 6547, 6548, WhoisConnector - 6534
 22.9.2020	Elza - bug 6548
 23.9.2020	Elza - bugs 6548, 6549
 24.9.2020	WhoisConnector - bug 6555, Elza - 6549
 25.9.2020	Elza - bug 6549
+
+28.9.2020	Elza - bugs 6552, 6562
 29.9.2020	Elza - bugs 6552, 6562
 30.9.2020	Elza - bugs 6552, 6549, 6562
 
@@ -37,16 +41,19 @@ November 2020
 
 01.10.2020	Elza - bugs 6562, 6565
 02.10.2020	Elza - bug 6562
+
 05.10.2020	WhoisConnector - bug 6576
 06.10.2020	WhoisConnector - bug 6576, Elza - 5432, 6565
 07.10.2020	WhoisConnector - bug 6587, Elza - 6565, 6567
 08.10.2020	WhoisConnector - bug 6595
 09.10.2020	WhoisConnector - bugs 6595, 6593
+
 12.10.2020	WhoisConnector - bug 6593
 13.10.2020	WhoisConnector - bug 6593
 14.10.2020	WhoisConnector - bug 6603
 15.10.2020	WhoisConnector - bug 6603
 16.10.2020	WhoisConnector - bug 6603, Elza - 6600
+
 19.10.2020	WhoisConnector - bug 6603
 20.10.2020	WhoisConnector - bug 6603
 21.10.2020	WhoisConnector - bug 6603
