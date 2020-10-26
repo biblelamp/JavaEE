@@ -59,3 +59,5 @@ November 2020
 21.10.2020	WhoisConnector - bug 6603
 22.10.2020	WhoisConnector - bug 6603
 23.10.2020	WhoisConnector - bug 6603
+
+26.10.2010	ArchiveOnline - bug 6613, Elza - 6600
