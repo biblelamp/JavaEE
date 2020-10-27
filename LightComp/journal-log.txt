@@ -14,6 +14,12 @@ Juny 2020
 July 2020
 August 2020
 
+24.8.2020	Elza - bugs 6472, 6427, WhoIsConnector - 6459
+25.8.2020	WhoIsConnector - bug 6459
+26.8.2020	Elza - bug 6478, WhoIsConnector - 6459
+27.8.2020	WhoIsConnector - bugs 6459, 6460
+28.8.2020	WhoIsConnector - bugs 6459, 6489
+
 31.8.2020	WhoIsConnector - bugs 6489, 6490, 6460
 
 September 2020
