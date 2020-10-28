@@ -14,6 +14,12 @@ Juny 2020
 July 2020
 August 2020
 
+17.8.2020	Elza - bug 6427 + opravit testy
+18.8.2020	Elza - bug 6427 + react
+19.8.2020	Elza - bug 6427 + react
+20.8.2020	Elza - bug 6427 + react
+21.8.2020	Elza - bug 6427
+
 24.8.2020	Elza - bugs 6472, 6427, WhoIsConnector - 6459
 25.8.2020	WhoIsConnector - bug 6459
 26.8.2020	Elza - bug 6478, WhoIsConnector - 6459
