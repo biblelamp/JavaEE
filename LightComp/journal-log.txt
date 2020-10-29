@@ -14,6 +14,12 @@ Juny 2020
 July 2020
 August 2020
 
+10.8.2020	Elza - bugs 6437, 6436, 6427
+11.8.2020	Elza - bugs 6437, 6436, 6427
+12.8.2020	Elza - bug 6427
+13.8.2020	Elza - bug 6427
+14.8.2020	Elza - bug 6427 + opravit testy
+
 17.8.2020	Elza - bug 6427 + opravit testy
 18.8.2020	Elza - bug 6427 + react
 19.8.2020	Elza - bug 6427 + react
