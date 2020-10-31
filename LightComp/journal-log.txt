@@ -4,6 +4,7 @@ Juny 2019
 July 2019
 August 2019
 September 2019
+October 2019
 November 2019
 December 2019
 January 2020
@@ -12,6 +13,13 @@ April 2020
 May 2020
 Juny 2020
 July 2020
+
+27.7.2020	WhoIsConnector - bug 6405
+28.7.2020	WhoIsConnector - bug 6309
+29.7.2020	WhoIsConnector - bug 6309
+30.7.2020	WhoIsConnector - bug 6309
+31.7.2020	WhoIsConnector - bug 6309, Elza 6418
+
 August 2020
 
 3.8.2020	WhoIsConnector - bug 6309, Elza 6418, 6422, 6423, 6424
@@ -63,7 +71,7 @@ September 2020
 29.9.2020	Elza - bugs 6552, 6562
 30.9.2020	Elza - bugs 6552, 6549, 6562
 
-November 2020
+October 2020
 
 01.10.2020	Elza - bugs 6562, 6565
 02.10.2020	Elza - bug 6562
@@ -87,3 +95,6 @@ November 2020
 23.10.2020	WhoisConnector - bug 6603
 
 26.10.2010	ArchiveOnline - bug 6613, Elza - 6600
+
+November 2020
+
