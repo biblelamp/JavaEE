@@ -104,3 +104,4 @@ October 2020
 
 November 2020
 
+2.11.2020	Elza - bug 6600
