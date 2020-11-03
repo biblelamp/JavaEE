@@ -28,11 +28,11 @@ July 2020
 
 August 2020
 
-3.8.2020	WhoIsConnector - bug 6309, Elza 6418, 6422, 6423, 6424
-4.8.2020	Elza - bugs 6418, 6423, 6425, 6426
-5.8.2020	Elza - bugs 6425, 6426
-6.8.2020	Elza - bug 6426
-7.8.2020	Elza - bugs 6426, 6437
+03.8.2020	WhoIsConnector - bug 6309, Elza 6418, 6422, 6423, 6424
+04.8.2020	Elza - bugs 6418, 6423, 6425, 6426
+05.8.2020	Elza - bugs 6425, 6426
+06.8.2020	Elza - bug 6426
+07.8.2020	Elza - bugs 6426, 6437
 
 10.8.2020	Elza - bugs 6437, 6436, 6427
 11.8.2020	Elza - bugs 6437, 6436, 6427
@@ -104,4 +104,5 @@ October 2020
 
 November 2020
 
-2.11.2020	Elza - bug 6600
+02.11.2020	Elza - bug 6600
+03.11.2020	Elza - bug 6600
