@@ -128,4 +128,5 @@ November 2020
 05.11.2020	Elza - bug 6600
 06.11.2020	Elza - bug 6641, 6600, ArchiveOnline - 6642
 
-9.11.2020	ArchiveOnline - bugs 6643, 6644
+09.11.2020	ArchiveOnline - bugs 6643, 6644
+10.11.2020	ArchiveOnline - bug 6648
