@@ -133,3 +133,5 @@ November 2020
 11.11.2020	ArchiveOnline - bug 6650
 12.11.2020	Elza - bug 6600, WhoisConnector - 6653
 13.11.2020	WhoisConnector - bug 6653, ArchiveOnline - 6650
+
+16.11.2020	ArchiveOnline - bug 6648
