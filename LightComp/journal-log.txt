@@ -13,6 +13,12 @@ April 2020
 May 2020
 Juny 2020
 
+22.6.2020	WhoIsConnector - bug 6333
+23.6.2020	WhoIsConnector - bugs 6333, 6224
+24.6.2020	WhoIsConnector - bug 6333
+25.6.2020	dovolená
+26.6.2020	WhoIsConnector - bug 6333, 6309
+
 29.6.2020	WhoIsConnector - bug 6333
 30.6.2020	WhoIsConnector - bugs 6353, 6309
 
@@ -120,6 +126,9 @@ October 2020
 23.10.2020	WhoisConnector - bug 6603
 
 26.10.2010	ArchiveOnline - bug 6613, Elza - 6600
+27.10.2020	dovolená
+29.10.2020	dovolená
+30.10.2020	dovolená
 
 November 2020
 
@@ -136,6 +145,7 @@ November 2020
 13.11.2020	WhoisConnector - bug 6653, ArchiveOnline - 6650
 
 16.11.2020	ArchiveOnline - bug 6648
+17.11.2020	svátek
 18.11.2020	ArchiveOnline - bug 6648
 19.11.2020	WhoisConnector - bug 6653
 20.11.2020	ArchiveOnline - bugs 6648, 6670, 6665
