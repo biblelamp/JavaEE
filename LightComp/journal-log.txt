@@ -14,6 +14,12 @@ May 2020
 
 Juny 2020
 
+08.6.2020	WhoIsConnector - bugs 6270, 6271
+09.6.2020	WhoIsConnector - bugs 6271, 6270
+10.6.2020	WhoIsConnector - bugs 6270, 6309
+11.6.2020	WhoIsConnector - bug 6312
+12.6.2020	WhoIsConnector - bug 6312
+
 15.6.2020	WhoIsConnector - bug 6312
 16.6.2020	WhoIsConnector - bug 6312
 17.6.2020	WhoIsConnector - bugs 6312, 6324, 6325, 6327
