@@ -176,3 +176,7 @@ November 2020
 27.11.2020	WhoisConnector - bug 6679
 
 30.11.2020	ArchiveOnline - bug 6665
+
+December 2020
+
+01.12.2020	ArchiveOnline - bugs 6665, 6668, WhoisConnector - 6653
