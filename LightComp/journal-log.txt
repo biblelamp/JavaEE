@@ -185,3 +185,4 @@ December 2020
 04.12.2020	WhoisConnector - bugs 6697, 6699
 
 07.12.2020	WhoisConnector - bug 6710
+08.12.2020	ArchiveOnline - bug 6668, WhoisConnector - 6720
