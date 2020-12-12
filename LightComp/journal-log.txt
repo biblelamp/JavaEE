@@ -12,6 +12,12 @@ February 2020
 April 2020
 May 2020
 
+25.5.2020	WhoIsConnector - bug 6238
+26.5.2020	WhoIsConnector - bug 6238
+27.5.2020	WhoIsConnector - bug 6238
+28.5.2020	WhoIsConnector - bugs 6263, 6264
+29.5.2020	WhoIsConnector - bugs 6269, 6272, 6264
+
 Juny 2020
 
 01.6.2020	WhoIsConnector - bugs 6264, 6265
