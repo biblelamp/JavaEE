@@ -205,3 +205,4 @@ December 2020
 14.12.2020	ArchiveOnline - bugs 6669, 6747
 15.12.2020	ArchiveOnline - bugs 6747, 6750
 16.12.2020	ArchiveOnline - bugs 6753, 6750, 6758, 6756
+17.12.2020	ArchiveOnline - bugs 6750, 6756, 6760, 6754
