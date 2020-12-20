@@ -12,6 +12,11 @@ February 2020
 April 2020
 May 2020
 
+04.5.2020	dovolená
+05.5.2020	dovolená
+06.5.2020	dovolená
+07.5.2020	dovolená
+
 11.5.2020	dovolená
 12.5.2020	WhoIsConnector
 13.5.2020	WhoIsConnector - bug 6210
