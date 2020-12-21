@@ -9,13 +9,21 @@ November 2019
 December 2019
 January 2020
 February 2020
+
 April 2020
+
+27.4.2020	kads - bug 6130
+28.4.2020	eSkartace - bug 6141
+29.4.2020	eSkartace - bugs 6148, 6159
+30.4.2020	eSkartace
+
 May 2020
 
 04.5.2020	dovolená
 05.5.2020	dovolená
 06.5.2020	dovolená
 07.5.2020	dovolená
+08.5.2020	dovolená
 
 11.5.2020	dovolená
 12.5.2020	WhoIsConnector
