@@ -12,6 +12,12 @@ February 2020
 
 April 2020
 
+20.4.2020	General - bug 6051 ghostscript
+21.4.2020	eSkartace - bugs 5999, 6110
+22.4.2020	eSkartace - bug 5903, ePrejimka 6118, 6121
+23.4.2020	ePrejimka - bug 6118 fix
+24.4.2020	eSkartace - bug 6126, ePrejimka 6128
+
 27.4.2020	kads - bug 6130
 28.4.2020	eSkartace - bug 6141
 29.4.2020	eSkartace - bugs 6148, 6159
