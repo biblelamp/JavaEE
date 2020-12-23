@@ -12,6 +12,11 @@ February 2020
 
 April 2020
 
+14.4.2020	General - bug 6051 ext research
+15.4.2020	General - bug 6051 ext
+16.4.2020	General - bug 6051 ext
+17.4.2020	General - bug 6051
+
 20.4.2020	General - bug 6051 ghostscript
 21.4.2020	eSkartace - bugs 5999, 6110
 22.4.2020	eSkartace - bug 5903, ePrejimka 6118, 6121
