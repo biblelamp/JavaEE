@@ -12,6 +12,13 @@ February 2020
 
 April 2020
 
+06.4.2020	eSkartace - bug 6018
+07.4.2020	eSkartace - bug 6018
+08.4.2020	General - bug 6051
+09.4.2020	General - bug 6051
+10.4.2020	General - bug 6051
+
+13.4.2020	General - bug 6051 ext research
 14.4.2020	General - bug 6051 ext research
 15.4.2020	General - bug 6051 ext
 16.4.2020	General - bug 6051 ext
