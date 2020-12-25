@@ -12,6 +12,10 @@ February 2020
 
 April 2020
 
+01.4.2020	eSkartace - bug 5996
+02.4.2020	eSkartace - bug 6004
+03.4.2020	ePrejimka - bug 6011, eSkartace 5893
+
 06.4.2020	eSkartace - bug 6018
 07.4.2020	eSkartace - bug 6018
 08.4.2020	General - bug 6051
