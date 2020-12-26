@@ -10,6 +10,11 @@ December 2019
 January 2020
 February 2020
 
+March
+
+30.3.	eSkartace - bugs 5973, 5961
+31.3.	eSkartace - bug 5983, General 5995
+
 April 2020
 
 01.4.2020	eSkartace - bug 5996
