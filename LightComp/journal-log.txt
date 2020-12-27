@@ -12,6 +12,12 @@ February 2020
 
 March
 
+23.3.2020	eSkartace - bugs 5927, 5934
+24.3.2020	eSkartace - bug 5934 fix
+25.3.2020	eSkartace - bugs 5936, 5937
+26.3.2020	eZpristupneni - bugs 5958, 5959
+27.3.2020	eZpristupneni - bug 5967
+
 30.3.	eSkartace - bugs 5973, 5961
 31.3.	eSkartace - bug 5983, General 5995
 
