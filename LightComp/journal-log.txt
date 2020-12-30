@@ -10,6 +10,12 @@ December 2019
 January 2020
 February 2020
 
+24.2.2020	eSkartace - bugs 5838, 5839, 5840, ePrejimka 5760
+25.2.2020	ePrejimka - bug 5760, eSkartace 5841
+26.2.2020	eSkartace - bug 5841
+27.2.2020	eSkartace - bugs 5841, 5850, 5851
+28.2.2020	eSkartace - bug 5851
+
 March 2020
 
 02.3.2020	eSkartace - bug 5851
