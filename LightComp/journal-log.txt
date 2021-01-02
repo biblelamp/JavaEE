@@ -11,6 +11,12 @@ January 2020
 
 February 2020
 
+03.2.2020	ePrejimka - bugs 5783, 5784, sCommon 5789
+04.2.2020	sCommon - bug 5789, eZpristupneni 5745
+05.2.2020	sCommon - bug 5789, eZpristupneni 5745
+06.2.2020	sCommon - bug 5789, ePrejimka 5707, 5793, 5795, eSkartace 5797
+07.2.2020	eSkartace - bug 5797
+
 10.2.2020	eSkartace - bug 5797, exiftool
 11.2.2020	eSkartace - bug 5797, exiftool
 12.2.2020	eSkartace - bug 5797
