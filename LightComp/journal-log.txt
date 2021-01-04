@@ -67,8 +67,8 @@ March 2020
 26.3.2020	eZpristupneni - bugs 5958, 5959
 27.3.2020	eZpristupneni - bug 5967
 
-30.3.	eSkartace - bugs 5973, 5961
-31.3.	eSkartace - bug 5983, General 5995
+30.3.2020	eSkartace - bugs 5973, 5961
+31.3.2020	eSkartace - bug 5983, General 5995
 
 April 2020
 
@@ -317,3 +317,6 @@ December 2020
 30.12.2020	dovolená
 31.12.2020	dovolená
 
+January 2021
+
+04.1.2021	ArchiveOnline - bugs 6771, 6776
