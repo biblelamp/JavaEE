@@ -320,3 +320,4 @@ December 2020
 January 2021
 
 04.1.2021	ArchiveOnline - bugs 6771, 6776
+05.1.2020	ArchiveOnline - bugs 6776, 6780, 6781, 6782, 6783
