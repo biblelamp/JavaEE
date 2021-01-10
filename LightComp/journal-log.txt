@@ -7,7 +7,14 @@ September 2019
 October 2019
 November 2019
 December 2019
+
 January 2020
+
+13.1.2020	ePrejimka - bug 5697
+14.1.2020	ePrejimka - bug 5697, eSkartace 5705
+15.1.2020	ePrejimka - bug 5707, eSkartace 5710, 5713
+16.1.2020	eSkartace - bugs 5714, 5718, 5717
+17.1.2020	eSkartace - bugs 5722, 5724, 5727, ePrejimka 5728, 5729
 
 20.1.2020	eSkartace - bug 5725, ePrejimka 5726
 21.1.2020	eSkartace - bug 5693
