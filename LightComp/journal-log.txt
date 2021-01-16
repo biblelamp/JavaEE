@@ -10,6 +10,12 @@ December 2019
 
 January 2020
 
+06.1.2020	ePrejimka - bugs 5649, 5680, kads 5678, eSkartace 5679
+07.1.2020	ePrejimka - bug 5680, 5682, eSkartace 5679, 5683, 5684
+08.1.2020	ePrejimka - bug 5685, eSkartace 5686, 5687, 5688
+09.1.2020	eSkartace - bug 5688, kads 5690
+10.1.2020	kads - bug 5690
+
 13.1.2020	ePrejimka - bug 5697
 14.1.2020	ePrejimka - bug 5697, eSkartace 5705
 15.1.2020	ePrejimka - bug 5707, eSkartace 5710, 5713
