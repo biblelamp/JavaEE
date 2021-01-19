@@ -354,3 +354,4 @@ January 2021
 15.1.2021	ArchiveOnline - bugs 6799, 6800, 6801
 
 18.1.2020	WhoisConnector - bug 6817, ArchiveOnline - 6802
+19.1.2020	WhoisConnector - bug 6817, ArchiveOnline - 6826
