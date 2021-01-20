@@ -355,3 +355,4 @@ January 2021
 
 18.1.2020	WhoisConnector - bug 6817, ArchiveOnline - 6802
 19.1.2020	WhoisConnector - bug 6817, ArchiveOnline - 6826
+20.1.2020	ArchiveOnline - bug 6826
