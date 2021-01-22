@@ -357,3 +357,4 @@ January 2021
 19.1.2020	WhoisConnector - bug 6817, ArchiveOnline - 6826
 20.1.2020	ArchiveOnline - bug 6826
 21.1.2020	ArchiveOnline - bug 6826 + dspace
+22.1.2020	ArchiveOnline - bug 6826 + dspace
