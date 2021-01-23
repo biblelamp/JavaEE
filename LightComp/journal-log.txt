@@ -8,6 +8,9 @@ October 2019
 November 2019
 December 2019
 
+30.12.2019	eSkartace - bugs 5663, 5664, 5666
+31.12.2019	dovolená
+
 January 2020
 
 02.1.2020	eSkartace - bugs 5666, 5667, ePrejimka 500673
