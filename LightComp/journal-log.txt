@@ -341,13 +341,13 @@ December 2020
 17.12.2020	ArchiveOnline - bugs 6750, 6756, 6760, 6754
 18.12.2020	Elza - bug 6742, ArchiveOnline - 6771
 
-21.12.2020	dovolená
-22.12.2020	dovolená
-23.12.2020	dovolená
-28.12.2020	dovolená
-29.12.2020	dovolená
-30.12.2020	dovolená
-31.12.2020	dovolená
+	21.12. dovolená
+	22.12. dovolená
+	23.12. dovolená
+	28.12. dovolená
+	29.12. dovolená
+	30.12. dovolená
+	31.12. dovolená
 
 January 2021
 
@@ -363,8 +363,10 @@ January 2021
 14.1.2021	ArchiveOnline - bug 6799
 15.1.2021	ArchiveOnline - bugs 6799, 6800, 6801
 
-18.1.2020	WhoisConnector - bug 6817, ArchiveOnline - 6802
-19.1.2020	WhoisConnector - bug 6817, ArchiveOnline - 6826
-20.1.2020	ArchiveOnline - bug 6826
-21.1.2020	ArchiveOnline - bug 6826 + dspace
-22.1.2020	ArchiveOnline - bug 6826 + dspace
+18.1.2021	WhoisConnector - bug 6817, ArchiveOnline - 6802
+19.1.2021	WhoisConnector - bug 6817, ArchiveOnline - 6826
+20.1.2021	ArchiveOnline - bug 6826
+21.1.2021	ArchiveOnline - bug 6826 + dspace
+22.1.2021	ArchiveOnline - bug 6826 + dspace
+
+25.1.2021	ArchiveOnline - bug 6826
