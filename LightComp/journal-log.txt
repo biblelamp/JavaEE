@@ -373,3 +373,4 @@ January 2021
 26.1.2021	ArchiveOnline - bug 6826
 27.1.2021	ArchiveOnline - bug 6826
 28.1.2021	ArchiveOnline - bugs 6826, 6842
+29.1.2021	ArchiveOnline - bugs 6842, 6850
