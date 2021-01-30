@@ -8,6 +8,8 @@ October 2019
 November 2019
 December 2019
 
+
+16.12.2019	eSkartace - bugs 5631, 5350, ePrejimka 5636
 17.12.2019	ePrejimka - bug 5636
 18.12.2019	ePrejimka - bugs 5636, 5653, eSkartace 5647, 5656
 19.12.2019	eSkartace - bugs 5656, 5659
@@ -43,9 +45,9 @@ January 2020
 
 27.1.2020	ePrejimka - bug 5657
 28.1.2020	ePrejimka - bugs 5657, 5762, 5763, eSkartace 5764
-29.1.2020	dovolená
+	29.1. dovolená
 30.1.2020	ePrejimka - bugs 5763, 5774, 5777, 5779, 5780, eSkartace 5778
-31.1.2020	dovolená
+	31.1. dovolená
 
 February 2020
 
@@ -133,13 +135,13 @@ April 2020
 
 May 2020
 
-04.5.2020	dovolená
-05.5.2020	dovolená
-06.5.2020	dovolená
-07.5.2020	dovolená
-08.5.2020	dovolená
+	04.5. dovolená
+	05.5. dovolená
+	06.5. dovolená
+	07.5. dovolená
+	08.5. dovolená
 
-11.5.2020	dovolená
+	11.5. dovolená
 12.5.2020	WhoIsConnector
 13.5.2020	WhoIsConnector - bug 6210
 14.5.2020	WhoIsConnector - bug 6210
@@ -180,7 +182,7 @@ Juny 2020
 22.6.2020	WhoIsConnector - bug 6333
 23.6.2020	WhoIsConnector - bugs 6333, 6224
 24.6.2020	WhoIsConnector - bug 6333
-25.6.2020	dovolená
+	25.6. dovolená
 26.6.2020	WhoIsConnector - bug 6333, 6309
 
 29.6.2020	WhoIsConnector - bug 6333
@@ -290,9 +292,9 @@ October 2020
 23.10.2020	WhoisConnector - bug 6603
 
 26.10.2010	ArchiveOnline - bug 6613, Elza - 6600
-27.10.2020	dovolená
-29.10.2020	dovolená
-30.10.2020	dovolená
+	27.10. dovolená
+	29.10. dovolená
+	30.10. dovolená
 
 November 2020
 
@@ -309,7 +311,7 @@ November 2020
 13.11.2020	WhoisConnector - bug 6653, ArchiveOnline - 6650
 
 16.11.2020	ArchiveOnline - bug 6648
-17.11.2020	svátek
+	17.11. svátek
 18.11.2020	ArchiveOnline - bug 6648
 19.11.2020	WhoisConnector - bug 6653
 20.11.2020	ArchiveOnline - bugs 6648, 6670, 6665
