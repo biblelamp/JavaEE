@@ -6,8 +6,14 @@ August 2019
 September 2019
 October 2019
 November 2019
+
 December 2019
 
+09.12.2019	eZpristupneni - bug 5617, ePrejimka 4972, eSkartace 5609
+10.12.2019	eSkartace - bug 5619, ePrejimka 5620
+11.12.2019	eSkartace - bugs 5619, 5624, ePrejimka 5620, 5625
+12.12.2019	ePrejimka - bugs 5626, 5620, eSkartace 5619, kads 5628
+13.12.2019	eSkartace - bugs 5632. 5624, 5631, kads 5633, 5634
 
 16.12.2019	eSkartace - bugs 5631, 5350, ePrejimka 5636
 17.12.2019	ePrejimka - bug 5636
