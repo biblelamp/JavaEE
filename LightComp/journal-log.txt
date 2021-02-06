@@ -9,6 +9,12 @@ November 2019
 
 December 2019
 
+02.12.2019	eSkartace - bugs 5585, 5590, kads 5589, ePrejimka 5591
+03.12.2019	"Simple-upl - bug 5592, eSkartace 5587, ePrejimka 5595
+04.12.2019	ePrejimka - bugs 5595, 5600, Simple-upl 5598, eSkartace 5599
+05.12.2019	eSkartace - bugs 5582, 5601, 5602, 5603, eZpristupneni 5607
+06.12.2019	eSkartace - bug 5587, eZpristupneni 5617
+
 09.12.2019	eZpristupneni - bug 5617, ePrejimka 4972, eSkartace 5609
 10.12.2019	eSkartace - bug 5619, ePrejimka 5620
 11.12.2019	eSkartace - bugs 5619, 5624, ePrejimka 5620, 5625
