@@ -5,7 +5,14 @@ July 2019
 August 2019
 September 2019
 October 2019
+
 November 2019
+
+25.11.2019	eSkartace - bug 5558
+26.11.2019	eSkartace - bug 5572, ePrejimka 5485
+27.11.2019	eZpřístupnění - bug 5573
+28.11.2019	eZpřístupnění - bug 5573+test, 5575
+29.11.2019	eSkartace - bug 5577, eZpřístupnění 5578
 
 December 2019
 
