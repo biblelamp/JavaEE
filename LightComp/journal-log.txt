@@ -8,6 +8,12 @@ October 2019
 
 November 2019
 
+18.11.2019	ePrejimka - bugs 5548, 5555
+19.11.2019	ePrejimka - bug 5525, Pristup 5556, AdmWs 5560
+20.11.2019	AdmWs - bug 5560, eSkartace 5564, ePrejimka 5566
+21.11.2019	ePrejimka - bugs 5566, 5567
+22.11.2019	ePrejimka - bug 5566
+
 25.11.2019	eSkartace - bug 5558
 26.11.2019	eSkartace - bug 5572, ePrejimka 5485
 27.11.2019	eZpřístupnění - bug 5573
