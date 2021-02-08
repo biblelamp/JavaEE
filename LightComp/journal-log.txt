@@ -409,3 +409,5 @@ February 2021
 03.2.2021	ArchiveOnline - bugs 6850, 5877
 04.2.2021	ArchiveOnline - bugs 6858, 6887
 05.2.2021	ArchiveOnline - bugs 6887, 6886
+
+08.2.2021	ArchiveOnline - bugs 6888, 6891
