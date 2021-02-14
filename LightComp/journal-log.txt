@@ -8,6 +8,12 @@ October 2019
 
 November 2019
 
+04.11.2019	eSkartace - bug 5513
+05.11.2019	eSkartace - bug 5513
+06.11.2019	eSkartace - bugs 5505, 5518, 5527
+07.11.2019	eSkartace - bug 5527, 5513
+08.11.2019	ePrejimka - bug 5531
+
 11.11.2019	eSkartace - bugs 5532, 5534
 12.11.2019	eSkartace - Postgre, eZpristupneni - 5537
 13.11.2019	eZpristupneni - bugs 5537 test, 5538, 5539, 5540, 5541
