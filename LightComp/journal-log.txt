@@ -429,3 +429,4 @@ February 2021
 12.2.2021	ArchiveOnline - bug 6905
 
 15.2.2021	WhoisConnector - bugs 6908, 6918
+16.2.2021	WhoisConnector - bug 6918
