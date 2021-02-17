@@ -430,3 +430,4 @@ February 2021
 
 15.2.2021	WhoisConnector - bugs 6908, 6918
 16.2.2021	WhoisConnector - bug 6918
+17.2.2021	WhoisConnector - bug 6908
