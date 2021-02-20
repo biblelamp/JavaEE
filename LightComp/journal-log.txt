@@ -8,6 +8,8 @@ October 2019
 
 November 2019
 
+01.11.2019	eSkartace - bugs 5511, 5513, ePrejimka 5512
+
 04.11.2019	eSkartace - bug 5513
 05.11.2019	eSkartace - bug 5513
 06.11.2019	eSkartace - bugs 5505, 5518, 5527
