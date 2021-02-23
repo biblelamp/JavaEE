@@ -441,3 +441,4 @@ February 2021
 19.2.2021	ArchiveOnline - bug 6932
 
 22.2.2021	ArchiveOnline - bugs 6946, 6947
+23.2.2021	ArchiveOnline - bug 6947, Elza - 6777, 6741
