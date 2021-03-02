@@ -462,3 +462,4 @@ February 2021
 March 2021
 
 01.3.2021	Elza - bugs 6485, 6961
+02.3.2021	Elza - bugs 6961, 6979
