@@ -7,6 +7,12 @@ September 2019
 
 October 2019
 
+07.10.2019	eSkartace - bugs 5420, 5424, ePrejimka 5437
+08.10.2019	ePrejimka - bug 5437
+09.10.2019	ePrejimka - bug 5437
+10.10.2019	ePrejimka - bug 5437
+11.10.2019	eSkartace - bugs 5412, Adm-ws 5455
+
 14.10.2019	eSkartace - bugs 5429, 5408
 15.10.2019	eSkartace - bugs 5408, 5452
 16.10.2019	eSkartace - bugs 5452, 5466, ePrejimka 5462, 5465
