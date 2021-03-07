@@ -7,6 +7,11 @@ September 2019
 
 October 2019
 
+01.10.2019	Elza M13
+	2.10. dovolená
+03.10.2019	eZpristupneni - bug 5416, Elza M13
+04.10.2019	eSkartace - bug 5420
+
 07.10.2019	eSkartace - bugs 5420, 5424, ePrejimka 5437
 08.10.2019	ePrejimka - bug 5437
 09.10.2019	ePrejimka - bug 5437
