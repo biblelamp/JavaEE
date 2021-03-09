@@ -479,3 +479,4 @@ March 2021
 05.3.2021	WhoisConnector - bug 6975, Elza - 6961, 6962, 6967
 
 08.3.2021	Elza - bug 6967
+09.3.2021	WhoisConnector - bugs 6984, 6985, Elza - 6967
