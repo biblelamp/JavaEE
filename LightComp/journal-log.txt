@@ -3,7 +3,10 @@ May 2019
 Juny 2019
 July 2019
 August 2019
+
 September 2019
+
+30.9.2019	Elza
 
 October 2019
 
@@ -482,3 +485,4 @@ March 2021
 09.3.2021	WhoisConnector - bugs 6984, 6985, Elza - 6967
 10.3.2021	Elza - bug 6967
 11.3.2021	Elza - bugs 6967, 6982
+12.3.2021	Elza - bugs 6982+6755, 4253
