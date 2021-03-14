@@ -6,6 +6,12 @@ August 2019
 
 September 2019
 
+23.9.2019	eZpristupneni - bugs 5385, 5386
+24.9.2019	eZpristupneni - bugs 5387, 5389
+25.9.2019	eZpristupneni - bugs 5389, 5398, 5397, 5399
+26.9.2019	eZpristupneni - bugs 5399, 5401
+27.9.2019	eZpristupneni - bug 5403, Elza
+
 30.9.2019	Elza
 
 October 2019
