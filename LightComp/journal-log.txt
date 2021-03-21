@@ -6,6 +6,12 @@ August 2019
 
 September 2019
 
+09.9.2019	eSkartace - bugs 5331, 5332, 5329 ext
+10.9.2019	eSkartace - bugs 5329 fix, 5338, eZpristupneni 5336
+11.9.2019	eSkartace - bugs 5319 ext, 5338, eZpristupneni 5340
+12.9.2019	eZpristupneni - bugs 5340, eSkartace 5331 fix
+13.9.2019	eZpristupneni - bugs 5340, 5346, eSkartace 5344, 5345
+
 16.9.2019	eZpristupneni - bugs 5346, 5348, 5349
 17.9.2019	eZpristupneni - bug 5346
 18.9.2019	eZpristupneni - bugs 5346, eSkartace 5344, 5354
