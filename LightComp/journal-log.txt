@@ -514,3 +514,4 @@ March 2021
 22.3.2021	Elza - bug 6993
 23.3.2021	Elza - bug 6993, WhoisConnector - 7020
 24.3.2021	WhoisConnector - bugs 7020, 7021
+25.3.2021	WhoisConnector - bug 7021, 7020, Elza - 6993, 6143
