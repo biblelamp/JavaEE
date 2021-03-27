@@ -6,6 +6,12 @@ August 2019
 
 September 2019
 
+02.9.2019	ePrejimka - bugs 5305 check, 5327
+03.9.2019	eSkartace - bug 5302 ext
+04.9.2019	eSkartace - bug 5302 ext
+05.9.2019	eSkartace - bugs 5302, 5319, 5328
+06.9.2019	eSkartace - bugs 5302 fix, 5329, 5331
+
 09.9.2019	eSkartace - bugs 5331, 5332, 5329 ext
 10.9.2019	eSkartace - bugs 5329 fix, 5338, eZpristupneni 5336
 11.9.2019	eSkartace - bugs 5319 ext, 5338, eZpristupneni 5340
