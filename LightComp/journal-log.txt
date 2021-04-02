@@ -4,6 +4,12 @@ Juny 2019
 July 2019
 August 2019
 
+26.8.2019	ePrejimka - bug 5305, eSkartace 5309
+27.8.2019	eSkartace - bug 5310
+28.8.2019	eSkartace - bug 5241 fixed, ePrejimka 5305 fixed
+29.8.2019	eSkartace - bugs 5319, 5320
+30.8.2019	eAutentizace - bug 5322, ePrejimka 5323
+
 September 2019
 
 02.9.2019	ePrejimka - bugs 5305 check, 5327
