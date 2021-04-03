@@ -4,6 +4,12 @@ Juny 2019
 July 2019
 August 2019
 
+19.8.2019	ePrejimka - bugs 5288, 5290, eSkartace 5289
+20.8.2019	ePrejimka - bug 5291, eSkartace 5292
+21.8.2019	eSkartace - bugs 5293, 5294, 5295, 5296
+22.8.2019	eSkartace - bugs 5296, 5297
+23.8.2019	ePrejimka - bug 5302, eSkartace 5303
+
 26.8.2019	ePrejimka - bug 5305, eSkartace 5309
 27.8.2019	eSkartace - bug 5310
 28.8.2019	eSkartace - bug 5241 fixed, ePrejimka 5305 fixed
