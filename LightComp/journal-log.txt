@@ -2,7 +2,14 @@ April 2019
 May 2019
 Juny 2019
 July 2019
+
 August 2019
+
+12.8.2019	eZpřístupnění - bugs 5256 test, 5257 test
+13.8.2019	eZpřístupnění - bugs 5257 test, eSkartace 5267
+14.8.2019	eSkartace - bugs 5267, 5279, ePrejimka 5274, 5280
+15.8.2019	eSkartace - bugs 5281, 5285, ePrejimka 5282
+16.8.2019	ePrejimka - bug 5288
 
 19.8.2019	ePrejimka - bugs 5288, 5290, eSkartace 5289
 20.8.2019	ePrejimka - bug 5291, eSkartace 5292
