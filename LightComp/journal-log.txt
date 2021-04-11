@@ -3,6 +3,10 @@ May 2019
 Juny 2019
 July 2019
 
+29.7.2019	eSkartace - bugs 5235, 5230
+30.7.2019	eSkartace - bug 5198
+31.7.2019	eSkartace - bug 5236
+
 August 2019
 
 01.8.2019	eSkartace - bugs 5238, 5240, 5241
