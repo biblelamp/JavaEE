@@ -576,3 +576,4 @@ April 2021
 19.4.2021	Elza - bug 7099
 20.4.2021	Elza - bug 7095
 21.4.2021	Elza - bug 7095
+22.4.2021	Elza - bug 7095 test
