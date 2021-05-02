@@ -4,6 +4,11 @@ Juny 2019
 
 July 2019
 
+01.7.2019	eZpřístupnění - bug 5128 test
+02.7.2019	eZpřístupnění - bugs 5129, 5139, 5140
+03.7.2019	eZpřístupnění - bug 5141
+04.7.2019	eZpřístupnění - bugs 5141, 5142
+
 09.7.2019	eZpřístupnění - bugs 5144, 5145, 5156
 10.7.2019	eZpřístupnění - bugs 5156, 5157, 5158
 11.7.2019	eZpřístupnění - bugs 5158, 5159
