@@ -1,6 +1,13 @@
 April 2019
 May 2019
+
 Juny 2019
+
+24.6.2019	eZpřístupnění - bugs fixed 5058, 5095, 5100
+25.6.2019	eZpřístupnění - bugs 5117, 5100
+26.6.2019	eZpřístupnění - bugs 5115, 5120
+27.6.2019	eZpřístupnění - bugs 5118, fixed 5097, 5117, 5127
+28.6.2019	eZpřístupnění - bug 5128
 
 July 2019
 
