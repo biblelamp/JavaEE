@@ -3,6 +3,12 @@ May 2019
 
 Juny 2019
 
+10.6.2019	eZpřístupnění - bugs 5094, 5095
+11.6.2019	eZpřístupnění - bugs 5096, 5097; laptop
+12.6.2019	eZpřístupnění - bug 5095, 5097 fixed; laptop
+13.6.2019	eZpřístupnění - bugs 5081
+14.6.2019	eZpřístupnění - bug 5082
+
 17.6.2019	eZpřístupnění - bug 5082
 18.6.2019	eZpřístupnění - bugs 5082, 5098, 5109
 19.6.2019	eZpřístupnění - bug 5112
