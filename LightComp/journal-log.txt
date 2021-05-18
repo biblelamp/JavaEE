@@ -649,3 +649,4 @@ May 2021
 14.5.2021	Elza - bug 7128
 
 17.5.2021	Elza - bug 7161
+18.5.2021	Elza - bug 7161 kontrola
