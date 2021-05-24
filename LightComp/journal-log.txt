@@ -666,3 +666,5 @@ May 2021
 19.5.2021	Elza - bug 7161 kontrola
 20.5.2021	Elza - bug 7161 opravy
 21.5.2021	Elza - bugs 7161, 7145
+
+24.5.2021	Elza - bug 7145 test
