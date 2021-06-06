@@ -1,5 +1,8 @@
 April 2019
 
+29.4.2019	eZpřístupnění - bug 5018, test
+30.4.2019	eZpřístupnění - bugs 5018, 5019
+
 May 2019
 
 02.5.2019	eZpřístupnění - bugs 5018 fixed, 5034
