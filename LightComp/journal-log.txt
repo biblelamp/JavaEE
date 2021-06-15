@@ -716,3 +716,4 @@ Juny 2019
 11.6.2021	Elza - bugs 7105, 7177, 7107
 
 14.6.2021	Elza - bugs 7181, 7148
+15.6.2021	WhoisConnector - bug 7223
