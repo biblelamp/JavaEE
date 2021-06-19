@@ -1,5 +1,9 @@
 April 2019
 
+10.4.2019	eZpřístupnění - seznámení se s modelem
+11.4.2019	eZpřístupnění - založení projektu
+12.4.2019	eZpřístupnění - přidání podpory pro LiquiBase
+
 15.4.2019	eZpřístupnění - příprava doménových tříd pro DB model
 16.4.2019	eZpřístupnění - generování Java tříd + controller+repo+service
 17.4.2019	eZpřístupnění - REST: Import archivu (fáze 1)
