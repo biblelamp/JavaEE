@@ -724,3 +724,5 @@ Juny 2019
 16.6.2021	WhoisConnector - bug 7223
 17.6.2021	WhoisConnector - bug 7223
 18.6.2021	WhoisConnector - bug 7223, Elza - 7015, 7209
+
+21.6.2021	WhoisConnector - bug 7223 test
