@@ -730,3 +730,5 @@ Juny 2019
 23.6.2021	WhoisConnector - bug 7223
 24.6.2021	WhoisConnector - bug 7223
 25.6.2021	WhoisConnector - bug 7223
+
+28.6.2021	WhoisConnector - bug 7223
