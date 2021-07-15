@@ -747,3 +747,4 @@ July 2021
 12.7.2021	WhoisConnector
 13.7.2021	WhoisConnector - bug 7223
 14.7.2021	WhoisConnector - bugs 7223, 7268
+15.7.2021	WhoisConnector - bug 7272
