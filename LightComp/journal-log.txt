@@ -751,3 +751,4 @@ July 2021
 16.7.2021	WhoisConnector - bugs 7268, 7277, 7269, Elza - 7278
 
 19.7.2021	Elza - bug 7278
+20.7.2021	Elza - bugs 7278, 7279
