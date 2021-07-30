@@ -759,3 +759,5 @@ July 2021
 26.7.2021	Elza - bug 7184
 27.7.2021	Elza - bug 7184
 28.7.2001	Elza - bug 7184 react
+	29.7. dovolená
+30.7.2021	Elza - bug 7184 refaktorování
