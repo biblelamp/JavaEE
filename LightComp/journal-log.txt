@@ -770,4 +770,5 @@ August 2021
 05.8.2021	Elza - bugs 7316, 7303
 06.8.2021	Elza - bug 7316 React
 
-https://docs.gitlab.com/ee/user/project/deploy_tokens/
+09.8.2021	Elza - bug 7316 React
+10.8.2021	Elza - bugs 7316 opravy, 7092
