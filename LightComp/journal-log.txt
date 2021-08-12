@@ -773,3 +773,4 @@ August 2021
 09.8.2021	Elza - bug 7316 React
 10.8.2021	Elza - bugs 7316 opravy, 7092
 11.8.2021	Elza - bug 6239
+12.8.2021	Elza - bugs 7237, 6239, 7296, 7328
