@@ -779,3 +779,4 @@ August 2021
 16.8.2021	Elza - bug 7336
 17.8.2021	Elza - bugs 7336, 7337
 18.8.2021	Ezla - bugs 7337, 7328
+19.8.2021	Elza - bug 7328, WhoisConnector - 7350
