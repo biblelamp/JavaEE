@@ -781,3 +781,9 @@ August 2021
 18.8.2021	Ezla - bugs 7337, 7328
 19.8.2021	Elza - bug 7328, WhoisConnector - 7350
 20.8.2021	WhoisConnector - bug 7350, Elza - 7328
+
+	23.8. dovolená
+	24.8. dovolená
+	25.8. dovolená
+	26.8. dovolená
+	27.8. dovolená
