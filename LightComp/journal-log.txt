@@ -802,3 +802,5 @@ September 2021
 	8.9. dovolená
 09.9.2021	Elza - bug 7184
 10.9.2021	Elza - bugs 7184, 7352
+
+13.9.2021	Elza - bug 7352
