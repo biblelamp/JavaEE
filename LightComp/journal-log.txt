@@ -804,3 +804,4 @@ September 2021
 10.9.2021	Elza - bugs 7184, 7352
 
 13.9.2021	Elza - bug 7352
+14.9.2021	Elza - bug 7352 Lucene + luke
