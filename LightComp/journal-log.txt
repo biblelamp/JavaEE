@@ -807,4 +807,4 @@ September 2021
 14.9.2021	Elza - bug 7352 Lucene + luke
 15.9.2021	Elza - bugs 7352, 7418
 16.9.2021	Elza - bug 7418
-17.9.2021	WhoisConnector - bug 7422
+17.9.	WhoisConnector - bug 7422
