@@ -810,3 +810,4 @@ September 2021
 17.9.2021	WhoisConnector - bug 7422, Elza - 6954, 7405
 
 20.9.2021	Elza - bug 7405
+21.9.2021	Elza - bugs 7405, 7406, 7407, 7408, 6954
