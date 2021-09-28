@@ -816,3 +816,5 @@ September 2021
 24.9.2021	Elza - bug 7303
 
 27.9.2021	WhoisConnector - bug 7448, Elza - 7303
+	28.9. svátek
+29.9.2021	Elza - bugs 7303, 7347
