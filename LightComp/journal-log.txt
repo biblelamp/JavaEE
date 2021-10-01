@@ -819,3 +819,7 @@ September 2021
 	28.9. svátek
 29.9.2021	Elza - bugs 7303, 7347
 30.9.2021	Elza - bugs 7347, 7429
+
+October 2021
+
+1.10.	Elza - bug 7429, 7436
