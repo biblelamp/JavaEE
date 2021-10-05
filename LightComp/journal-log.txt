@@ -822,6 +822,7 @@ September 2021
 
 October 2021
 
-1.10.2021	Elza - bug 7429, 7436
+01.10.2021	Elza - bug 7429, 7436
 
-4.10.2021	Elza - bug 7436
+04.10.2021	Elza - bug 7436
+05.10.2021	Elza - bug 7436
