@@ -841,3 +841,5 @@ October 2021
 20.10.2021	Elza - bugs 7471, 7274
 21.10.2021	Elza - bugs 7274, 7430
 22.10.2021	Elza - bugs 7430, 7326, 7484
+
+25.10.2021	WhoisConnector - bug 7503, Elza 7484
