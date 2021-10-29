@@ -845,3 +845,5 @@ October 2021
 25.10.2021	WhoisConnector - bug 7503, Elza 7484
 26.10.2021	Elza - bug 7484, 7423
 27.10.2021	Elza - bug 7423
+	28.10. svátek
+29.10.2021	Elza - bug 7489
