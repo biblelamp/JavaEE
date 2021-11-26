@@ -870,3 +870,4 @@ October 2021
 23.11.2021	Elza - bug 7522
 	24.11. dovolená
 25.11.2021	Elza - bug 7522
+26.11.2021	Elza - bug 7522
