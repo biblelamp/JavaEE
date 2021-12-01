@@ -848,6 +848,8 @@ October 2021
 	28.10. svátek
 29.10.2021	Elza - bug 7489
 
+November 2021
+
 01.11.2021	Elza - bugs 7489, 7501
 02.11.2021	Elza - bugs 7468, 7501, 7385
 03.11.2021	Elza - bugs 7446, 7312
@@ -874,3 +876,7 @@ October 2021
 
 29.11.2021	Elza - bug 7522
 30.11.2021	Elza - bugs 7522, 7542
+
+December 2021
+
+01.12.2021	Elza - bugs 7551, 7559
