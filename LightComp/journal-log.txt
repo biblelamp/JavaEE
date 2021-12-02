@@ -880,3 +880,4 @@ November 2021
 December 2021
 
 01.12.2021	Elza - bugs 7551, 7559
+02.12.2021	Elza - bug 7559
