@@ -890,3 +890,4 @@ December 2021
 10.12.2021	Elza - bug 7569
 
 13.12.2021	Elza - bugs 7569 react, 7575
+14.12.2021	Elza - bug 7575, LA 7576
