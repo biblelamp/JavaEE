@@ -898,3 +898,5 @@ December 2021
 20.12.2021	Elza - bugs 7538, 7566, 7540
 21.12.2021	Elza - bug 7540
 22.12.2021	Elza - bugs 7444, 7540
+	23.12. dovolená
+	24.12. svátek
