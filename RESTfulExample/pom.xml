@@ -11,7 +11,7 @@
 
     <properties>
         <resteasy-jaxrs-version>2.3.2.Final</resteasy-jaxrs-version>
-        <org-bouncycastle-version>1.60</org-bouncycastle-version>
+        <org-bouncycastle-version>1.67</org-bouncycastle-version>
     </properties>
 
     <build>
