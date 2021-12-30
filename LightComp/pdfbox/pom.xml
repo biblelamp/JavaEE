@@ -10,7 +10,7 @@
   <properties>
     <main-class>pdfbox.HelloPDFBox</main-class>
     <java.version>1.8</java.version>
-    <pdfbox.version>2.0.19</pdfbox.version>
+    <pdfbox.version>2.0.24</pdfbox.version>
     <jasperreports.version>6.11.0</jasperreports.version>
   </properties>
 
