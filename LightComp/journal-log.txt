@@ -1248,3 +1248,7 @@ December 2022
 	28.12. dovolená
 	29.12. dovolená
 	30.12. dovolená
+
+January 2023
+
+02.1.2022	Elza - bug 8202
