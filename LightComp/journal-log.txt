@@ -906,3 +906,7 @@ December 2021
 	29.12. dovolená
 	30.12. dovolená
 	31.12. dovolená
+
+January 2022
+
+03.1.2022	Elza - bug 7540, LA 7576
