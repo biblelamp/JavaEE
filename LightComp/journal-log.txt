@@ -912,3 +912,4 @@ January 2022
 03.1.2022	Elza - bug 7540, LA 7576
 04.1.2022	Elza - bug 7540
 05.1.2022	Elza - bug 7540
+06.1.2022	WhoisConnector - bug 7589
