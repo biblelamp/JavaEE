@@ -914,3 +914,11 @@ January 2022
 05.1.2022	Elza - bug 7540
 06.1.2022	WhoisConnector - bug 7589
 07.1.2022	WhoisConnector - bug 7589
+
+	10.1. dovolená
+	11.1. dovolená
+	12.1. dovolená
+	13.1. dovolená
+	14.1. dovolená
+
+	17.1. dovolená
