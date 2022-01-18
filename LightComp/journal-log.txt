@@ -922,3 +922,4 @@ January 2022
 	14.1. dovolená
 
 	17.1. dovolená
+18.1.2022	WhoisConnector - bug 7589
