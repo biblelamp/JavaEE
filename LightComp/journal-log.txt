@@ -924,3 +924,4 @@ January 2022
 	17.1. dovolená
 18.1.2022	WhoisConnector - bug 7589
 19.1.2022	WhoisConnector - bug 7589
+20.1.2022	WhoisConnector - bug 7589
