@@ -928,3 +928,4 @@ January 2022
 21.1.2022	WhoisConnector - bug 7589
 	24.1. dovolená
 25.1.2022	WhoisConnector - bug 7589
+26.1.2022	WhoisConnector - bug 7589
