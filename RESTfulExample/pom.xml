@@ -10,7 +10,7 @@
     <packaging>war</packaging>
 
     <properties>
-        <resteasy-jaxrs-version>2.3.2.Final</resteasy-jaxrs-version>
+        <resteasy-jaxrs-version>3.0.20.Final</resteasy-jaxrs-version>
         <org-bouncycastle-version>1.67</org-bouncycastle-version>
     </properties>
 
