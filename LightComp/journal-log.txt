@@ -942,3 +942,4 @@ Febuary 2022
 04.2.2022	WhoisConnector - bug 7589
 
 07.2.2022	Elza - zdvojení dat při reimportu
+08.2.2022	Elza - zdvojení dat při reimportu
