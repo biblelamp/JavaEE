@@ -945,3 +945,4 @@ Febuary 2022
 08.2.2022	Elza - zdvojení dat při reimportu
 09.2.2022	Elza - zdvojení dat při reimportu
 10.2.2022	Elza - zdvojení dat při reimportu
+11.2.2022	LA PNP - bug 7655
