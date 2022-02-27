@@ -1,3 +1,13 @@
+Groups of topics:
+
+1. OOP. Object oriented programming
+2. JCF. Java Collections Framework
+3. Lambdas & Stream API
+4. I/O. Ввод-вывод
+5. Multithreading
+6. Spring & Spring Boot
+7. Miscellaneous
+
 Training program Java Proffecional (source):
 
 1. Classes, objects, fields and methods of an object. Encapsulation. Fields and methods of a Class. Modifier 'static' and 'final.'
