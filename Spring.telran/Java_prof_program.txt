@@ -8,6 +8,14 @@
 6. Spring & Spring Boot
 7. Miscellaneous
 
+1. OOP. Object oriented programming
+
+    1. Classes, objects, fields and methods of an object. Encapsulation. Fields and methods of a Class. Modifier 'static' and 'final.'
+    4. Inheritance. Abstract classes. Polymorphism
+    10. Understanding reference type.
+    14. Understanding OOP: implementing custom data structure with 'add', 'remove', 'get' and 'getMax' methods.
+    25. Enums in Java.
+
 Программа Java Proffecional (исходные пункты):
 
 1. Classes, objects, fields and methods of an object. Encapsulation. Fields and methods of a Class. Modifier 'static' and 'final.'
