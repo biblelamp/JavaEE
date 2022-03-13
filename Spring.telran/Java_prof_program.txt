@@ -16,6 +16,20 @@
     14. Understanding OOP: implementing custom data structure with 'add', 'remove', 'get' and 'getMax' methods.
     25. Enums in Java.
 
+2. JCF. Java Collections Framework
+
+    3. Sorted collection of elements.
+    7. Data structures definition. Interfaces. Data structure 'List'. ArraysList implementation, beginning.
+    8. Iterators and Iterable. Foreach syntax.
+    9. Comparing objects in Java. Comparator, Comparable. Method sort.
+    11. Lists implementations. LinkedList.
+    12. Data structures 'Queue', 'Stack'. Custom ArrayDeque implementation.
+    13. Java List and Deque implementations. Examples of problems solved via List, Deque.
+    15. Data structure 'Map'. Object.hashCode, HashMap implementation.
+    16. Graphs. Trees, Binary Trees, Tree Map.
+    17. Data structure 'Set'. HashSet.
+    18. Java Set implementation. Exercises.
+
 Программа Java Proffecional (исходные пункты):
 
 1. Classes, objects, fields and methods of an object. Encapsulation. Fields and methods of a Class. Modifier 'static' and 'final.'
