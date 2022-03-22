@@ -981,3 +981,4 @@ March 2022
 18.3.2022	Elza - bugs 7717, 7726
 
 21.3.2022	Elza - bug 7661 groovy
+22.3.2022	Elza - bug 7661 groovy
