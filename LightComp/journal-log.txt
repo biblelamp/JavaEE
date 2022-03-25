@@ -984,3 +984,4 @@ March 2022
 22.3.2022	Elza - bug 7661 groovy
 23.3.2022	Elza - bug 7356
 24.3.2022	Elza - bug 7356
+25.3.2022	WhoisConnector - bug 7743
