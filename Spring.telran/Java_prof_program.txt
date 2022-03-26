@@ -30,6 +30,14 @@
     17. Data structure 'Set'. HashSet.
     18. Java Set implementation. Exercises.
 
+3. Lambdas & Stream API
+
+    33. Lambdas, Functional Interfaces, Method references.
+    34. Existing Functional Interfaces in Java 8. Functions and Predicates.
+    35. Stream API: Stream, primitive streams. Intermediate and Terminal operations.
+    36. Java Streams: Flat map.
+    37. Java Streams: Collectors and Custom Collectors.
+
 Программа Java Proffecional (исходные пункты):
 
 1. Classes, objects, fields and methods of an object. Encapsulation. Fields and methods of a Class. Modifier 'static' and 'final.'
