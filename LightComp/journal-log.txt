@@ -985,3 +985,5 @@ March 2022
 23.3.2022	Elza - bug 7356
 24.3.2022	Elza - bug 7356
 25.3.2022	WhoisConnector - bug 7743
+
+28.3.2022	WhoisConnector - bug 7743, Elza - 7356
