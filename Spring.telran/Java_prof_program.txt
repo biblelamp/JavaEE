@@ -52,6 +52,17 @@
     30. JavaUtilConcurrent. Concurrent Collections.
     32. Threads Executors
 
+6. Spring & Spring Boot (8)
+
+    38. Spring Framework: Introduction, Context and Beans
+    39. Spring Framework: Beans configuration
+    40. Spring Boot: Onion (Hexagonal) architecture
+    41. Spring Boot: Implementing Rest Controllers
+    42. Spring Boot: JPA and databases
+    43. Spring Boot: validation
+    44. Spring Boot: logging and AOP basics
+    45. Spring Boot: scheduled jobs
+
 Программа Java Proffecional (исходные пункты):
 
 1. Classes, objects, fields and methods of an object. Encapsulation. Fields and methods of a Class. Modifier 'static' and 'final.'
