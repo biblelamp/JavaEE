@@ -63,6 +63,19 @@
     44. Spring Boot: logging and AOP basics
     45. Spring Boot: scheduled jobs
 
+7. Miscellaneous (8)
+
+    2. Working with Arrays in Java. Binary search. Sort.
+    5. Generics, Object.equals, Exceptions.
+    6. Unit testing. JUnit.
+    19. Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
+    23. Reflections. Annotations.
+    26. LocalDate, LocalDateTime, ZonedDateTime, exercises.
+    34. Mini-project 1.
+    31. Mini-project 2.
+
+TOTAL: 5+11+5+3+5+8+8 = 45
+
 Программа Java Proffecional (исходные пункты):
 
 1. Classes, objects, fields and methods of an object. Encapsulation. Fields and methods of a Class. Modifier 'static' and 'final.'
