@@ -1000,3 +1000,5 @@ April 2022
 06.4.2022	Elza - bug 7661
 07.4.2022	Elza - bug 7661
 08.4.2022	Elza - bug 7661
+
+11.4.2022	Elza - bug 7661 + groovy
