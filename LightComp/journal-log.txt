@@ -1007,3 +1007,4 @@ April 2022
 14.4.2022	WhoisConnector - bug 7772, Elza - 7661 + groovy
 	15.4. svátek
 
+	18.4. svátek
