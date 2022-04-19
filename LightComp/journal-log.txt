@@ -1008,3 +1008,4 @@ April 2022
 	15.4. svátek
 
 	18.4. svátek
+19.4.2022	WhoisConnector - bug 7772
