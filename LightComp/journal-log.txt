@@ -1009,3 +1009,4 @@ April 2022
 
 	18.4. svátek
 19.4.2022	WhoisConnector - bug 7772
+20.4.2022	WhoisConnector - bug 7772, Elza - 7661
