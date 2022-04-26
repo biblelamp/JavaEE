@@ -1014,3 +1014,4 @@ April 2022
 22.4.2022	Elza - bug 7661, WhoisConnector - 7792
 
 	25.4. dovolená
+26.4.2022	WhoisConnector - bug 7792
