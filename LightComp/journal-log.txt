@@ -1018,3 +1018,7 @@ April 2022
 27.4.2022	WhoisConnector - bug 7792
 28.4.2022	WhoisConnector - bug 7792
 29.4.2022	WhoisConnector - bug 7792
+
+May 2022
+
+02.5.2022	WhoisConnector - bug 7792
