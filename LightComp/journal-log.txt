@@ -1025,3 +1025,4 @@ May 2022
 03.5.2022	WhoisConnector - bug 7792
 04.5.2022	WhoisConnector - bug 7792
 05.5.2022	WhoisConnector - bug 7792
+06.5.2022	WhoisConnector - bug 7792, LA - 7576
