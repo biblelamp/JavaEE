@@ -1028,3 +1028,4 @@ May 2022
 06.5.2022	WhoisConnector - bug 7792, LA - 7576
 
 09.5.2022	LA - bug 7576, Elza - 7279
+10.5.2022	Elza - bug 7279
