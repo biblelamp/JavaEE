@@ -1040,3 +1040,4 @@ May 2022
 20.5.2022	Elza - bug 7643
 
 23.5.2022	Elza - bug 7643 test+
+24.5.2022	Elza - bug 7643 test+
