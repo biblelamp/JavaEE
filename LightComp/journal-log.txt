@@ -1043,3 +1043,4 @@ May 2022
 24.5.2022	Elza - bug 7643 test+
 25.5.2022	Elza - bugs 7643, 7801, 7742, 7846
 26.5.2022	Elza - bug 7846
+27.5.2022	Elza - bug 7846, WhoisConnector - 7847
