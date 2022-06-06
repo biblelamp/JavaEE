@@ -1053,3 +1053,5 @@ Juny 2022
 01.6.2022	Elza - bug 6525
 02.6.2022	Elza - bug 6525
 03.6.2022	Elza - bug 6525
+
+06.6.2022	MUA - deleteFund & reimport, Elza - 7750
