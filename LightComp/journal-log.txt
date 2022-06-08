@@ -1056,3 +1056,4 @@ Juny 2022
 
 06.6.2022	MUA - deleteFund & reimport, Elza - 7750
 07.6.2022	Elza - bugs 7750, 7566, WhoIsConnector - 7865
+08.6.2022	Elza - bugs 7542, 7590
