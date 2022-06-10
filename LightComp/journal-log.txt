@@ -1058,3 +1058,4 @@ Juny 2022
 07.6.2022	Elza - bugs 7750, 7566, WhoIsConnector - 7865
 08.6.2022	Elza - bugs 7542, 7590
 09.6.2022	Elza - bugs 7590, 7866, 7705
+10.6.2022	Elza - bugs 7705, 7866
