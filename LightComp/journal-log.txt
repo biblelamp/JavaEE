@@ -1082,3 +1082,4 @@ July 2022
 01.7.2022	Elza - bugs 7887, 7917
 
 04.7.2022	Elza - bug 7917
+	5.7. státní svátek
