@@ -1083,3 +1083,4 @@ July 2022
 
 04.7.2022	Elza - bug 7917
 	5.7. státní svátek
+	6.7. státní svátek
