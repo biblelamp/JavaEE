@@ -1086,3 +1086,5 @@ July 2022
 	6.7. státní svátek
 	7.7. dovolená
 08.7.2022	Elza - bug 7917
+
+11.7.2022	Elza - bug 7917
