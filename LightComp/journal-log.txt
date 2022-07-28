@@ -1102,3 +1102,4 @@ July 2022
 25.7.2022	Elza - bug 7941
 26.7.2022	Elza - bug 7941
 27.7.2022	Elza - bug 7941
+	28.7. dovolená
