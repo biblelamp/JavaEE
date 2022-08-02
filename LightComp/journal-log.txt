@@ -1108,3 +1108,4 @@ July 2022
 August 2022
 
 	1.8. dovolená
+	2.8. dovolená
