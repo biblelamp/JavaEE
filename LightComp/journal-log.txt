@@ -1110,3 +1110,4 @@ August 2022
 	1.8. dovolená
 	2.8. dovolená
 03.8.2022	Elza - bug 7941
+04.8.2022	Elza - bugs 7941, 7951
