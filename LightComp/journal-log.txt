@@ -1134,3 +1134,7 @@ August 2022
 29.8.2022	Elza - bug 7999
 30.8.2022	Elza - bug 7999
 31.8.2022	Elza - bug 7999, 7987
+
+September 2022
+
+	1.9. dovolená
