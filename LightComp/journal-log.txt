@@ -1139,3 +1139,5 @@ September 2022
 
 	1.9. dovolená
 	2.9. dovolená
+
+	5.9. dovolená
