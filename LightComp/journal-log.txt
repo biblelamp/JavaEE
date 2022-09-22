@@ -1155,3 +1155,4 @@ September 2022
 19.9.2022	WhoisConnector - bug 8055
 20.9.2022	WhoisConnector - bug 8055
 21.9.2022	WhoisConnector - bug 8055
+22.9.2022	WhoisConnector - bug 8055
