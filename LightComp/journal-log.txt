@@ -1162,3 +1162,4 @@ September 2022
 27.9.2022	WhoisConnector - bug 8055
 	28.9. svátek
 29.9.2022	Elza - bug 7987
+30.9.2022	Elza - bug 7987
