@@ -1182,3 +1182,4 @@ October 2022
 18.10.		volný den
 19.10.		volný den
 20.10.2022	Elza - bug 7179, WhoisConnector - 8055
+21.10.2022	WhoisConnector - bug 8055
