@@ -1190,3 +1190,7 @@ October 2022
 27.10.2022	WhoisConnector - bug 8055
 
 31.10.2022	WhoisConnector - bug 8055
+
+November 2022
+
+1.11.2022	WhoisConnector - bug 8055
