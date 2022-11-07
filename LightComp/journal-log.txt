@@ -1197,3 +1197,5 @@ November 2022
 02.11.2022	WhoisConnector - bug 8055
 03.11.2022	WhoisConnector - bug 8139
 04.11.2022	WhoisConnector - bug 8139
+
+7.11.2022	WhoisConnector - bug 8139
