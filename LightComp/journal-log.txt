@@ -1209,3 +1209,5 @@ November 2022
 16.11.2022	Elza - bug 8153
 	17.11. státní svátek
 18.11.2022	Elza - bug 8153
+
+21.11.2022	Elza - bug 8153
