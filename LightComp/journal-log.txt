@@ -1223,3 +1223,4 @@ November 2022
 December 2022
 
 01.12.2022	Elza - bugs 7781, 7849, SOA Praha - 8188
+02.12.2022	SOA Praha - bug 8188
