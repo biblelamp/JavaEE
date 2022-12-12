@@ -1230,3 +1230,5 @@ December 2022
 07.12.2022	Elza - bugs 8195, 7889
 08.12.2022	Elza - bugs 8195, 7411
 09.12.2022	Elza - bugs 8195, 7411, LA PNP - 8203
+
+12.12.2022	Elza - bug 7411, LA PNP - 8203
