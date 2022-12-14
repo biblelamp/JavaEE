@@ -1233,3 +1233,4 @@ December 2022
 
 12.12.2022	Elza - bug 7411, LA PNP - 8203
 13.12.2022	Elza - bug 7411
+14.12.2022	Elza - bug 7411
