@@ -1236,3 +1236,5 @@ December 2022
 14.12.2022	Elza - bug 7411
 15.12.2022	Elza - bug 8146, SOA Praha - bug 8221
 16.12.2022	Elza - bug 8146
+
+19.12.2022	Elza - bug 8146
