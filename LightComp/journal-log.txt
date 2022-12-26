@@ -1242,3 +1242,5 @@ December 2022
 21.12.2022	Elza - bugs 8146, 8202, 8240
 22.12.2022	Elza - bugs 8202, 8240
 	23.12. dovolená
+
+	26.12. dovolená
