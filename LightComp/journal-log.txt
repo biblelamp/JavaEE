@@ -1252,7 +1252,3 @@ December 2022
 January 2023
 
 02.1.2022	Elza - bug 8202
-03.1.2022	Elza - bugs 8202, 8240
-04.1.2022	Elza - bug 8240
-05.1.2022	Elza - bug 8240
-06.1.2022	Elza - bug 8240
