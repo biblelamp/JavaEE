@@ -1261,3 +1261,4 @@ January 2023
 10.1.2023	Elza - bug 8205
 11.1.2023	Elza - bug 8205
 12.1.2023	Elza - bug 8205
+13.1.2023	Elza - bug 7752
