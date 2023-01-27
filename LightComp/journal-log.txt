@@ -1273,3 +1273,4 @@ January 2023
 24.1.2023	Elza - bugs 7752, 8294, 7774
 25.1.2023	Elza - bugs 8294, 8296, 7752
 26.1.2023	SOA Praha - bug 8303
+27.1.2023	SOA Praha - bug 8302, Elza - 8296
