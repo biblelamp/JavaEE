@@ -1293,3 +1293,4 @@ February 2023
 13.2.2023	Elza - bug 8329
 14.2.2023	Elza - bugs 8329, 8348
 15.2.2023	Elza - bug 8349
+16.2.2023	Elza - bug 8349
