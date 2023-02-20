@@ -1295,3 +1295,5 @@ February 2023
 15.2.2023	Elza - bug 8349
 16.2.2023	Elza - bug 8349
 17.2.2023	Elza - bug 8349
+
+20.2.2022	Elza - bugs 8329, 8348, SOA Praha - 8372
