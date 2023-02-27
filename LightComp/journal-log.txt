@@ -1301,3 +1301,5 @@ February 2023
 22.2.2023	Elza - bug 8329, SOA Praha - 8303
 23.2.2023	Elza - bug 8329
 24.2.2022	Elza - bug 8329
+
+27.2.2022	Elza - bug 8329
