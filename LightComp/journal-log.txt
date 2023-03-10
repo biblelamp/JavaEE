@@ -1315,3 +1315,4 @@ March 2023
 07.3.2023	SOA Praha - bug 8404, Elza - 8329
 08.3.2023	Elza - bug 8329
 	9.3. dovolená
+10.3.2023	Elza - bug 8348
