@@ -1316,3 +1316,5 @@ March 2023
 08.3.2023	Elza - bug 8329
 	9.3. dovolená
 10.3.2023	Elza - bug 8348
+
+13.3.2023	Elza - bug 8348
