@@ -1319,3 +1319,4 @@ March 2023
 
 13.3.2023	Elza - bug 8348
 14.3.2023	VHA - aktualizace Elza 2.6.1, Elza - 8348
+15.3.2023	Elza - bugs 8348, 8020
