@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<kml xmlns="http://earth.google.com/kml/2.2">-->
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Placemark>
+<name>Orlik</name>
+<description>Orlik</description>
+<Point>
+<coordinates>14.181221004109831,49.606926490508656,0</coordinates>
+</Point>
+</Placemark>
+</kml>
