@@ -7,9 +7,11 @@ import java.util.Map;
 
 /**
  * Based on https://stackoverflow.com/questions/15636303/extract-coordinates-from-kml-file-in-java
+ *
+ * @see https://developers.google.com/kml/documentation/kml_tut
  */
 
-public class KmlParseDemo {
+public class JavaAPIforKmlDemo {
     static String kmlFile = "KML-Orlik-19012023-hz6d6xbb.kml";
 
     public static void main(String[] args) {
