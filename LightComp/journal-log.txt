@@ -1328,3 +1328,5 @@ March 2023
 22.3.2023	Elza - bug 7612
 23.3.2023	Elza - bugs 8205, 7612 test
 24.3.2023	Elza - bug 7612 test
+
+27.3.2023	Elza - bugs 7752 analize, 7843
