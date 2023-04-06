@@ -1340,3 +1340,4 @@ April 2023
 03.4.2023	Elza - bug 7752
 04.4.2023	Elza - bug 8437
 05.4.2023	Elza - bugs 8437, 7752, WhoisConnector - 8442
+06.4.2023	WhoisConnector - bug 8442
