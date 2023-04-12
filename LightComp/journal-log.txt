@@ -1345,3 +1345,4 @@ April 2023
 
 	10.4. státní svátek
 11.4.2023	WhoisConnector - bug 8442
+12.4.2023	WhoisConnector - bug 8442, Elza - 8394
