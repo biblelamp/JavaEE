@@ -1348,3 +1348,5 @@ April 2023
 12.4.2023	WhoisConnector - bug 8442, Elza - 8394
 13.4.2023	Elza - bug 8394
 14.4.2023	SOA Praha - bug 8454
+
+17.4.2023	SOA Praha - bug 8454, WhoisConnector - 8442
