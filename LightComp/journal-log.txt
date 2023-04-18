@@ -1350,3 +1350,4 @@ April 2023
 14.4.2023	SOA Praha - bug 8454
 
 17.4.2023	SOA Praha - bug 8454, WhoisConnector - 8442
+18.4.2023	WhoisConnector - bug 8442
