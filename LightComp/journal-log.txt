@@ -1347,8 +1347,9 @@ April 2023
 11.4.2023	WhoisConnector - bug 8442
 12.4.2023	WhoisConnector - bug 8442, Elza - 8394
 13.4.2023	Elza - bug 8394
-14.4.2023	SOA Praha - bug 8454
+14.4.2023	SOA Praha - bug 8454, Elza - 8450
 
 17.4.2023	SOA Praha - bug 8454, WhoisConnector - 8442
 18.4.2023	WhoisConnector - bug 8442
 19.4.2023	Elza VHA - aktualizace 2.7.2, WhoisConnector - 8442
+20.4.2023	Elza - bugs 8466, 8397
