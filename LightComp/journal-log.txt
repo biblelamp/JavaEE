@@ -1354,3 +1354,5 @@ April 2023
 19.4.2023	Elza VHA - aktualizace 2.7.2, WhoisConnector - 8442
 20.4.2023	Elza - bugs 8466, 8397
 21.4.2023	Elza - bug 8397
+
+24.4.2023	Elza - bug 8397
