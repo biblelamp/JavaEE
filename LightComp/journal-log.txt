@@ -1359,3 +1359,4 @@ April 2023
 25.4.2023	SOA Praha - bug 8481
 26.4.2023	Elza - bug 8397
 27.4.2023	Elza - bug 8397
+28.4.2023	Elza - bug 8397
