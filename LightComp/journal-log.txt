@@ -1371,3 +1371,4 @@ May 2023
 
 	8.5. státní svátek
 09.5.2023	Elza - bug 8397
+10.5.2023	Elza - bug 8493
