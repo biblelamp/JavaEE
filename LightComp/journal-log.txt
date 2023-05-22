@@ -1380,3 +1380,5 @@ May 2023
 17.5.2023	Elza - bug 8483
 18.5.2023	Elza - bug 8483
 19.5.2023	Elza - bug 8483, SOA Praha - Nymburk prod
+
+22.5.2023	SOA Praha - bug 8506, Elza - 8503, 8501
