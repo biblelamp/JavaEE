@@ -1400,4 +1400,5 @@ Juny 2023
 06.6.2023	Elza - bugs 8523, 8527, 8533
 07.6.2023	Elza - bug 8533
 08.6.2023	Elza - bug 8533, SOA Praha - 8539
+09.6.2023	SOA Praha - bugs 8539, 8545, Elza - 8541
 
