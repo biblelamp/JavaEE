@@ -1409,3 +1409,4 @@ Juny 2023
 16.6.2023	Elza - bug 8551 (8524), SOA Praha Melnik
 
 19.6.2023	SOA Praha - KO, MB, ME do prod
+20.6.2023	Elza - bug 8551 (8524)
