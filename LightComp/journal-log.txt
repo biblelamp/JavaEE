@@ -1411,3 +1411,4 @@ Juny 2023
 19.6.2023	SOA Praha - KO, MB, ME do prod
 20.6.2023	Elza - bugs 8551, 8558 (8524)
 21.6.2023	Elza - bug 8558 (8524)
+22.6.2023	Elza - bug 8558 (8524)
