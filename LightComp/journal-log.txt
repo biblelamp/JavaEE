@@ -1423,4 +1423,8 @@ Juny 2023
 July 2023
 
 03.7.2023	Elza - bug 8524
-04.7.2023	Elza - bug 8524
+04.7.2003	Elza - bugs 8524, 8435
+	5.7. státní svátek
+	6.7. státní svátek
+	7.7. dovolená
+10.7.2023	Elza - bug 8435
