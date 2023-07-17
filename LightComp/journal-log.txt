@@ -1427,8 +1427,11 @@ July 2023
 	5.7. státní svátek
 	6.7. státní svátek
 	7.7. dovolená
+
 10.7.2023	Elza - bug 8435
 11.7.2023	Elza - bugs 8524, 8436, SOA Praha
 12.7.2023	Elza - bug 8436
 13.7.2023	Elza - bugs 8578,8436
 14.7.2023	Elza - bug 8436
+
+17.7.2023	Elza - bug 8436
