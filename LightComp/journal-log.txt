@@ -1438,3 +1438,4 @@ July 2023
 18.7.2023	SOA Praha, Elza - 8436
 19.7.2023	Elza - bugs 8436, 8583
 20.7.2023	Elza - bug 8436
+21.7.2023	Elza - bug 8436
