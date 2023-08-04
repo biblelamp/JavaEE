@@ -1452,4 +1452,5 @@ August 2023
 
 01.8.2023	Elza - bug 8597
 	2.8. dovolená
-3.8.2023	Elza - bugs 8597, 8599
+3.8.2023	Elza - bugs 8597, 8435, 8599
+4.8.2023	Elza - bug 8436
