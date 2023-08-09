@@ -1457,3 +1457,4 @@ August 2023
 
 07.8.2023	Elza - bug 8436 test
 08.8.2023	Elza - bug 8436 test
+09.8.2023	Elza - bugs 8579, 7926
