@@ -1484,4 +1484,5 @@ September 2023
 	4.9. dovolená
 05.9.2023	Elza VHA - aktualizace 2.8.1, Elza - bugs 8397, 8632
 06.9.2023	Elza - bugs 8632, 8631
-07.9.2023	Elza - bug 8631
+07.9.2023	Elza - bug 8631, WhoisConnector - 8002
+08.9.2023	Elza - bug 7568
