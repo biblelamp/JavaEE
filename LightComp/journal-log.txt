@@ -1490,3 +1490,4 @@ September 2023
 11.9.2023	Elza - bug 8643
 	12.9. dovolená
 13.9.2023	Elza - bugs 8648, 8679
+14.9.2023	Elza - bug 8648
