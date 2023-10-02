@@ -1501,4 +1501,10 @@ September 2023
 
 25.9.2023	Elza - bug 7781
 26.9.2023	Elza - bugs 7781, 8436, 8705
-27.9.2023	Elza - bug 8626
+27.9.2023	Elza - bug 8626, SOA Praha - 8709
+	28.9. státní svátek
+	29.9. dovolená
+
+October 2023
+
+2.10.2023	Elza - bug 8626
