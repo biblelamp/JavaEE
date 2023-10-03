@@ -1507,4 +1507,5 @@ September 2023
 
 October 2023
 
-2.10.2023	Elza - bug 8626
+02.10.2023	Elza - bug 8626
+03.10.2023	Elza - bug 8626
