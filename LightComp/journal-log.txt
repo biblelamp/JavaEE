@@ -1517,3 +1517,6 @@ October 2023
 10.10.2023	Elza - bugs 8626, 7876, 8666
 11.10.2023	Elza - bugs 8626, 8666
 12.10.2023	Elza - bug 8666
+13.10.2023	Elza - bug 8666 test
+
+16.10.2023	Elza - bug 8666, WhoisConnector - 8002
