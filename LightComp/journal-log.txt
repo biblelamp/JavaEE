@@ -1521,3 +1521,4 @@ October 2023
 
 16.10.2023	Elza - bug 8666, WhoisConnector - 8002
 17.10.2023	Elza - bug 8666
+18.10.2023	SOA Praha - bug 8723
