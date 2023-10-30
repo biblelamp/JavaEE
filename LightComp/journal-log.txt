@@ -1528,3 +1528,7 @@ October 2023
 23.10.2023	Elza - bug 8666 test, SOA Praha Velkostatek Křivoklát
 24.10.2023	Elza - bug 8722
 25.10.2023	Elza - bugs 8734, 8722
+	26.10. dovolená
+	27.10. dovolená
+
+30.10.2023	Elza - bug 8734
