@@ -1531,4 +1531,5 @@ October 2023
 	26.10. dovolená
 	27.10. dovolená
 
-30.10.2023	Elza - bug 8734
+30.10.2023	Elza - bugs 8734, 8735
+31.10.2023	Elza - bug 8722
