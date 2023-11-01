@@ -1533,3 +1533,7 @@ October 2023
 
 30.10.2023	Elza - bugs 8734, 8735
 31.10.2023	Elza - bug 8722
+
+November 2023
+
+01.11.2023	Elza - bug 8722
