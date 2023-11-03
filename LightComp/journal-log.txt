@@ -1537,3 +1537,5 @@ October 2023
 November 2023
 
 01.11.2023	Elza - bug 8722
+	2.11. dovolená
+03.11.2023	Elza - 8705
