@@ -1538,7 +1538,8 @@ November 2023
 
 01.11.2023	Elza - bug 8722
 	2.11. dovolená
-03.11.2023	Elza - 8666, SOA Praha - Mělník
+03.11.2023	Elza - bug 8666, SOA Praha - Mělník
 	6.11. dovolená
-07.11.2023	Elza - 8666
-08.11.2023	Elza - 8666
+07.11.2023	Elza - bug 8666
+08.11.2023	Elza - bug 8666
+09.11.2023	Elza - bug 8666
