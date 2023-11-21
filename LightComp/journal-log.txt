@@ -1552,3 +1552,4 @@ November 2023
 	17.11. státní svátek
 
 20.11.2023	Elza - bug 8705
+21.11.2023	Elza - bug 8705
