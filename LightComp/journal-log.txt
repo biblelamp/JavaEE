@@ -1561,3 +1561,7 @@ November 2023
 28.11.2023	Elza - bugs 8771, 8784, 8298
 29.11.2023	Elza - bugs 8771, 8298
 30.11.2023	Elza - bug 8298
+
+December 2023
+
+01.12.2023	Elza - bug 8298
