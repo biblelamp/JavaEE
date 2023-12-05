@@ -1565,3 +1565,6 @@ November 2023
 December 2023
 
 01.12.2023	Elza - bug 8298
+
+04.12.2023	Elza - bug 8648
+05.12.2023	Elza - bug 8648
