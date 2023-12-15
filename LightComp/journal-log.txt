@@ -1575,4 +1575,5 @@ December 2023
 11.12.2023	Elza - bugs 8260, 8791
 12.12.2023	Elza - v3.0
 13.12.2023	Elza - v3.0
-14.12.2023	Elza - v3.0
+14.12.2023	Elza - v3.0 první start
+15.12.2023	Elza - v3.0 testy
