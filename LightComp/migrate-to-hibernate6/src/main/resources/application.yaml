@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/migrate_to_6
+    username: postgres
+    password: root
