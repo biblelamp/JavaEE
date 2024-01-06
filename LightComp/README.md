@@ -12,3 +12,9 @@ Encountered the same issue, as a workaround you can set the following VM option
 
 Unable to create SAAJ meta-factory: Provider SAAJMetaFactoryImpl not found
 https://www.studytonight.com/post/solved-unable-to-create-saaj-metafactory-provider-saajmetafactoryimpl-not-found
+
+How to use QueryBuilder and Search String in hibernate search 6?
+https://stackoverflow.com/questions/71219881/how-to-use-querybuilder-and-search-string-in-hibernate-search-6
+
+Query DSL migration reference
+https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#queries-reference
