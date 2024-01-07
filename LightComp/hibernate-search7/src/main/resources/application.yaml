@@ -1,1 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hibernate_search
+    username: postgres
+    password: root
 
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true

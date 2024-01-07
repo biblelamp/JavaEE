@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hibernate search</title>
+</head>
+<body>
+  <p>Add book name</p>
+  <form action="/add" th:object="${book}" method="POST">
+      <table border="0">
+          <tr>
+              <td><input type="text" th:field="*{name}"/></td>
+              <td><input type="submit" value="Add"/></td>
+          </tr>
+      </table>
+  </form>
+  <table style='border: 1px solid lightgray'>
+      <tr>
+          <th>№</th>
+          <th>Book name</th>
+          <th>Action</th>
+      </tr>
+      <tr th:each="book : ${books}">
+          <td th:utext="${book.id}"/>
+          <td th:utext="${book.name}"/>
+          <td>
+              <form action="/delete" th:method="DELETE">
+                  <input type="hidden" name="id" th:value="${book.id}"/>
+                  <button>delete</button>
+              </form>
+          </td>
+      </tr>
+  </table>
+  <p>Hibernate search</p>
+  <form action="/search" th:object="${search}" method="POST">
+    <table border="0">
+      <tr>
+        <td><input type="text" th:field="*{text}"/></td>
+        <td><input type="submit" value="Search"/></td>
+      </tr>
+    </table>
+  </form>
+  <table style='border: 1px solid lightgray'>
+      <tr>
+          <th>№</th>
+          <th>Book name</th>
+      </tr>
+      <tr th:each="item : ${result}">
+          <td th:utext="${item.id}"/>
+          <td th:utext="${item.name}"/>
+      </tr>
+  </table>
+</body>
+</html>
