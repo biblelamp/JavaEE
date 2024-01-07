@@ -32,7 +32,12 @@ public class BookService {
                 .where(f -> f.bool().with(b -> {
                     b.must(f.matchAll());
                     if (txtSearch != null) {
-                        b.must(f.wildcard().field(Book.NAME).matching("*" + txtSearch + "*"));
+//                        b.must(f.match().field(Book.NAME).matching(txtSearch));
+//                        b.must(f.wildcard().field(Book.NAME).matching("*" + txtSearch + "*"));
+                        String[] tokens = txtSearch.split(" ");
+                        for (String token : tokens) {
+                            b.must(f.wildcard().field(Book.NAME).matching("*" + token + "*"));
+                        }
                     }
                 }))
                 .fetch(from, count);
