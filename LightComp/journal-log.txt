@@ -1597,3 +1597,5 @@ January 2024
 03.01.2024	Elza - v3.0 testy (e:2,f:2)
 04.01.2024	Elza - v3.0 testy (e:0,f:2)
 05.01.2024	Elza - v3.0 findApCachedAccessPointis
+
+08.01.2024	Elza - v3.0 findApCachedAccessPointis
