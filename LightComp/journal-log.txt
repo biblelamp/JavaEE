@@ -1599,3 +1599,4 @@ January 2024
 05.01.2024	Elza - v3.0 findApCachedAccessPointis
 
 08.01.2024	Elza - v3.0 findApCachedAccessPointis
+09.01.2024	Elza - v3.0 findApCachedAccessPointis
