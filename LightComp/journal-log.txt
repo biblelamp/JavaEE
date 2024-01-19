@@ -1596,15 +1596,16 @@ January 2024
 	2.1. dovolená
 03.01.2024	Elza - v3.0 testy (e:2,f:2)
 04.01.2024	Elza - v3.0 testy (e:0,f:2)
-05.01.2024	Elza - v3.0 findApCachedAccessPointis
+05.01.2024	Elza - v3.0 vyhledávání archivních entit
 
-08.01.2024	Elza - v3.0 findApCachedAccessPointis
-09.01.2024	Elza - v3.0 findApCachedAccessPointis
-10.01.2024	Elza - v3.0 findApCachedAccessPointis
-11.01.2024	Elza - v3.0 findApCachedAccessPointis
-12.01.2024	Elza - v3.0 findApCachedAccessPointis
+08.01.2024	Elza - v3.0 vyhledávání archivních entit
+09.01.2024	Elza - v3.0 vyhledávání archivních entit
+10.01.2024	Elza - v3.0 vyhledávání archivních entit
+11.01.2024	Elza - v3.0 vyhledávání archivních entit
+12.01.2024	Elza - v3.0 vyhledávání archivních entit
 
-15.01.2024	Elza - v3.0 findApCachedAccessPointis
-16.01.2024	Elza - v3.0 findApCachedAccessPointis
-17.01.2024	Elza - v3.0 findApCachedAccessPointis
-18.01.2024	Elza - v3.0 findApCachedAccessPointis
+15.01.2024	Elza - v3.0 vyhledávání archivních entit
+16.01.2024	Elza - v3.0 vyhledávání archivních entit
+17.01.2024	Elza - v3.0 vyhledávání archivních entit
+18.01.2024	Elza - v3.0 vyhledávání archivních entit funguje
+19.01.2024	Elza - v3.0 filtr pro pokročilé vyhledávání
