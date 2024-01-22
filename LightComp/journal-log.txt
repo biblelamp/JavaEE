@@ -1608,4 +1608,6 @@ January 2024
 16.01.2024	Elza - v3.0 vyhledávání archivních entit
 17.01.2024	Elza - v3.0 vyhledávání archivních entit
 18.01.2024	Elza - v3.0 vyhledávání archivních entit funguje
-19.01.2024	Elza - v3.0 filtr pro pokročilé vyhledávání
+19.01.2024	Elza - v3.0 filtr pokročilé vyhledávání
+
+22.01.2024	Elza - v3.0 filtr pokročilé vyhledávání
