@@ -1617,4 +1617,5 @@ January 2024
 26.01.2024	Elza - v3.0 filtr pokročilé vyhledávání
 
 29.01.2024	Elza - v3.0 filtr pokročilé vyhledávání
-30.01.2024	Elza - v3.0 filtr pokročilé vyhledávání
+30.01.2024	Elza - v3.0 odstranění orika-core
+31.01.2024	Elza - v3.0 odstranění orika-core
