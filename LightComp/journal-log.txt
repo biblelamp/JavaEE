@@ -934,7 +934,7 @@ January 2022
 
 31.1.2022	WhoisConnector - bug 7589
 
-Febuary 2022
+February 2022
 
 01.2.2022	WhoisConnector - bug 7589
 02.2.2022	WhoisConnector - bug 7589
@@ -1619,3 +1619,8 @@ January 2024
 29.01.2024	Elza - v3.0 filtr pokročilé vyhledávání
 30.01.2024	Elza - v3.0 odstranění orika-core
 31.01.2024	Elza - v3.0 odstranění orika-core
+
+February 2024
+
+	1.2. dovolená
+02.02.2024	Elza - v3.0 odstranění orika-core
