@@ -1624,3 +1624,5 @@ February 2024
 
 	1.2. dovolená
 02.02.2024	Elza - v3.0 odstranění orika-core
+
+05.02.2024	Elza - v3.0 odstranění orika-core
