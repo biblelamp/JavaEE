@@ -1627,3 +1627,4 @@ February 2024
 
 05.02.2024	Elza - v3.0 odstranění orika-core
 06.02.2024	Elza - v3.0 hibernate search 7 in tests
+07.02.2024	Elza - v3.0 hibernate search 7 in tests
