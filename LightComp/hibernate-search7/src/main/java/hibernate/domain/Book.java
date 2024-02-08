@@ -33,7 +33,7 @@ public class Book {
     @Column(name = "book_id")
     private Integer id;
 
-    @FullTextField
+    @FullTextField(analyzer = "cz")
     @Column(length = Length.LONG) // Hibernate long text field
     private String name;
 

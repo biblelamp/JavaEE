@@ -5,6 +5,7 @@ import hibernate.domain.Book;
 import hibernate.repository.BookRepository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
 import org.hibernate.search.engine.search.query.SearchResult;
 import org.hibernate.search.mapper.orm.Search;
 import org.hibernate.search.mapper.orm.session.SearchSession;
@@ -34,6 +35,7 @@ public class BookService {
                     if (txtSearch != null) {
 //                        b.must(f.match().field(Book.NAME).matching(txtSearch));
 //                        b.must(f.wildcard().field(Book.NAME).matching("*" + txtSearch + "*"));
+//                        List<String> tokens = analyze(txtSearch, new WhitespaceAnalyzer());
                         String[] tokens = txtSearch.split(" ");
                         for (String token : tokens) {
                             b.must(f.wildcard().field(Book.NAME).matching("*" + token + "*"));

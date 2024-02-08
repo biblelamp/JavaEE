@@ -4,6 +4,17 @@ spring:
     username: postgres
     password: root
 
+  jpa:
+    properties:
+      hibernate:
+        search:
+          backend:
+            analysis:
+              configurer: hibernate.config.LuceneAnalyzerConfigurer
+#            directory:
+#              root: ${elza.workingDir}/lucene/indexes
+            lucene_version: LATEST
+
   mvc:
     hiddenmethod:
       filter:
