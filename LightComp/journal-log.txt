@@ -1630,3 +1630,5 @@ February 2024
 07.02.2024	Elza - v3.0 hibernate search 7 in tests
 08.02.2024	Elza - v3.0 filtr pokročilé vyhledávání
 09.02.2024	Elza - v3.0 filtr pokročilé vyhledávání
+
+12.02.2024	Elza - v3.0 filtr pokročilé vyhledávání
