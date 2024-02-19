@@ -1636,3 +1636,5 @@ February 2024
 14.02.2024	Elza - v3.0 filtr pokročilé vyhledávání
 15.02.2024	Elza - v3.0 filtr pokročilé vyhledávání
 16.02.2024	Elza - v3.0 filtr pokročilé vyhledávání
+
+19.02.2024	Elza - v3.0 filtr pokročilé vyhledávání
