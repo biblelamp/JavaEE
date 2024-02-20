@@ -1637,4 +1637,5 @@ February 2024
 15.02.2024	Elza - v3.0 filtr pokročilé vyhledávání
 16.02.2024	Elza - v3.0 filtr pokročilé vyhledávání
 
-19.02.2024	Elza - v3.0 filtr pokročilé vyhledávání
+19.02.2024	Elza - bug 8858
+20.02.2024	Elza - bug 8858
