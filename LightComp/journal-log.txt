@@ -1644,4 +1644,5 @@ February 2024
 23.02.2024	Elza - bugs 8859, 8861
 
 26.02.2024	Elza - bug 8861
-27.02.2024	Elza - bug 8861
+27.02.2024	Elza - bug 8861, v3.0 filtr pokročilé vyhledávání
+28.02.2024	Elza - v3.0 filtr pokročilé vyhledávání
