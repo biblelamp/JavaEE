@@ -1651,3 +1651,5 @@ February 2024
 March 2024
 
 01.03.2024	Elza - v3.0 filtr pokročilé vyhledávání
+
+04.03.2024	Elza - v3.0 strategy: outbox-polling
