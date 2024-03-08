@@ -1655,4 +1655,5 @@ March 2024
 04.03.2024	Elza - v3.0 strategy: outbox-polling
 05.03.2024	Elza - bug 8877, Elza - v3.0 strategy: outbox-polling
 06.03.2024	Elza - bug 8877
-07.03.2024	Elza - bug 8877
+07.03.2024	Elza - bug 8877, Elza - v3.0 findNodeIdsByFilters
+08.03.2024	Elza - v3.0 findNodeIdsByFilters
