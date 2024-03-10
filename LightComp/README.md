@@ -27,3 +27,8 @@ https://www.baeldung.com/java-remove-accents-from-text
 
 Hibernate Search 6 With Spring Boot
 https://www.mindbowser.com/hibernate-search-6-with-spring-boot/
+
+8.3.2024
+
+How to use QueryBuilder and Search String in hibernate search 6?
+https://stackoverflow.com/questions/71219881/how-to-use-querybuilder-and-search-string-in-hibernate-search-6
