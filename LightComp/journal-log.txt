@@ -1657,3 +1657,5 @@ March 2024
 06.03.2024	Elza - bug 8877
 07.03.2024	Elza - bug 8877, Elza - v3.0 findNodeIdsByFilters
 08.03.2024	Elza - v3.0 findNodeIdsByFilters
+
+11.03.2024	Elza - v3.0 findNodeIdsByFilters
