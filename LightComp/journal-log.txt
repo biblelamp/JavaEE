@@ -1666,3 +1666,4 @@ March 2024
 
 18.03.2024	Elza - v3.0 findNodeIdsByFilters
 19.03.2024	Elza - v3.0 findNodeIdsByFilters
+20.03.2024	Elza - v3.0 findNodeIdsByFilters
