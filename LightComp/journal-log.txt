@@ -1669,3 +1669,5 @@ March 2024
 20.03.2024	Elza - v3.0 findNodeIdsByFilters
 21.03.2024	Elza - v3.0 findNodeIdsByFilters
 22.03.2024	Elza - v3.0 http://10.2.0.27:8082/
+
+23.03.2024	Elza - v3.0 findByFulltextAndVersionLockChangeId
