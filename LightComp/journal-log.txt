@@ -1672,3 +1672,4 @@ March 2024
 
 25.03.2024	Elza - v3.0 findByFulltextAndVersionLockChangeId
 26.03.2024	Elza - v3.0 findByFulltextAndVersionLockChangeId
+27.03.2024	Elza VHA - aktualizace 2.8.16, Elza v3.0
