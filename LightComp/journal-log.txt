@@ -1674,3 +1674,9 @@ March 2024
 26.03.2024	Elza - v3.0 findByFulltextAndVersionLockChangeId
 27.03.2024	Elza VHA - aktualizace 2.8.16, Elza v3.0
 28.03.2024	Elza - v3.0 NodeRepositoryImpl
+	29.3. státní svátek
+
+April 2024
+
+	1.4. státní svátek
+02.04.2024	Elza - v3.0 NodeRepositoryImpl.findFundIdsByFulltext()
