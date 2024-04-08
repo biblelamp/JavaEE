@@ -1682,4 +1682,6 @@ April 2024
 02.04.2024	Elza - v3.0 NodeRepositoryImpl.findFundIdsByFulltext()
 03.04.2024	Elza - v3.0 NodeRepositoryImpl finish
 04.04.2024	Elza - bugs 8909, 8889
-05.04.2024	Elza - v3.0
+05.04.2024	Elza - v3.0 bug 8900
+
+08.04.2024	Elza - v3.0 bug 8900
