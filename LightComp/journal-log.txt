@@ -1695,3 +1695,5 @@ April 2024
 17.04.2024	Elza - v3.0 bug 8925
 18.04.2024	Elza - v3.0 bug 8925
 19.04.2024	Elza - v3.0 bug 8925
+
+22.04.2024	Elza - v3.0 bug 8925, deserialization in bridges
