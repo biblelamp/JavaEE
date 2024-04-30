@@ -1704,3 +1704,4 @@ April 2024
 26.04.2024	Elza - v3.0 bug 8928, v2.8 bug 8944
 
 29.04.2024	Elza - v3.0 bug 8928
+30.04.2024	Elza - v3.0 bug 8928 test
