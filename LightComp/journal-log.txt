@@ -1705,3 +1705,8 @@ April 2024
 
 29.04.2024	Elza - v3.0 bug 8928
 30.04.2024	Elza - v3.0 bug 8928 test
+
+May 2024
+
+	1.5. státní svátek
+02.05.2024	Elza - v3.0 bug 8928 test
