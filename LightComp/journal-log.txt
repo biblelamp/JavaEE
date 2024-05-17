@@ -1721,4 +1721,5 @@ May 2024
 13.05.2024	Elza - v3.0 bug 8928 test
 14.05.2024	Elza - v3.0 bug 8928 test
 15.05.2024	Elza - v3.0 bugs 8928 test, 8962
-16.05.2024	Elza - v3.0 bug 8962
+16.05.2024	Elza - v3.0 bugs 8962, 7774
+17.05.2024	Elza - v3.0 bug 7774
