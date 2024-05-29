@@ -1731,4 +1731,5 @@ May 2024
 24.05.2024	Elza - v3.0 bug 8955
 
 27.05.2024	Elza - bug 8955
-28.05.2024	Elza - v3.0 filtr pokročilé vyhledávání
+28.05.2024	Elza - v3.0 bug 8088
+29.05.2024	Elza - v3.0 bug 8088
