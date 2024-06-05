@@ -1735,3 +1735,9 @@ May 2024
 29.05.2024	Elza - v3.0 bug 8088
 30.05.2024	Elza - v3.0 bug 8088
 31.05.2024	Elza - v3.0 bug 8088
+
+Juny 2024 
+
+	3.6. dovolená
+	4.6. dovolená
+05.06.2024	Elza - v3.0 bugs 8977, 8928
