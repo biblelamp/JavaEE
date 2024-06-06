@@ -1741,3 +1741,4 @@ Juny 2024
 	3.6. dovolená
 	4.6. dovolená
 05.06.2024	Elza - v3.0 bugs 8977, 8928
+06.06.2024	Elza - v3.0 bug 8928
