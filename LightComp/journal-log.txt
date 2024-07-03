@@ -1766,3 +1766,4 @@ July 2024
 
 	1.7. dovolená
 02.07.2024	Elza - v3.0 bug 8961 cherry-pick
+03.07.2024	Elza - v3.0 bugs 8961, 8986
