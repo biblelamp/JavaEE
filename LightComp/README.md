@@ -32,3 +32,31 @@ https://www.mindbowser.com/hibernate-search-6-with-spring-boot/
 
 How to use QueryBuilder and Search String in hibernate search 6?
 https://stackoverflow.com/questions/71219881/how-to-use-querybuilder-and-search-string-in-hibernate-search-6
+
+14.3.2024
+
+Hibernate Search 6.0.11.Final: Migration Guide from 5.11
+https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#searching
+
+{!} org.apache.lucene.search.Query ⇒ SearchPredicate
+
+Remaining classes:
+- * GeDescItemCondition
+- * GtDescItemCondition
+- * LeDescItemCondition
+- * LtDescItemCondition
+- * IntervalDescItemCondition
+- * NotIntervalDescItemCondition
+- * EqIntervalDescItemCondition
+- * IntersectDescItemCondition
+- * SubsetDescItemCondition
+- * SelectedValuesDescItemEnumCondition
+- * UnselectedValuesDescItemEnumCondition
+
+4.7.2024
+
+Merging LiquiBase changesets
+https://stackoverflow.com/questions/47770546/merging-liquibase-changesets
+
+Liquibase doc: generate-changelog
+https://docs.liquibase.com/commands/inspection/generate-changelog.html
