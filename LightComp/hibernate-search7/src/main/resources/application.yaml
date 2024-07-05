@@ -5,15 +5,23 @@ spring:
     password: root
 
   jpa:
+    hibernate.ddl-auto: create
     properties:
       hibernate:
         search:
+#          multi_tenancy:
+#            strategy: discriminator
+          coordination:
+            strategy: outbox-polling
           backend:
             analysis:
               configurer: hibernate.config.LuceneAnalyzerConfigurer
 #            directory:
 #              root: ${elza.workingDir}/lucene/indexes
             lucene_version: LATEST
+        cache:
+          use_second_level_cache: true
+          region.factory_class: jcache
 
   mvc:
     hiddenmethod:
