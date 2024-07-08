@@ -1768,3 +1768,6 @@ July 2024
 02.07.2024	Elza - v3.0 bug 8961 cherry-pick
 03.07.2024	Elza - v3.0 bugs 8961, 8986
 04.07.2024	Elza - v3.0 bugs 8986, 9020
+	5.7. státní svátek
+
+08.07.2024	Elza - v3.0 bug 9020
