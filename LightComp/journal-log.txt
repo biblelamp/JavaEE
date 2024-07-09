@@ -1771,3 +1771,4 @@ July 2024
 	5.7. státní svátek
 
 08.07.2024	Elza - v3.0 bug 9020
+09.07.2024	Elza - v3.0 bug 9021, liquibase 3.8.9 generateChangelog
