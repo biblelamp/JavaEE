@@ -60,3 +60,8 @@ https://stackoverflow.com/questions/47770546/merging-liquibase-changesets
 
 Liquibase doc: generate-changelog
 https://docs.liquibase.com/commands/inspection/generate-changelog.html
+
+12.7.2024
+
+Swagger in Spring Boot 3.x
+https://springdoc.org/#migrating-from-springfox
