@@ -1775,3 +1775,5 @@ July 2024
 10.07.2024	Elza - v3.0 liquibase changelog 2.x trim
 11.07.2024	Elza - v3.0 bug 7843, Liquibase changelog 2.x trim
 12.07.2024	Elza - v3.0 bug 9023, SOA Praha
+
+15.07.2024	Elza - v3.0 bug 9023, SOA Praha, Liquibase changelog 2.x trim
