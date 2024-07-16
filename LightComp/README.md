@@ -39,6 +39,7 @@ Hibernate Search 6.0.11.Final: Migration Guide from 5.11
 https://docs.jboss.org/hibernate/search/6.0/migration/html_single/#searching
 
 {!} org.apache.lucene.search.Query ⇒ SearchPredicate
+https://docs.jboss.org/hibernate/stable/search/reference/en-US/html_single/#query-predicate
 
 Remaining classes:
 - * GeDescItemCondition
@@ -65,3 +66,8 @@ https://docs.liquibase.com/commands/inspection/generate-changelog.html
 
 Swagger in Spring Boot 3.x
 https://springdoc.org/#migrating-from-springfox
+
+18.7.2024
+
+Error Handling for REST with Spring
+https://www.baeldung.com/exception-handling-for-rest-with-spring
