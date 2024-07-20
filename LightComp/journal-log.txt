@@ -1780,3 +1780,4 @@ July 2024
 16.07.2024	Elza - v3.0 bugs 9023, 9027
 17.07.2024	Elza - v3.0 bug 9027, Liquibase changelog 2.x trim
 18.07.2024	Elza - v3.0 bugs 9029, 9030 [ 9025 ]
+19.07.2024	Elza - v3.0 bugs 9029, 9030
