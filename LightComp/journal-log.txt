@@ -1791,3 +1791,8 @@ July 2024
 29.07.2024	Elza - v3.0 bug 9025
 30.07.2024	Elza - v3.0 bug 9025
 31.07.2024	Elza - v3.0 bug 9025
+
+August 2024
+
+	1.8. dovolená
+	2.8. dovolená
