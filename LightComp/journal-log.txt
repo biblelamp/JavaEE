@@ -1824,3 +1824,5 @@ September 2024
 
 	2.9. dovolená
 03.09.2024	Elza - v3.0 bug 9083
+04.09.2024	Elza - v3.0 bugs 9083, 9091
+05.09.2024	Elza - v3.0 bugs 9091, 9056
