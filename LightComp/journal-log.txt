@@ -1853,3 +1853,4 @@ October 2024
 01.10.2024	Elza - v3.0 bug 8955
 	2.10. dovolená
 03.10.2024	Elza - v3.0 bug 8828, LA PNP bug 9134
+04.10.2024	LA PNP bug 9134, Elza - v3.0 bug 9139
