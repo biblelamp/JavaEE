@@ -1872,3 +1872,5 @@ October 2024
 23.10.2024	Elza - v3.0 bug 9151
 24.10.2024	Elza - v3.0 bug 9151
 25.10.2024	Elza - v3.0 bugs 9166, 9151
+
+	28.10. státní svátek
