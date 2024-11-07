@@ -1881,3 +1881,7 @@ October 2024
 November 2024
 
 01.11.2024	Elza - v3.0 bugs 9175, 9151
+	4.11. dovolená
+	5.11. dovolená
+	6.11. dovolená
+	7.11. dovolená
