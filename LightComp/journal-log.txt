@@ -1885,3 +1885,4 @@ November 2024
 	5.11. dovolená
 	6.11. dovolená
 	7.11. dovolená
+	8.11. dovolená
