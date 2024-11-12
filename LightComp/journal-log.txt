@@ -1888,3 +1888,4 @@ November 2024
 	8.11. dovolená
 
 11.11.2024	Elza - v3.0 bug 9151, WhoisConnector - 9187, 9192, 9193
+12.11.2024	WhoisConnector - bug 9193
