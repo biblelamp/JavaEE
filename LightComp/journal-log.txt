@@ -1895,3 +1895,4 @@ November 2024
 
 18.11.2024	WhoisConnector - bug 9194
 19.11.2024	WhoisConnector - bugs 9194, 9192
+20.11.2024	WhoisConnector - bugs 9194, 9192, 9201
