@@ -1898,3 +1898,5 @@ November 2024
 20.11.2024	WhoisConnector - bugs 9194, 9192, 9201
 	21.11. dovolená
 22.11.2024	WhoisConnector - bug 9201
+
+25.11.2024	WhoisConnector - bug 9201, Elza - 9151
