@@ -1904,3 +1904,7 @@ November 2024
 27.11.2024	Elza - v3.1 bug 9151
 28.11.2024	Elza - v3.1 bug 9151
 29.11.2024	Elza - v3.1 bug 9151
+
+December 2024
+
+02.12.2024	Elza - v3.1 bug 9151
