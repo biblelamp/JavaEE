@@ -1924,3 +1924,5 @@ December 2024
 18.12.2024	Elza - v3.1 bug 9233
 19.12.2024	Elza - v3.1 bugs 9233, 9250
 20.12.2024	Elza - v3.1 bug 9233
+
+	23.12. dovolená
