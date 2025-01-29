@@ -1960,3 +1960,4 @@ January 2025
 
 27.1.2025	Elza - v3.1 bug 9289
 28.1.2025	Elza VHA - aktualizace 3.1.0, Elza v3.1 bug 9289
+29.1.2025	Elza - v3.1 bug 9289
