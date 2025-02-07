@@ -1970,3 +1970,4 @@ February 2025
 04.2.2025	Elza - v3.1 bugs 9299, 9305
 05.2.2025	Elza - v3.1 bug 9305
 06.2.2025	Elza - v3.1 bug 9305
+07.2.2025	Elza - v3.1 bugs 9305 test, 9314
