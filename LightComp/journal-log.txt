@@ -1980,3 +1980,4 @@ February 2025
 
 17.2.2025	Elza - main bug 9262
 18.2.2025	Elza - main bug 9262
+19.2.2025	Elza - main bugs 9262, 8648
