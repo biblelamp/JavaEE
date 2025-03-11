@@ -1999,3 +1999,4 @@ March 2025
 07.3.2025	Elza VHA - aktualizace 3.1.4, Elza v3.1 bug 9362
 
 10.3.2025	Elza - v3.2 bug 9262
+11.3.2025	Elza - v3.2 bugs 9262, 9154
