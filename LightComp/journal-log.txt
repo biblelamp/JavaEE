@@ -2012,3 +2012,4 @@ March 2025
 
 24.3.2025	Elza - v3.1 bug 9365 + test
 25.3.2025	Elza - v3.1 bug 9365 + test, WhoisConnector - 9378
+26.3.2025	Elza - v3.2 bug 9296, WhoisConnector - 9385
