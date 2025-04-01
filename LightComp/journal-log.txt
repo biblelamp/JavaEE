@@ -2017,3 +2017,7 @@ March 2025
 28.3.2025	WhoisConnector - bug 9385
 
 31.3.2025	WhoisConnector - bug 9385
+
+April 2025
+
+01.4.2025	WhoisConnector - bug 9385, Elza v3.2 - 9296
