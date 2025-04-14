@@ -2030,3 +2030,5 @@ April 2025
 09.4.2025	Elza - v3.2 bugs 9296, 9154
 10.4.2025	Elza - v3.1 tests, v3.2 - 9154 refactory
 11.4.2025	Elza - v3.2 bug 9154 refactory
+
+14.4.2025	Elza - v3.2 bug 9379
