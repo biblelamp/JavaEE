@@ -2035,3 +2035,7 @@ April 2025
 15.4.2025	Elza - v3.2 bug 9379
 16.4.2025	Elza - v3.2 bugs 9379, 9395
 17.4.2025	Elza - v3.2 bugs 9379, 9395
+	18.4. státní svátek
+
+	21.4. státní svátek
+22.4.2025	Elza - v3.2 bug 9395
