@@ -2082,3 +2082,4 @@ June 2025
 03.6.2025	Elza - v3.2 bug 9374
 04.6.2025	Elza - v3.2 bug 9374
 05.6.2025	Elza - v3.2 bug 9374 + test
+06.6.2025	Elza - v3.2 bug 9420
