@@ -2087,3 +2087,7 @@ June 2025
 09.6.2025	Elza - v3.2 bug 9420
 10.6.2025	WhoisConnector - bug 9434
 11.6.2025	WhoisConnector - bug 9434
+	12.6. dovolená
+	13.6. dovolená
+
+16.6.2025	Elza - v3.2 bugs 9440, 9441
