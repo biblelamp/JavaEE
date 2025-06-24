@@ -2097,3 +2097,4 @@ June 2025
 20.6.2025	Elza - v3.3 studium dokumentace
 
 23.6.2025	Elza - v3.3 bugs 9396, 8976
+24.6.2025	Elza - v3.3 bug 9396
