@@ -2112,3 +2112,4 @@ July 2025
 	4.7. dovolená
 
 07.7.2025	Elza - v3.2 bugs 9447,9456
+08.7.2025	Elza - v3.3 JasperReport -> 7.0.3
