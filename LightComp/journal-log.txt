@@ -2115,3 +2115,4 @@ July 2025
 08.7.2025	Elza - v3.3 JasperReport -> 7.0.3
 09.7.2025	Elza - v3.3 bug 9465, v3.2 bug 9457
 10.7.2025	Elza - v3.2 bugs 9462, 9468, v3.3 bug 9465
+11.7.2025	Elza - v3.2 bug 9468
