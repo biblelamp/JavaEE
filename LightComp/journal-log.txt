@@ -2121,3 +2121,4 @@ July 2025
 15.7.2025	Elza - v3.3 bugs 9446, 9465
 16.7.2025	Elza - v3.3 bugs 9465, 9478, 9396, v3.2 bug 9479
 17.7.2025	WhoisConnector - bug 9482, Elza v3.3 bug 9396
+18.7.2025	Elza - v3.3 bug 9396, v3.2 bugs 9484, 9486
