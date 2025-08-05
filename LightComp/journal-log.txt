@@ -2139,3 +2139,4 @@ August 2025
 01.8.2025	WhoisConnector - bug 9516, Elza v3.2
 
 04.8.2025	Elza - v3.3 bugs 9396, 7664
+05.8.2025	Elza - v3.3 bug 9396
