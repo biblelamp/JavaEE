@@ -2154,3 +2154,4 @@ August 2025
 19.8.2025	Elza - v3.3 bug 9374 test+
 20.8.2025	Elza - v3.3 bug 9530
 21.8.2025	Elza - v3.2 bugs 9501, 9535
+22.8.2025	Elza - v3.3 bug 9530, v3.2 bug 9502
