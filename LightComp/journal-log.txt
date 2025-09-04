@@ -2167,3 +2167,4 @@ September 2025
 01.9.2025	Elza - v3.3 bug 9539
 02.9.2025	Elza - v3.3 bug 9539
 03.9.2025	Elza - v3.3 bugs 9539, 9557
+04.9.2025	Elza - v3.3 bugs 9557 test, 9558
