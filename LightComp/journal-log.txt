@@ -2216,3 +2216,5 @@ October 2025
 24.10.2025	Elza - v3.3 bugs 9573, 9598, v3.2 bug 9597
 
 27.10.2025	Elza - v3.2 bug 9597
+	28.10. státní svátek
+29.10.2025	Elza - v3.2 bug 9597
