@@ -2219,3 +2219,4 @@ October 2025
 	28.10. státní svátek
 29.10.2025	Elza - v3.2 bug 9597
 30.10.2025	Elza - v3.2 bug 9597, v3.3 bug 9573
+31.10.2025	Elza - v3.3 bug 9503
