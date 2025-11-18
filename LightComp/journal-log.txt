@@ -2234,3 +2234,6 @@ November 2025
 12.11.2025	Elza - v3.2 bug 9602
 13.11.2025	Elza - v3.2 bug 9602
 14.11.2025	Elza - v3.3 bugs 9558, 8780, v3.2 bug 9602
+
+	17.11. státní svátek
+18.11.2025	Elza - v3.3 opravy a doplňky (pro Jakub Randák)
