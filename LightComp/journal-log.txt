@@ -2237,3 +2237,4 @@ November 2025
 
 	17.11. státní svátek
 18.11.2025	Elza - v3.3 opravy a doplňky (pro Jakub Randák)
+19.11.2025	Elza - v3.3 bug 9612
