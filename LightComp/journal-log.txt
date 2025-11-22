@@ -2239,3 +2239,4 @@ November 2025
 18.11.2025	Elza - v3.3 opravy a doplňky (pro Jakub Randák)
 19.11.2025	Elza - v3.3 bug 9612
 20.11.2025	CAMImporter - v2 bug 9613
+21.11.2025	CAMImporter - v2 bug 9613
