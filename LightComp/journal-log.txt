@@ -2240,3 +2240,5 @@ November 2025
 19.11.2025	Elza - v3.3 bug 9612
 20.11.2025	CAMImporter - v2 bug 9613
 21.11.2025	CAMImporter - v2 bug 9613
+
+24.11.2025	CAMImporter - v2 bug 9613
