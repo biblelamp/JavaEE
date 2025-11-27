@@ -2244,3 +2244,4 @@ November 2025
 24.11.2025	CAMImporter - v2 bug 9613
 25.11.2025	CAMImporter - v2 bug 9613
 26.11.2025	CAMImporter - v2 bug 9613
+27.11.2025	Elza VHA - aktualizace 3.2.9, CAMImporter - v2 bugs 9613, 2620
