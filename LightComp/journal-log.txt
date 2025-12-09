@@ -2254,3 +2254,5 @@ December 2025
 03.12.2025	CAMImporter - v2 bug 9624
 04.12.2025	CAMImporter - v2 bug 9624
 05.12.2025	CAMImporter - v2 bug 9624
+
+08.12.2025	CAMImporter - v2 bug 9624
