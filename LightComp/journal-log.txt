@@ -2260,3 +2260,5 @@ December 2025
 10.12.2025	CAMImporter - v2 bug 9624
 	11.12. dovolená
 12.12.2025	CAMImporter - v2 bug 9624
+
+15.12.2025	CAMImporter - v2 bug 9624
