@@ -2265,3 +2265,14 @@ December 2025
 16.12.2025	CAMImporter - v2 bugs 9624, 9637
 17.12.2025	CAMImporter - v2 bug 9637
 18.12.2025	CAMImporter - v2 bug 9637
+19.12.2025	CAMImporter - v2 bugs 9624, 9637
+
+	22.12. dovolená
+	23.12. dovolená
+	24.12. Štědrý den
+	25.12. Boží hod
+	26.12. Svátek svatého Štěpána
+
+	29.12. dovolená
+	30.12. dovolená
+	31.12. dovolená
