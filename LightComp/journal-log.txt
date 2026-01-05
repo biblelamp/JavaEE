@@ -2276,3 +2276,10 @@ December 2025
 	29.12. dovolená
 	30.12. dovolená
 	31.12. dovolená
+
+January 2026
+
+	1.1. státní svátek
+	2.1. dovolená
+
+05.1.2026	CAMImporter - v2 bug 9637
