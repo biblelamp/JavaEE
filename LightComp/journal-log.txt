@@ -2287,3 +2287,5 @@ January 2026
 07.1.2026	CAMImporter - v2 bug 9637
 08.1.2026	CAMImporter - v2 bug 9637
 09.1.2026	CAMImporter - v2 bug 9637
+
+12.1.2026	CAMImporter - v2 bug 9637
