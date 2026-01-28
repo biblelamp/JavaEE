@@ -2299,3 +2299,6 @@ January 2026
 21.1.2026	CAMImporter - v2 bug 9637
 22.1.2026	CAMImporter - v2 bug 9637
 23.1.2026	CAMImporter - v2 bug 9637
+
+	26.1. dovolená
+27.1.2026	CAMImporter - v2 bug 9637
