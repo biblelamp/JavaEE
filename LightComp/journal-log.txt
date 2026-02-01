@@ -2304,3 +2304,4 @@ January 2026
 27.1.2026	CAMImporter - v2 bug 9637
 28.1.2026	CAMImporter - v2 bug 9637, Elza - v3.3 oprava testu
 29.1.2026	CAMImporter - v2 test & prod profiles
+30.1.2026	CAMImporter - v2 bug 9637
