@@ -2312,3 +2312,4 @@ February 2026
 03.2.2026	CAMImporter - v2 bug 9637
 04.2.2026	Elza - v3.3 bug 9676
 05.2.2026	Elza - v3.3 bugs 9680, 9676, CAMImporter v2 bug 9637
+06.2.2026	Elza - v3.3 bugs 9680, 9686
