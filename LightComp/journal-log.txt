@@ -2331,3 +2331,7 @@ February 2026
 25.2.2026	WhoisConnector - bug 9716
 26.2.2026	WhoisConnector - bug 9716, CAMImporter v2
 27.2.2026	CAMImporter - v2 oprava, WhoisConnector bug 9716
+
+March 2026
+
+02.3.2026	CAMImporter - v2 oprava
