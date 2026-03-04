@@ -2335,3 +2335,4 @@ February 2026
 March 2026
 
 02.3.2026	CAMImporter - v2 oprava
+03.3.2026	CAMImporter - v2 delete items, WhoisConnector bug 9716
