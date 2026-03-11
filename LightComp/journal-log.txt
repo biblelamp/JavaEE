@@ -2342,3 +2342,4 @@ March 2026
 
 09.3.2026	WhoisConnector - bugs 9716, 9739
 10.3.2026	WhoisConnector - bugs 9716, 9739, 9741
+11.3.2026	WhoisConnector - bug 9741
