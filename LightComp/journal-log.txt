@@ -2345,3 +2345,5 @@ March 2026
 11.3.2026	WhoisConnector - bug 9741
 12.3.2026	CAMImporter - v2 zastavit odesílání, WhoisConnector bug 9741
 13.3.2026	WhoisConnector - bug 9741
+
+16.3.2026	WhoisConnector - bug 9741, CAMImporter v2
