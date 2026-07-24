@@ -2350,3 +2350,122 @@ March 2026
 18.3.2026	Elza - v3.3 bug 9025, WhoisConnector bug 9741
 19.3.2026	Elza - v3.3 bugs 9025, 9732
 20.3.2026	Elza - v3.3 bugs 9025, 9732
+
+23.3.2026	Elza - v3.3 bugs 9025, 9732, 9772
+24.3.2026	Elza - v3.3 bugs 9732, 9772, 9616
+25.3.2026	Elza - v3.3 bug 9774
+26.3.2026	Elza - v3.3 bug 9774
+	27.3. dovolená
+
+30.3.2026	Elza - v3.3 bug 9774, CAMImporter v2
+31.3.2026	Elza - v3.3 bug 9774, WhoisConnector bug 9716
+
+April 2026
+
+01.4.2026	Elza - v3.3 bug 9774, WhoisConnector bug 9716
+02.4.2026	Elza - v3.3 bugs 9774, 9778
+	3.4. státní svátek
+
+	6.4. státní svátek
+07.4.2026	Elza - v3.3 bug 9778
+08.4.2026	Elza - v3.3 bug 9792
+09.4.2026	Elza - v3.3 bug 9792
+10.4.2026	Elza - v3.3 bug 9792, v 3.2 9567, v3.4 9547
+
+13.4.2026	WhoisConnector - bug 9716
+14.4.2026	WhoisConnector - bug 9716, Elza v3.3 bug 9602
+15.4.2026	Elza - v3.4 bug 9488
+16.4.2026	Elza - v3.4 bugs 9488, 9503, v3.3 bug 9616
+	17.4. dovolená
+
+20.4.2026	Elza - v3.3 bug 9616
+21.4.2026	Elza - v3.3 bug 8705
+22.4.2026	WhoisConnector bug 9716
+23.4.2026	CAMImporter - v2, WhoisConnector bug 9716
+24.4.2026	WhoisConnector - bug 9716
+
+27.4.2026	WhoisConnector - bug 9716
+28.4.2026	Elza - v3.3 bug 7343, WhoisConnector bug 9716
+29.4.2026	Elza - v3.4 bug 9823
+30.4.2026	Elza - v3.4 bug 9823
+
+May 2026
+
+	1.5. státní svátek
+
+04.5.2026	Elza - v3.4 bug 9823, Elza v3.3 bug 9769
+05.5.2026	Elza - v3.3 bug 9582
+06.5.2026	Elza - v3.4 bug 9823
+07.5.2026	Elza - v3.4 bug 9823
+	8.5. státní svátek
+
+11.5.2026	Elza - v3.4 bug 9823
+12.5.2026	Elza - v3.4 bug 9823
+13.5.2026	Elza - v3.4 bugs 9823, 9839
+14.5.2026	Elza - v3.4 bugs 9823, 9839
+15.5.2026	Elza - v3.4 bug 9839
+
+18.5.2026	Elza - v3.4 bug 9839 testy
+19.5.2026	Elza - v3.4 bug 9839
+20.5.2026	Elza - v3.4 bug 9839
+21.5.2026	Elza VHA - aktualizace 3.3.13, Elza - v3.4 bug 9839
+22.5.2026	Elza - v3.4 bugs 9839, 9823
+
+25.5.2026	Elza - v3.4 bug 9534
+26.5.2026	Elza - v3.4 bug 9534
+27.5.2026	CAMImporter - v2
+28.5.2026	CAMImporter - v2
+29.5.2026	Elza v3.4 bug 9534, CAMImporter - v2
+
+June 2026
+
+01.6.2026	CAMImporter - v2 bug 9637, Elza - v3.3 bug 9863
+02.6.2026	CAMImporter - v2 bug 9637
+03.6.2026	CAMImporter - v2 bug 9637
+04.6.2026	CAMImporter - v2 bug 9637
+05.6.2026	CAMImporter - v2 bug 9637
+
+08.6.2026	CAMImporter - v2 bug 9637
+09.6.2026	CAMImporter - v2 bug 9878
+10.6.2026	CAMImporter - v2 bug 9878
+11.6.2026	CAMImporter - v2 bug 9878
+12.6.2026	CAMImporter - v2 bug 9878
+
+15.6.2026	CAMImporter - v2 bug 9878
+16.6.2026	CAMImporter - v2 bug 9878
+17.6.2026	CAMImporter - v2 bug 9878
+18.6.2026	CAMImporter - v2 bug 9878
+19.6.2026	Elza - v3.3 bug 9863
+
+22.6.2026	Elza - v3.3 bugs 9863, 9843
+23.6.2026	Elza - v3.3 bug 9869
+24.6.2026	Elza - v3.3 bugs 9843, 9845, Elza v3.4 bug 9902
+25.6.2026	Elza - v3.4 bug 9902, CAMImporter v2 bug 9903
+26.6.2026	Elza - v3.4 bug 9902
+
+29.6.2026	Elza - v3.4 bug 9902
+30.6.2026	Elza - v3.4 bug 9902
+
+July 2026
+
+01.7.2026	Elza - v3.4 bug 9902
+	2.7. dovolená
+	3.7. dovolená
+
+	6.7. státní svátek
+	7.7. dovolená
+08.7.2026	Elza - v3.4 bug 9902
+09.7.2026	Elza - v3.4 bug 9902
+10.7.2026	Elza - v3.4 bugs 9902, 9925
+
+13.7.2026	Elza - v3.4 bugs 9925, 9594
+14.7.2026	Elza - v3.4 bugs 9925, 9902, Elza v3.3 bugs 9594, 9929, 9797
+15.7.2026	Elza - v3.4 bug 9902
+16.7.2026	Elza - v3.4 bugs 9902, 9935
+17.7.2026	Elza - v3.4 bugs 9935, 9902
+
+20.7.2026	Elza - v3.4 bugs 9902, 9935, 9547
+21.7.2026	Elza - v3.4 bugs 9547, 9935, 9679
+22.7.2026	Elza - v3.4 bug 9679
+23.7.2026	Elza - v3.4 bug 9679
+24.7.2026	Elza - v3.4 bugs 9679, 9943, 9944
