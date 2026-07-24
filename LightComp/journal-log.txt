@@ -78,10 +78,10 @@ July 2019
 03.7.2019	eZpřístupnění - bug 5141
 04.7.2019	eZpřístupnění - bugs 5141, 5142
 
+08.7.2019	eZpřístupnění - bugs 5142, 5143, 5144
 09.7.2019	eZpřístupnění - bugs 5144, 5145, 5156
 10.7.2019	eZpřístupnění - bugs 5156, 5157, 5158
 11.7.2019	eZpřístupnění - bugs 5158, 5159
-08.7.2019	eZpřístupnění - bugs 5142, 5143, 5144
 12.7.2019	eZpřístupnění - bugs 5159, 5165, 5166
 
 15.7.2019	eZpřístupnění - bugs 5166, 5167
@@ -510,7 +510,7 @@ October 2020
 22.10.2020	WhoisConnector - bug 6603
 23.10.2020	WhoisConnector - bug 6603
 
-26.10.2010	ArchiveOnline - bug 6613, Elza - 6600
+26.10.2020	ArchiveOnline - bug 6613, Elza - 6600
 	27.10. dovolená
 	29.10. dovolená
 	30.10. dovolená
@@ -706,7 +706,7 @@ May 2021
 
 31.5.2021	Elza - bug 7173
 
-Juny 2019
+Juny 2021
 
 01.6.2021	Elza - bugs 7173, 7191, 7192
 02.6.2021	Elza - bugs 7191, 7192
@@ -758,7 +758,7 @@ July 2021
 
 26.7.2021	Elza - bug 7184
 27.7.2021	Elza - bug 7184
-28.7.2001	Elza - bug 7184 react
+28.7.2021	Elza - bug 7184 react
 	29.7. dovolená
 30.7.2021	Elza - bug 7184 refaktorování
 
@@ -1300,10 +1300,10 @@ February 2023
 21.2.2023	Elza - bugs 8329, 8348
 22.2.2023	Elza - bug 8329, SOA Praha - 8303
 23.2.2023	Elza - bug 8329
-24.2.2022	Elza - bug 8329
+24.2.2023	Elza - bug 8329
 
-27.2.2022	Elza - bug 8329
-28.2.2022	SOA Praha - bug 8392
+27.2.2023	Elza - bug 8329
+28.2.2023	SOA Praha - bug 8392
 
 March 2023
 
@@ -1423,7 +1423,7 @@ Juny 2023
 July 2023
 
 03.7.2023	Elza - bug 8524
-04.7.2003	Elza - bugs 8524, 8435
+04.7.2023	Elza - bugs 8524, 8435
 	5.7. státní svátek
 	6.7. státní svátek
 	7.7. dovolená
@@ -1699,7 +1699,6 @@ April 2024
 22.04.2024	Elza - v3.0 bug 8925, deserialization in bridges
 23.04.2024	Elza - v3.0 bug 8928
 24.04.2024	Elza - v3.0 bug 8928
-24.04.2024	Elza - v3.0 bug 8928
 25.04.2024	Elza - v3.0 bug 8928
 26.04.2024	Elza - v3.0 bug 8928, v2.8 bug 8944
 
@@ -1844,7 +1843,7 @@ September 2024
 24.09.2024	Elza - v3.0 bugs 8955, 8088
 25.09.2024	Elza - v3.0 bugs 8088, 9038, 8955
 26.09.2024	Elza - v3.0 bug 9125
-27.99.2024	Elza - v3.0 bugs 9125, 8955
+27.09.2024	Elza - v3.0 bugs 9125, 8955
 
 30.09.2024	Elza - v3.0 bug 8955
 
@@ -1986,7 +1985,7 @@ February 2025
 
 24.2.2025	Elza - v3.2 bug 6341
 25.2.2025	Elza - v3.1 bug 9334, v3.2 - 9341
-26.2.2026	Elza - v3.1 bug 9334
+26.2.2025	Elza - v3.1 bug 9334
 27.2.2025	Elza - v3.1 bug 9334
 28.2.2025	Elza - v3.1 bugs 9331, 9334
 
