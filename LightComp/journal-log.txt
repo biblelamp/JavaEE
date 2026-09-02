@@ -2503,3 +2503,7 @@ August 2026
 	28.8. dovolená
 
 31.8.2026	Elza - v3.4 bug 9991
+
+September 2026
+
+01.9.2026	Elza - v3.4 bug 9991
