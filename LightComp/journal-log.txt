@@ -2510,3 +2510,5 @@ September 2026
 02.9.2026	Elza - v3.4 bug 9991
 03.9.2026	Elza - v3.4 bug 9991
 04.9.2026	Elza - v3.4 bug 9991
+
+07.9.2026	Elza - v3.4 bug 9991, CAMImporter
