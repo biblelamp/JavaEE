@@ -2522,3 +2522,6 @@ September 2026
 16.9.2026	Elza - v3.4 bug 10028
 17.9.2026	Elza - v3.4 bug 10028
 18.9.2026	Elza - v3.4 bug 10028
+
+	21.9. dovolená
+22.9.2026	Elza - v3.4 bug 10054
