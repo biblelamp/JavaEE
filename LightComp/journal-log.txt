@@ -2532,3 +2532,7 @@ September 2026
 	28.9. státní svátek
 29.9.2026	Elza - v3.4 bugs 7077, 9963
 30.9.2026	Elza - v3.4 bug 9963
+
+October 2026
+
+01.10.2026	Elza - v3.4 bugs 9963, 10076
