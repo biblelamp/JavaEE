@@ -2537,3 +2537,5 @@ October 2026
 
 01.10.2026	Elza - v3.4 bugs 9963, 10076
 02.10.2026	Elza - v3.4 bugs 10063, 9921, 7843, CAMImporter
+
+05.10.2026	Elza - v3.4 bug 9963
