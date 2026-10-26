@@ -2554,3 +2554,4 @@ October 2026
 20.10.2026	Elza - v3.4 bug 10161
 21.10.2026	Elza - VHA 3.4.10 test, Elza - v3.4 bug 9991
 22.10.2026	Elza - v3.4 bug 9991 fix, v3.5 bug 9509
+23.10.2026	Elza - v3.5 bug 5909
