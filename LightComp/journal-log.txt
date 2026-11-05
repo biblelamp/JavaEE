@@ -2567,3 +2567,4 @@ November 2026
 	2.11. dovolená
 03.11.2026	Elza - v3.5 bug 9509, v3.4 bugs 10159, 9714
 04.11.2026	Elza - v3.4 bug 9714
+05.11.2026	Elza - v3.4 bug 9714
